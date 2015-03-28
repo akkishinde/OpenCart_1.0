@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="112dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/username_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:hint="@string/email_str"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:textColor="@color/mTeal"
+            android:textColorHint="@color/mTeal"
+            android:background="@drawable/inputs_02"
+            android:drawableStart="@drawable/username"
+            android:drawableLeft="@drawable/username"
+            android:drawablePadding="5dp" />
+
+        <EditText
+            android:id="@+id/password_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="5dip"
+            android:hint="@string/password_str"
+            android:textSize="18sp"
+            android:gravity="center_vertical|start"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/mTeal"
+            android:textColorHint="@color/mTeal"
+            android:background="@drawable/inputs_02"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"/>
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/mWhite"
+            android:text="@string/signin_btn"
+            android:textSize="18sp"
+            android:background="@drawable/login_selector"
+            android:singleLine="false"
+            android:onClick="login"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:text="Don't have account?"
+                android:textSize="20sp"
+                android:id="@+id/register"
+                android:onClick="register"
+                android:textColor="@drawable/textview_selector"
+                />
+         <!--   <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="end"
+                android:text="Skip"
+                android:textSize="20sp"
+                android:id="@+id/skip"
+                android:onClick="skip"
+                android:textColor="@drawable/textview_selector"
+                />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

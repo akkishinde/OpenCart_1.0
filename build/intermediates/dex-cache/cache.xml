@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\classes-e2440ebbf3e3ddf88aca7da4ce663896d59c05cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-e3a51634381fcdd32606d6922efac014769d3dbf.jar" />
+    </item>
+    <item
+        jar="C:\Users\Splash New\.gradle\caches\modules-2\files-2.1\com.loopj.android\android-async-http\1.4.4\3bae85a076241828810bf8fbcc12e5891d5fc34c\android-async-http-1.4.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3bae85a076241828810bf8fbcc12e5891d5fc34c">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.4-c108177c52126bcd054d9ebc7c0b750cb9c2c73b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Splash New\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-64174fd3d15fac49d529e22a8aff0965e4a83871.jar" />
+    </item>
+    <item
+        jar="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\classes-714c5af791028310dff1e0418ea01caa601efaa8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\exploded-aar\com.pnikosis\materialish-progress\1.5\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="75c54c470e19b251749e6e6c2cf3d73c0b50aa64">
+        <dex dex="C:\Users\Splash New\Desktop\Dynamic Drawer\SlidingMenu1\app\build\intermediates\pre-dexed\debug\classes-3df43174b2bc852917979d450aa53df9f3f44610.jar" />
+    </item>
+
+</items>
