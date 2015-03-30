@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/plain_bg">
     
-    <TextView
+  <!--  <TextView
         android:id="@+id/txtLabel"
          android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,14 @@
         android:layout_below="@id/txtLabel"
         android:src="@drawable/ic_home"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"/>-->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector" />
     
 
 </RelativeLayout>
