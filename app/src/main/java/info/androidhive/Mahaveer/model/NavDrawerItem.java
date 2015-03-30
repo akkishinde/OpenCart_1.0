@@ -10,9 +10,9 @@ public class NavDrawerItem {
 	
 	public NavDrawerItem(){}
 
-	public NavDrawerItem(String title, int icon){
+	public NavDrawerItem(String title){
 		this.title = title;
-		this.icon = icon;
+		//this.icon = icon;
 	}
 	
 	public NavDrawerItem(String title, int icon, boolean isCounterVisible, String count){

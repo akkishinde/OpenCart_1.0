@@ -9,12 +9,30 @@
     
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
-        <item >Home</item>
-        <item >Find People</item>
-        <item >Photos</item>
-        <item >Communities</item>
-        <item >Pages</item>
-        <item >What\'s Hot</item>
+        <item >Appliances</item>
+        <item >Baby Care</item>
+        <item >Bakery &amp; Confectionery </item>
+        <item >Banya\'s Bakery &amp; Deli</item>
+        <item >Bases &amp; Buns</item>
+        <item >Beverages &amp; Syrups</item>
+        <item >Bottles, Cans &amp; Packets</item>
+        <item >Breakfast &amp; Health Food</item>
+        <item >Cakes</item>
+        <item >Coconut</item>
+        <item >Condiments &amp; Sauces</item>
+        <item >Dairy Products</item>
+        <item >Food Matters</item>
+        <item >Frozen Section</item>
+        <item >Fruits &amp; Vegetables</item>
+        <item >Grocery &amp; Staples</item>
+        <item >Health Care</item>
+        <item >Home &amp; Kitchen Ware</item>
+        <item >Household Supplies</item>
+        <item >Khari &amp; Toasts</item>
+        <item >Organic Foods</item>
+        <item >Personal Care</item>
+        <item >Salt &amp; Sugar</item>
+        <item >Stationery</item>
     </string-array>
     
     <!-- Nav Drawer List Item Icons -->

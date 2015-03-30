@@ -5,11 +5,14 @@ import info.androidhive.Mahaveer.model.NavDrawerItem;
 
 import java.util.ArrayList;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
@@ -17,6 +20,8 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -42,7 +47,16 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
+        ActionBar mActionBar = getActionBar();
+        assert mActionBar != null;
+        mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
+                .getColor(R.color.mOrange)));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getResources()
+                    .getColor(R.color.mOrangeDark));
+        }
 		mTitle = mDrawerTitle = getTitle();
 
 		// load slide menu items
@@ -56,21 +70,35 @@ public class MainActivity extends Activity {
 		mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
 
 		navDrawerItems = new ArrayList<NavDrawerItem>();
-
+        // Communities, Will add a counter here
+        //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
 		// adding nav drawer items to array
 		// Home
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
-		// Find People
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-		// Photos
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
-		// Communities, Will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
-		// Pages
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
-		// What's hot, We  will add a counter here
-		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
-		
+		navDrawerItems.add(new NavDrawerItem(navMenuTitles[1]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[11]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[12]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[13]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[15]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[16]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[17]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[18]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[19]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[20]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[21]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[22]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[23]));
+        //navDrawerItems.add(new NavDrawerItem(navMenuTitles[24]));
+
 
 		// Recycle the typed array
 		navMenuIcons.recycle();

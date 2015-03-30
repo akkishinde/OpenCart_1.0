@@ -194,11 +194,11 @@ public class LoginActivity extends Activity{
         Intent intent = new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
-    /*public void skip(View view)
+    public void skip(View view)
     {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-    }*/
+    }
 
 
 }
