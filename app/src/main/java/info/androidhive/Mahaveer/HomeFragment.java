@@ -31,12 +31,13 @@ public class HomeFragment extends Fragment {
     private List<SubCat> movieList = new ArrayList<SubCat>();
     private ListView listView;
     private CustomSubCatAdapter adapter;
-	
-	public HomeFragment(){}
-	
-	@Override
+
+    public HomeFragment() {
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
        /* int key=getArguments().getInt("key");
@@ -55,10 +56,10 @@ public class HomeFragment extends Fragment {
                     @Override
                     public void onResponse(JSONArray response) {
                         //Log.d(TAG, response.toString());
-                       pDialog.hide();
-                        for (int i = 0; i < response.length(); i++) {
-                            try {
 
+                        try {
+                            pDialog.hide();
+                            for (int i = 0; i < response.length(); i++) {
                                 JSONObject obj = response.getJSONObject(i);
                                 SubCat movie = new SubCat();
                                 movie.setTitle(obj.getString("title"));
@@ -78,18 +79,19 @@ public class HomeFragment extends Fragment {
                                 // adding movie to movies array
                                 movieList.add(movie);
 
-                            } catch (JSONException e) {
-                                e.printStackTrace();
                             }
-
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
+
+
                         adapter.notifyDataSetChanged();
                     }
-                },new Response.ErrorListener() {
+                }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 //VolleyLog.d(TAG, "Error: " + error.getMessage());
-               pDialog.hide();
+                pDialog.hide();
 
             }
 
