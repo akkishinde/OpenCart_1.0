@@ -43,7 +43,7 @@ public class SplashActivity extends Activity {
             //splashHandler.postDelayed(r, 3000);
             //Notify user they aren't connected
             Toast.makeText(getApplicationContext(), "You aren't connected to the internet.", Toast.LENGTH_LONG).show();
-            splashHandler.postDelayed(r2, 3000);
+            splashHandler.postDelayed(r, 3000);
             //close the app
             //finish();
         }

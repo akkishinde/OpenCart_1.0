@@ -87,7 +87,7 @@
                 android:onClick="register"
                 android:textColor="@drawable/textview_selector"
                 />
-         <!--   <TextView
+           <TextView
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_weight="0"
@@ -97,7 +97,7 @@
                 android:id="@+id/skip"
                 android:onClick="skip"
                 android:textColor="@drawable/textview_selector"
-                />-->
+                />
         </LinearLayout>
 
 
