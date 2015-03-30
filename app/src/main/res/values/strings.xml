@@ -59,5 +59,6 @@
     <string name="city_str">Aurangabad</string>
     <string name="register_btn">Register</string>
     <string name="signin_btn">Sign In</string>
+    <string name="search_hint">Search Item</string>
 
 </resources>

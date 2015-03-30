@@ -1,10 +1,16 @@
 package info.androidhive.Mahaveer;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,7 +25,7 @@ import org.json.JSONObject;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created by Splash New on 3/24/2015.
+ * Created by Akshay New on 3/24/2015.
  */
 public class RegisterActivity extends Activity{
     EditText firstname,lastname,username,password,repeat_password,contact,address1,address2,city;
@@ -28,6 +34,24 @@ public class RegisterActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_activity);
+        ActionBar mActionBar = getActionBar();
+        assert mActionBar != null;
+        mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
+                .getColor(R.color.mOrange)));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getResources()
+                    .getColor(R.color.mOrangeDark));
+        }
+        int actionBarTitleId = Resources.getSystem().getIdentifier("action_bar_title", "id", "android");
+        if (actionBarTitleId > 0) {
+            TextView title = (TextView) findViewById(actionBarTitleId);
+            if (title != null) {
+                title.setTextColor(getResources()
+                        .getColor(R.color.mWhite));
+            }
+        }
         firstname=(EditText)findViewById(R.id.firstname_text);
         lastname=(EditText)findViewById(R.id.lastname_text);
         username=(EditText)findViewById(R.id.username_text);
