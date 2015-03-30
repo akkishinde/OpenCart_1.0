@@ -1,13 +1,19 @@
 package info.androidhive.Mahaveer;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -33,6 +39,16 @@ public class LoginActivity extends Activity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
+        ActionBar mActionBar = getActionBar();
+        assert mActionBar != null;
+        mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
+                .getColor(R.color.mOrange)));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setStatusBarColor(getResources()
+                    .getColor(R.color.mOrangeDark));
+        }
         username=(EditText)findViewById(R.id.username_text);
         password=(EditText)findViewById(R.id.password_text);
         prgDialog = new ProgressDialog(this);
