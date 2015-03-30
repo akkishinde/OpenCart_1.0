@@ -3,16 +3,19 @@ package info.androidhive.Mahaveer;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.loopj.android.http.AsyncHttpClient;
 
 import org.json.JSONArray;
@@ -20,24 +23,25 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import info.androidhive.Mahaveer.adapter.CustomSubCatAdapter;
 import info.androidhive.Mahaveer.model.SubCat;
 
 public class HomeFragment extends Fragment {
-    private static final String url = "http://api.androidhive.info/json/movies.json";
+    private static final String url = "http://webshop.opencart-api.com:80/api/rest/products/category/24";
     private ProgressDialog pDialog;
     private List<SubCat> movieList = new ArrayList<SubCat>();
     private ListView listView;
     private CustomSubCatAdapter adapter;
 
-    public HomeFragment() {
-    }
+	public HomeFragment(){}
 
-    @Override
+	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+            Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
        /* int key=getArguments().getInt("key");
@@ -51,51 +55,64 @@ public class HomeFragment extends Fragment {
         pDialog.setMessage("Loading...");
         pDialog.show();
 
-        JsonArrayRequest movieReq = new JsonArrayRequest(url,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        //Log.d(TAG, response.toString());
+        JsonObjectRequest movieReq = new JsonObjectRequest(url,null,
+                new Response.Listener<JSONObject>() {
+                    public static final String TAG = "";
 
-                        try {
-                            pDialog.hide();
-                            for (int i = 0; i < response.length(); i++) {
-                                JSONObject obj = response.getJSONObject(i);
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d(TAG, response.toString());
+
+                            try {
+                                pDialog.hide();
+                                //String data=response.getString("Data");
+                                JSONArray jr=response.getJSONArray("data");
+                                for (int i = 0; i < jr.length(); i++) {
+                                JSONObject obj = jr.getJSONObject(i);
                                 SubCat movie = new SubCat();
-                                movie.setTitle(obj.getString("title"));
+                                movie.setTitle(obj.getString("name"));
                                 movie.setThumbnailUrl(obj.getString("image"));
-                                movie.setRating(((Number) obj.get("rating"))
-                                        .doubleValue());
-                                movie.setYear(obj.getInt("releaseYear"));
+                                movie.setRating((obj.getString("price")));
+                                movie.setYear(obj.getString("stock_status"));
 
                                 // Genre is json array
-                                JSONArray genreArry = obj.getJSONArray("genre");
-                                ArrayList<String> genre = new ArrayList<String>();
+                                JSONArray genreArry = obj.getJSONArray("category");
+                                /*ArrayList<String> genre = new ArrayList<String>();
                                 for (int j = 0; j < genreArry.length(); j++) {
                                     genre.add((String) genreArry.get(j));
                                 }
-                                movie.setGenre(genre);
+                                movie.setGenre(genre);*/
 
                                 // adding movie to movies array
                                 movieList.add(movie);
 
+                            }} catch (JSONException e) {
+                                e.printStackTrace();
                             }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
 
 
                         adapter.notifyDataSetChanged();
                     }
-                }, new Response.ErrorListener() {
+                },new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 //VolleyLog.d(TAG, "Error: " + error.getMessage());
-                pDialog.hide();
+               pDialog.hide();
 
             }
 
-        });
+
+        }){
+            @Override
+            public Map<String, String> getHeaders()  {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                headers.put("Accept", "application/json");
+                headers.put("X-Oc-Merchant-Id","123");
+                headers.put("X-Oc-Merchant-Language","en");
+                return headers;
+            }
+        };
         Session.getInstance().addToRequestQueue(movieReq);
         return rootView;
     }

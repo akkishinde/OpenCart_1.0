@@ -8,14 +8,14 @@ import java.util.ArrayList;
 public class SubCat {
 
     private String title, thumbnailUrl;
-    private int year;
-    private double rating;
+    private String year;
+    private String rating;
     private ArrayList<String> genre;
 
     public SubCat() {
     }
 
-    public SubCat(String name, String thumbnailUrl, int year, double rating,
+    public SubCat(String name, String thumbnailUrl, String year, String rating,
                  ArrayList<String> genre) {
         this.title = name;
         this.thumbnailUrl = thumbnailUrl;
@@ -40,19 +40,19 @@ public class SubCat {
         this.thumbnailUrl = thumbnailUrl;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public double getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(double rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
