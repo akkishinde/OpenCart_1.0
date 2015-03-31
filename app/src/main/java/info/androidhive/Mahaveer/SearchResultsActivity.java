@@ -22,7 +22,7 @@ public class SearchResultsActivity extends Activity {
         ActionBar actionBar = getActionBar();
 
         // Enabling Back navigation on Action Bar icon
-        assert actionBar != null;
+        //assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
 
         txtQuery = (TextView) findViewById(R.id.txtQuery);
