@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
 
     // slide menu items
     private String[] navMenuTitles;
-    private TypedArray navMenuIcons;
     Bundle args = new Bundle();
     private ArrayList<NavDrawerItem> navDrawerItems;
     private NavDrawerListAdapter adapter;
@@ -79,8 +78,7 @@ public class MainActivity extends Activity {
         navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
 
         // nav drawer icons from resources
-        navMenuIcons = getResources()
-                .obtainTypedArray(R.array.nav_drawer_icons);
+        TypedArray navMenuIcons = getResources().obtainTypedArray(R.array.nav_drawer_icons);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
@@ -90,30 +88,30 @@ public class MainActivity extends Activity {
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
         // adding nav drawer items to array
         // Home
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[11]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[12]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[13]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[15]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[16]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[17]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[18]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[19]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[20]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[21]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[22]));
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[23]));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0,-1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[7], navMenuIcons.getResourceId(7, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[8], navMenuIcons.getResourceId(8, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[9], navMenuIcons.getResourceId(9, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[10], navMenuIcons.getResourceId(10, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[11], navMenuIcons.getResourceId(11, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[12], navMenuIcons.getResourceId(12, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[13], navMenuIcons.getResourceId(13, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[14], navMenuIcons.getResourceId(14, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[15], navMenuIcons.getResourceId(15, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[16], navMenuIcons.getResourceId(16, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[17], navMenuIcons.getResourceId(17, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[18], navMenuIcons.getResourceId(18, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[19], navMenuIcons.getResourceId(19, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[20], navMenuIcons.getResourceId(20, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[21], navMenuIcons.getResourceId(21, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[22], navMenuIcons.getResourceId(22, -1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[23], navMenuIcons.getResourceId(23, -1)));
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[24]));
 
 

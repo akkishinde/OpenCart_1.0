@@ -38,12 +38,33 @@
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
-        <item>@drawable/ic_people</item>
-        <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_communities</item>
-        <item>@drawable/ic_pages</item>
-        <item>@drawable/ic_whats_hot</item>
+        <item>@drawable/ic_fan</item>
+        <item>@drawable/ic_duck</item>
+        <item>@drawable/ic_cake</item>
+        <item>@drawable/ic_timetable</item>
+        <item>@drawable/ic_cube</item>
+        <item>@drawable/ic_ornament</item>
+        <item>@drawable/ic_glass_mug</item>
+        <item>@drawable/ic_carrot</item>
+        <item>@drawable/ic_cake_variant</item>
+        <item>@drawable/ic_water</item>
+        <item>@drawable/ic_food_variant</item>
+        <item>@drawable/ic_cow</item>
+        <item>@drawable/ic_food</item>
+        <item>@drawable/ic_weather_windy</item>
+        <item>@drawable/ic_barley</item>
+        <item>@drawable/ic_basket</item>
+        <item>@drawable/ic_pill</item>
+        <item>@drawable/ic_silverware</item>
+        <item>@drawable/ic_stove</item>
+        <item>@drawable/ic_pizza</item>
+        <item>@drawable/ic_food_apple</item>
+        <item>@drawable/ic_dumbbell</item>
+        <item>@drawable/ic_silverware_spoon</item>
+        <item>@drawable/ic_spotlight_beam</item>
+
+
+
     </array>
     
     <!-- Content Description -->
