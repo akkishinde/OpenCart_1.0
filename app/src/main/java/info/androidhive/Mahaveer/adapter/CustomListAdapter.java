@@ -3,6 +3,8 @@ package info.androidhive.Mahaveer.adapter;
 /**
  * Created by Splash New on 3/31/2015.
  */
+import info.androidhive.Mahaveer.ItemsDetails;
+import info.androidhive.Mahaveer.ItemsListDisplay;
 import info.androidhive.Mahaveer.R;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.ItemList;
@@ -11,6 +13,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +50,7 @@ public class CustomListAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         if (inflater == null)
             inflater = (LayoutInflater) activity
@@ -87,7 +90,16 @@ public class CustomListAdapter extends BaseAdapter {
 */
         // release year
         year.setText(String.valueOf(m.getYear()));
+        convertView.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                ItemList m = movieItems.get(position);
+                Intent intent = new Intent(activity, ItemsDetails.class);
+                intent.putExtra("title", m.getTitle());
+                activity.startActivity(intent);
+            }
+        });
         return convertView;
     }
 
