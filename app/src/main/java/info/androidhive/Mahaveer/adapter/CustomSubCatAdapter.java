@@ -1,5 +1,6 @@
 package info.androidhive.Mahaveer.adapter;
-import info.androidhive.Mahaveer.HomeFragment;
+import info.androidhive.Mahaveer.ItemsDisplay;
+import info.androidhive.Mahaveer.MainActivity;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.SubCat;
 import info.androidhive.Mahaveer.R;
@@ -7,8 +8,9 @@ import info.androidhive.Mahaveer.R;
 import java.util.List;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Movie;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,18 +47,18 @@ public class CustomSubCatAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
 
         if (inflater == null)
             inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.list_row, null);
+            convertView = inflater.inflate(R.layout.category_list_row, null);
 
         if (imageLoader == null)
             imageLoader = Session.getInstance().getImageLoader();
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
-        TextView title = (TextView) convertView.findViewById(R.id.title);
+        final TextView title = (TextView) convertView.findViewById(R.id.title);
         TextView rating = (TextView) convertView.findViewById(R.id.rating);
         TextView genre = (TextView) convertView.findViewById(R.id.genre);
         TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
@@ -71,7 +73,7 @@ public class CustomSubCatAdapter extends BaseAdapter {
         title.setText(m.getTitle());
 
         // rating
-        rating.setText("Price: " + String.valueOf(m.getRating()));
+        //rating.setText("Price: " + String.valueOf(m.getRating()));
 
         // genre
        /* String genreStr = "";
@@ -85,7 +87,18 @@ public class CustomSubCatAdapter extends BaseAdapter {
         // release year
         year.setText(String.valueOf(m.getYear()));
 
+        convertView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                SubCat m = movieItems.get(position);
+                Intent intent = new Intent(activity, ItemsDisplay.class);
+                intent.putExtra("title", m.getTitle());
+                activity.startActivity(intent);
+            }
+        });
         return convertView;
     }
+
 
 }

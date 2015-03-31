@@ -31,7 +31,7 @@ import info.androidhive.Mahaveer.adapter.CustomSubCatAdapter;
 import info.androidhive.Mahaveer.model.SubCat;
 
 public class HomeFragment extends Fragment {
-    private static final String url = "http://webshop.opencart-api.com:80/api/rest/products/category/24";
+    private static final String url = "http://webshop.opencart-api.com:80/api/rest/categories/parent/25";
     private ProgressDialog pDialog;
     private List<SubCat> movieList = new ArrayList<SubCat>();
     private ListView listView;
@@ -72,11 +72,11 @@ public class HomeFragment extends Fragment {
                                 SubCat movie = new SubCat();
                                 movie.setTitle(obj.getString("name"));
                                 movie.setThumbnailUrl(obj.getString("image"));
-                                movie.setRating((obj.getString("price")));
-                                movie.setYear(obj.getString("stock_status"));
+                               //movie.setRating((obj.getString("price")));
+                                //movie.setYear(obj.getString("stock_status"));
 
                                 // Genre is json array
-                                JSONArray genreArry = obj.getJSONArray("category");
+                                //JSONArray genreArry = obj.getJSONArray("category");
                                 /*ArrayList<String> genre = new ArrayList<String>();
                                 for (int j = 0; j < genreArry.length(); j++) {
                                     genre.add((String) genreArry.get(j));
