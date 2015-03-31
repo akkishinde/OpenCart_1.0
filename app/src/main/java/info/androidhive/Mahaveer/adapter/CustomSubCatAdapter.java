@@ -57,9 +57,9 @@ public class CustomSubCatAdapter extends BaseAdapter {
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
         final TextView title = (TextView) convertView.findViewById(R.id.title);
-        TextView rating = (TextView) convertView.findViewById(R.id.rating);
-        TextView genre = (TextView) convertView.findViewById(R.id.genre);
-        TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
+        //TextView rating = (TextView) convertView.findViewById(R.id.rating);
+        //TextView genre = (TextView) convertView.findViewById(R.id.genre);
+       // TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
 
         // getting movie data for the row
         SubCat m = movieItems.get(position);
@@ -83,7 +83,7 @@ public class CustomSubCatAdapter extends BaseAdapter {
         genre.setText(genreStr);*/
 
         // release year
-        year.setText(String.valueOf(m.getYear()));
+        //year.setText(String.valueOf(m.getYear()));
 
         convertView.setOnClickListener(new View.OnClickListener() {
 
