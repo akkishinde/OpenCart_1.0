@@ -1,14 +1,16 @@
 package info.androidhive.Mahaveer.adapter;
-import info.androidhive.Mahaveer.ItemsListDisplay;
-import info.androidhive.Mahaveer.Session;
-import info.androidhive.Mahaveer.model.SubCat;
+
+/**
+ * Created by Splash New on 3/31/2015.
+ */
 import info.androidhive.Mahaveer.R;
+import info.androidhive.Mahaveer.Session;
+import info.androidhive.Mahaveer.model.ItemList;
 
 import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,13 +20,13 @@ import android.widget.TextView;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
 
-public class CustomSubCatAdapter extends BaseAdapter {
+public class CustomListAdapter extends BaseAdapter {
     private Activity activity;
     private LayoutInflater inflater;
-    private List<SubCat> movieItems;
+    private List<ItemList> movieItems;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
 
-    public CustomSubCatAdapter(Activity activity, List<SubCat> movieItems) {
+    public CustomListAdapter(Activity activity, List<ItemList> movieItems) {
         this.activity = activity;
         this.movieItems = movieItems;
     }
@@ -45,24 +47,25 @@ public class CustomSubCatAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(final int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
 
         if (inflater == null)
-            inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            inflater = (LayoutInflater) activity
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.category_list_row, null);
+            convertView = inflater.inflate(R.layout.list_row, null);
 
         if (imageLoader == null)
             imageLoader = Session.getInstance().getImageLoader();
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
-        final TextView title = (TextView) convertView.findViewById(R.id.title);
+        TextView title = (TextView) convertView.findViewById(R.id.title);
         TextView rating = (TextView) convertView.findViewById(R.id.rating);
         TextView genre = (TextView) convertView.findViewById(R.id.genre);
         TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
 
         // getting movie data for the row
-        SubCat m = movieItems.get(position);
+        ItemList m = movieItems.get(position);
 
         // thumbnail image
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
@@ -71,7 +74,7 @@ public class CustomSubCatAdapter extends BaseAdapter {
         title.setText(m.getTitle());
 
         // rating
-        //rating.setText("Price: " + String.valueOf(m.getRating()));
+        rating.setText("Price: " + String.valueOf(m.getRating()));
 
         // genre
        /* String genreStr = "";
@@ -80,23 +83,12 @@ public class CustomSubCatAdapter extends BaseAdapter {
         }
         genreStr = genreStr.length() > 0 ? genreStr.substring(0,
                 genreStr.length() - 2) : genreStr;
-        genre.setText(genreStr);*/
-
+        genre.setText(genreStr);
+*/
         // release year
         year.setText(String.valueOf(m.getYear()));
 
-        convertView.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                SubCat m = movieItems.get(position);
-                Intent intent = new Intent(activity, ItemsListDisplay.class);
-                intent.putExtra("title", m.getTitle());
-                activity.startActivity(intent);
-            }
-        });
         return convertView;
     }
-
 
 }

@@ -15,7 +15,8 @@ import android.widget.Toast;
 /**
  * Created by Splash New on 3/31/2015.
  */
-public class ItemsDisplay extends Activity{
+public class ItemsDetails extends Activity{
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class ItemsDisplay extends Activity{
         }
         Intent intent = getIntent();
         String title = intent.getStringExtra("title");
-        Toast.makeText(getApplicationContext(),title,Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();
     }
 
 
