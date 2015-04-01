@@ -8,32 +8,32 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        >
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="asdasdas"
-            android:textColor="@color/mOrange"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/heading_bg"
+            android:textColor="@color/mTeal"
+            android:textStyle="bold"
             android:textSize="20sp"
-            android:paddingTop="5dp"
-            android:paddingLeft="5dp"
-            android:gravity="left"
+            android:gravity="center"
             android:id="@+id/name"
-            android:layout_gravity="start" />
+            android:layout_gravity="center_horizontal" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="asdasdas"
-            android:paddingLeft="5dp"
-            android:textColor="@color/mOrange"
+            android:text=""
+            android:textColor="@color/mTeal"
             android:textSize="15sp"
             android:paddingTop="1dp"
             android:gravity="left"
             android:id="@+id/manufacturer"
-            android:layout_gravity="start" />
+            android:layout_gravity="center" />
 
         <LinearLayout
             android:paddingTop="5dp"
@@ -58,73 +58,136 @@
             android:layout_height="100dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:background="@color/list_row_end_color"
+
             >
 
             <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="100dp"
+                android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:id="@+id/imageView2"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignBottom="@+id/imageView3" />
 
             <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView3"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="5dp"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentTop="true" />
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView2" />
 
             <com.android.volley.toolbox.NetworkImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:id="@+id/imageView4"
-                android:paddingTop="5dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
-                android:paddingBottom="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true" />
+                android:layout_toEndOf="@+id/imageView3"
+                android:layout_alignBottom="@+id/imageView3" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/imageView5"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageView4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/imageView3"/>
         </RelativeLayout>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="161dp">
+            android:layout_height="200dp"
+            android:background="@color/mWhite"
+            android:layout_weight="8">
 
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
 
                 <TextView
+                    android:layout_marginStart="2dp"
                     android:layout_width="200dp"
-                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content"
                     android:text="New Text"
                     android:textColor="@color/mOrange"
-                    android:textSize="20sp"
-                    android:id="@+id/textView2"
+                    android:textSize="25sp"
+                    android:id="@+id/item_name"
+                    android:scrollbars = "vertical"
+                    android:maxLines="50"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentStart="true" />
 
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="200dp"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey_text"
+                    android:textSize="15sp"
+                    android:id="@+id/brand_name"
+                    android:scrollbars="vertical"
+                    android:maxLines="50"
+                    android:layout_below="@+id/item_name"
+                    android:layout_alignStart="@+id/item_name" />
+
+
+                <TextView
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="200dp"
+                    android:textAlignment="textStart"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey_text"
+                    android:textSize="15sp"
+                    android:id="@+id/stock_status"
+                    android:scrollbars="vertical"
+                    android:maxLines="50"
+                    android:layout_below="@+id/brand_name"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text=""
+                    android:id="@+id/price"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/mTeal"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
+                    android:layout_below="@+id/stock_status"
+                    android:layout_alignStart="@+id/stock_status" />
+
                 <ImageButton
+                    android:layout_marginTop="5dp"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:id="@+id/imageButton"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/textView2"
                     android:background="@drawable/add_cart_small"
                     android:adjustViewBounds="false"
-                    android:contentDescription="Add To Cart" />
+                    android:contentDescription="Add To Cart"
+                    android:layout_below="@+id/imageButton2"
+                    android:layout_alignParentEnd="true" />
 
                 <ImageButton
+                    android:layout_marginTop="5dp"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:id="@+id/imageButton2"
@@ -133,20 +196,8 @@
                     android:background="@drawable/add_wish_small"
                     android:contentDescription="Add to WishList" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Small Text"
-                    android:id="@+id/textView3"
-                    android:textSize="20sp"
-                    android:textColor="@color/mTeal"
-                    android:gravity="left"
-                    android:paddingTop="5dp"
-                    android:layout_below="@+id/imageButton"
-                    android:layout_alignEnd="@+id/imageButton2"
-                    android:layout_alignParentBottom="true"
-                    android:layout_toEndOf="@+id/textView2" />
+
+
 
             </RelativeLayout>
         </LinearLayout>

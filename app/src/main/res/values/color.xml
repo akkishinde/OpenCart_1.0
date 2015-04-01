@@ -7,6 +7,7 @@
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
     <color name="transparent">#00ffffff</color>
+    <color name="grey_text">#626262</color>
 
     <!--New ListView Colors-->
     <color name="genre">#666666</color>

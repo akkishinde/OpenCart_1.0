@@ -6,6 +6,7 @@ import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -15,6 +16,7 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -23,17 +25,25 @@ import org.json.JSONTokener;
  * Created by Splash New on 3/31/2015.
  */
 public class ItemsDetails extends Activity{
-    NetworkImageView main,im1,im2,im3;
-    TextView title,manufacturer;
+    NetworkImageView item_header,im1,im2,im3,im4;
+    TextView title,manufacturer,item_name,brand,stock,price;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
-    String url="http://webshop.opencart-api.com:80/api/rest/products/47";
+    String url="http://webshop.opencart-api.com:80/api/rest/products/40";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_details);
         title= (TextView) findViewById(R.id.name);
         manufacturer=(TextView) findViewById(R.id.manufacturer);
-        main= (NetworkImageView) findViewById(R.id.thumbnail);
+        item_header= (NetworkImageView) findViewById(R.id.thumbnail);
+        im1=(NetworkImageView) findViewById(R.id.imageView2);
+        im2=(NetworkImageView) findViewById(R.id.imageView3);
+        im3=(NetworkImageView) findViewById(R.id.imageView4);
+        im4=(NetworkImageView) findViewById(R.id.imageView5);
+        item_name=(TextView)findViewById(R.id.item_name);
+        brand=(TextView)findViewById(R.id.brand_name);
+        stock=(TextView)findViewById(R.id.stock_status);
+        price=(TextView)findViewById(R.id.price);
 
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
@@ -64,7 +74,7 @@ public class ItemsDetails extends Activity{
         AsyncHttpClient client=new AsyncHttpClient();
         client.addHeader("X-Oc-Merchant-Id","123");
         client.addHeader("X-Oc-Merchant-Language","en");
-        client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/products/47", new AsyncHttpResponseHandler() {
+        client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/products/40", new AsyncHttpResponseHandler() {
             public static final String TAG = "";
 
             @Override
@@ -78,7 +88,18 @@ public class ItemsDetails extends Activity{
                         //Toast.makeText(getApplicationContext(), "title:", Toast.LENGTH_SHORT).show();
                         title.setText(json2.getString("name"));
                         manufacturer.setText(json2.getString("manufacturer"));
-                        main.setImageUrl(json2.getString("image"), imageLoader);
+                        item_header.setImageUrl(json2.getString("image"), imageLoader);
+                        im1.setImageUrl(json2.getString("image"),imageLoader);
+                        JSONArray jsonArray=json2.getJSONArray("images");
+                        im2.setImageUrl(jsonArray.get(0).toString(),imageLoader);
+                        im3.setImageUrl(jsonArray.get(1).toString(),imageLoader);
+                        im4.setImageUrl(jsonArray.get(2).toString(),imageLoader);
+                        item_name.setText(json2.getString("name"));
+                        brand.setText("Manufacturer: "+json2.getString("manufacturer"));
+                        stock.setText("Stock: "+json2.getString("stock_status"));
+                        price.setText("Price: "+json2.getString("price"));
+
+
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
