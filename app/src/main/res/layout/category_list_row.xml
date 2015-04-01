@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_marginRight="8dp"
-        android:background="@drawable/plus_cat"/>
+        android:background="@drawable/ic_action_plus_box"/>
 
     <!-- Movie Title -->
     <TextView

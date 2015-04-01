@@ -114,71 +114,69 @@
                 android:layout_height="fill_parent">
 
                 <TextView
-                    android:layout_marginStart="2dp"
+                    android:id="@+id/item_name"
+                    android:layout_marginStart="5dp"
                     android:layout_width="200dp"
                     android:textStyle="bold"
-                    android:textAlignment="textStart"
                     android:layout_height="wrap_content"
-                    android:text="New Text"
+                    android:text=""
                     android:textColor="@color/mOrange"
                     android:textSize="25sp"
-                    android:id="@+id/item_name"
                     android:scrollbars = "vertical"
-                    android:maxLines="50"
                     android:layout_alignParentTop="true"
-                    android:layout_alignParentStart="true" />
+                    />
 
 
                 <TextView
-                    android:layout_marginStart="2dp"
-                    android:layout_marginTop="2dp"
+                    android:id="@+id/brand_name"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
                     android:layout_width="200dp"
                     android:textAlignment="textStart"
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textColor="@color/grey_text"
                     android:textSize="15sp"
-                    android:id="@+id/brand_name"
                     android:scrollbars="vertical"
                     android:maxLines="50"
                     android:layout_below="@+id/item_name"
-                    android:layout_alignStart="@+id/item_name" />
+                     />
 
 
                 <TextView
-                    android:layout_marginStart="2dp"
-                    android:layout_marginTop="2dp"
+                    android:id="@+id/stock_status"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
                     android:layout_width="200dp"
-                    android:textAlignment="textStart"
                     android:layout_height="wrap_content"
                     android:text=""
                     android:textColor="@color/grey_text"
                     android:textSize="15sp"
-                    android:id="@+id/stock_status"
                     android:scrollbars="vertical"
                     android:maxLines="50"
                     android:layout_below="@+id/brand_name"
-                    android:layout_alignParentStart="true" />
+                    />
 
                 <TextView
+                    android:id="@+id/price"
                     android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text=""
-                    android:id="@+id/price"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textColor="@color/mTeal"
                     android:gravity="left"
-                    android:paddingTop="5dp"
                     android:layout_below="@+id/stock_status"
-                    android:layout_alignStart="@+id/stock_status" />
+                    />
 
                 <ImageButton
-                    android:layout_marginTop="5dp"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:id="@+id/imageButton"
                     android:background="@drawable/add_cart_small"
                     android:adjustViewBounds="false"
@@ -188,8 +186,9 @@
 
                 <ImageButton
                     android:layout_marginTop="5dp"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:id="@+id/imageButton2"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
