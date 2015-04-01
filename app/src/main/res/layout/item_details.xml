@@ -7,29 +7,49 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
-            android:gravity="center"
-            android:id="@+id/textView"
-            android:layout_gravity="center" />
+            android:text="asdasdas"
+            android:textColor="@color/mOrange"
+            android:textSize="20sp"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:gravity="left"
+            android:id="@+id/name"
+            android:layout_gravity="start" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="asdasdas"
+            android:paddingLeft="5dp"
+            android:textColor="@color/mOrange"
+            android:textSize="15sp"
+            android:paddingTop="1dp"
+            android:gravity="left"
+            android:id="@+id/manufacturer"
+            android:layout_gravity="start" />
 
         <LinearLayout
+            android:paddingTop="5dp"
             android:orientation="horizontal"
-            android:layout_width="362dp"
+            android:layout_width="match_parent"
             android:layout_height="248dp"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:background="@color/mWhite">
 
-            <ImageView
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/thumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/imageView"
-                android:layout_gravity="center"
-                android:background="@drawable/ic_people" />
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                />
         </LinearLayout>
 
         <RelativeLayout
@@ -38,9 +58,10 @@
             android:layout_height="100dp"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
+            android:background="@color/list_row_end_color"
             >
 
-            <ImageView
+            <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="100dp"
                 android:layout_height="80dp"
                 android:id="@+id/imageView2"
@@ -52,7 +73,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true" />
 
-            <ImageView
+            <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageView3"
@@ -63,7 +84,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentTop="true" />
 
-            <ImageView
+            <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageView4"
@@ -88,6 +109,8 @@
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     android:text="New Text"
+                    android:textColor="@color/mOrange"
+                    android:textSize="20sp"
                     android:id="@+id/textView2"
                     android:layout_alignParentStart="true" />
 
@@ -98,7 +121,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_toEndOf="@+id/textView2"
                     android:background="@drawable/add_cart_small"
-                    android:adjustViewBounds="false" />
+                    android:adjustViewBounds="false"
+                    android:contentDescription="Add To Cart" />
 
                 <ImageButton
                     android:layout_width="80dp"
@@ -106,7 +130,8 @@
                     android:id="@+id/imageButton2"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:background="@drawable/add_wish_small" />
+                    android:background="@drawable/add_wish_small"
+                    android:contentDescription="Add to WishList" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,6 +139,10 @@
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="Small Text"
                     android:id="@+id/textView3"
+                    android:textSize="20sp"
+                    android:textColor="@color/mTeal"
+                    android:gravity="left"
+                    android:paddingTop="5dp"
                     android:layout_below="@+id/imageButton"
                     android:layout_alignEnd="@+id/imageButton2"
                     android:layout_alignParentBottom="true"
