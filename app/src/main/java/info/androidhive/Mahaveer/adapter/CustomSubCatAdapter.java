@@ -92,6 +92,7 @@ public class CustomSubCatAdapter extends BaseAdapter {
                 SubCat m = movieItems.get(position);
                 Intent intent = new Intent(activity, ItemsListDisplay.class);
                 intent.putExtra("title", m.getTitle());
+                intent.putExtra("category_id",m.getYear());
                 activity.startActivity(intent);
             }
         });

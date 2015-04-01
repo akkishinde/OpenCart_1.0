@@ -31,7 +31,7 @@ import info.androidhive.Mahaveer.adapter.CustomSubCatAdapter;
 import info.androidhive.Mahaveer.model.SubCat;
 
 public class HomeFragment extends Fragment {
-    private static final String url = "http://webshop.opencart-api.com:80/api/rest/categories/parent/25";
+    private static String url = "";
     private ProgressDialog pDialog;
     private List<SubCat> movieList = new ArrayList<SubCat>();
     private ListView listView;
@@ -44,8 +44,8 @@ public class HomeFragment extends Fragment {
             Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-       /* int key=getArguments().getInt("key");
-        Toast.makeText(getActivity(),"Key:"+key,Toast.LENGTH_SHORT).show();*/
+        int key=getArguments().getInt("key");
+        //Toast.makeText(getActivity(),"Key:"+key,Toast.LENGTH_SHORT).show();
 
         listView = (ListView) rootView.findViewById(R.id.list);
         adapter = new CustomSubCatAdapter(getActivity(), movieList);
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
-
+        url="http://webshop.opencart-api.com:80/api/rest/categories/parent/"+key;
         JsonObjectRequest movieReq = new JsonObjectRequest(url,null,
                 new Response.Listener<JSONObject>() {
                     public static final String TAG = "";
@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
                                 movie.setTitle(obj.getString("name"));
                                 movie.setThumbnailUrl(obj.getString("image"));
                                //movie.setRating((obj.getString("price")));
-                                //movie.setYear(obj.getString("stock_status"));
+                                movie.setYear(obj.getString("category_id"));
 
                                 // Genre is json array
                                 //JSONArray genreArry = obj.getJSONArray("category");

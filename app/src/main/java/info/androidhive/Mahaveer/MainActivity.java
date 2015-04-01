@@ -221,122 +221,122 @@ public class MainActivity extends Activity {
             case 0:
                 fragment = new HomeFragment();
 
-                args.putInt("key", 0);
+                args.putInt("key", 20);
                 fragment.setArguments(args);
                 break;
             case 1:
                 fragment = new HomeFragment();
-                args.putInt("key", 1);
+                args.putInt("key", 18);
                 fragment.setArguments(args);
                 break;
             case 2:
                 fragment = new HomeFragment();
-                args.putInt("key", 2);
+                args.putInt("key", 25);
                 fragment.setArguments(args);
                 break;
             case 3:
                 fragment = new HomeFragment();
-                args.putInt("key", 3);
+                args.putInt("key", 57);
                 fragment.setArguments(args);
                 break;
             case 4:
                 fragment = new HomeFragment();
-                args.putInt("key", 4);
+                args.putInt("key", 17);
                 fragment.setArguments(args);
                 break;
             case 5:
                 fragment = new HomeFragment();
-                args.putInt("key", 5);
+                args.putInt("key", 24);
                 fragment.setArguments(args);
                 break;
             case 6:
                 fragment = new HomeFragment();
-                args.putInt("key", 6);
+                args.putInt("key", 33);
                 fragment.setArguments(args);
                 break;
             case 7:
                 fragment = new HomeFragment();
-                args.putInt("key", 7);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 8:
                 fragment = new HomeFragment();
-                args.putInt("key", 8);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 9:
                 fragment = new HomeFragment();
-                args.putInt("key", 9);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 10:
                 fragment = new HomeFragment();
-                args.putInt("key", 10);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 11:
                 fragment = new HomeFragment();
-                args.putInt("key", 11);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 12:
                 fragment = new HomeFragment();
-                args.putInt("key", 12);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 13:
                 fragment = new HomeFragment();
-                args.putInt("key", 13);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 14:
                 fragment = new HomeFragment();
-                args.putInt("key", 14);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 15:
                 fragment = new HomeFragment();
-                args.putInt("key", 15);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 16:
                 fragment = new HomeFragment();
-                args.putInt("key", 16);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 17:
                 fragment = new HomeFragment();
-                args.putInt("key", 17);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 18:
                 fragment = new HomeFragment();
-                args.putInt("key", 18);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 19:
                 fragment = new HomeFragment();
-                args.putInt("key", 19);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 20:
                 fragment = new HomeFragment();
-                args.putInt("key", 20);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 21:
                 fragment = new HomeFragment();
-                args.putInt("key", 21);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 22:
                 fragment = new HomeFragment();
-                args.putInt("key", 22);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
             case 23:
                 fragment = new HomeFragment();
-                args.putInt("key", 23);
+                args.putInt("key", 34);
                 fragment.setArguments(args);
                 break;
 

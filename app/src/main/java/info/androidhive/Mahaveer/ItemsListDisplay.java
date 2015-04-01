@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -37,7 +38,7 @@ import info.androidhive.Mahaveer.model.ItemList;
  * Created by Splash New on 3/31/2015.
  */
 public class ItemsListDisplay extends Activity{
-    private static final String url = "http://webshop.opencart-api.com:80/api/rest/products";
+    private static String url = "";
     private ProgressDialog pDialog;
     private List<ItemList> movieList = new ArrayList<ItemList>();
     private ListView listView;
@@ -64,8 +65,9 @@ public class ItemsListDisplay extends Activity{
                         .getColor(R.color.mWhite));
             }
         }
-
-
+         Intent intent = getIntent();
+        String category_id = intent.getStringExtra("category_id");
+        url="http://webshop.opencart-api.com/api/rest/products/category/"+category_id;
         listView = (ListView) findViewById(R.id.list);
         adapter = new CustomListAdapter(this, movieList);
         listView.setAdapter(adapter);
