@@ -3,7 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/plain_bg">
-    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Refine Search"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/heading_bg"
+        android:textColor="@color/mTeal"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:layout_gravity="center_horizontal" />
   <!--  <TextView
         android:id="@+id/txtLabel"
          android:layout_width="wrap_content"
@@ -19,12 +31,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"/>-->
     <ListView
+        android:layout_marginTop="5dp"
         android:id="@+id/list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="@color/transparent"
         android:dividerHeight="5dp"
-        android:listSelector="@drawable/list_row_selector" />
+        android:listSelector="@drawable/list_row_selector"
+        android:layout_below="@+id/name"/>
     
 
 </RelativeLayout>

@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="asdasdas"
+            android:text=""
             android:layout_marginTop="5dp"
             android:background="@drawable/heading_bg"
             android:textColor="@color/mTeal"
@@ -88,7 +88,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_alignParentTop="true"
                 android:layout_toEndOf="@+id/imageView3"
-                android:layout_alignBottom="@+id/imageView3" />
+                />
 
             <com.android.volley.toolbox.NetworkImageView
                 android:layout_width="80dp"
@@ -105,9 +105,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="200dp"
-            android:background="@color/mWhite"
-            android:layout_weight="8">
+            android:layout_height="134dp"
+            android:background="@color/mWhite">
 
             <RelativeLayout
                 android:layout_width="fill_parent"

@@ -2,6 +2,7 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -10,6 +11,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -25,6 +27,7 @@ import org.json.JSONTokener;
  * Created by Splash New on 3/31/2015.
  */
 public class ItemsDetails extends Activity{
+    private ProgressDialog pDialog;
     NetworkImageView item_header,im1,im2,im3,im4;
     TextView title,manufacturer,item_name,brand,stock,price;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
@@ -67,7 +70,10 @@ public class ItemsDetails extends Activity{
         //String title = intent.getStringExtra("title");
        // Toast.makeText(getApplicationContext(), title, Toast.LENGTH_SHORT).show();
         LoadData();
-
+        pDialog = new ProgressDialog(this);
+        // Showing progress dialog before making http request
+        pDialog.setMessage("Loading...");
+        pDialog.show();
     }
 
     private void LoadData() {
@@ -79,6 +85,7 @@ public class ItemsDetails extends Activity{
 
             @Override
             public void onSuccess(String response) {
+                pDialog.hide();
                 try {
                     JSONObject obj = new JSONObject(response);
 
@@ -96,7 +103,7 @@ public class ItemsDetails extends Activity{
                         im4.setImageUrl(jsonArray.get(2).toString(),imageLoader);
                         item_name.setText(json2.getString("name"));
                         brand.setText("Manufacturer: "+json2.getString("manufacturer"));
-                        stock.setText("Stock: "+json2.getString("stock_status"));
+                        stock.setText("Stock: " + json2.getString("stock_status"));
                         price.setText("Price: "+json2.getString("price"));
 
 
@@ -109,7 +116,8 @@ public class ItemsDetails extends Activity{
             @Override
             public void onFailure(int statusCode, Throwable error,
                                   String content) {
-
+                pDialog.hide();
+                Toast.makeText(getApplicationContext(),"Something went wrong at server side!",Toast.LENGTH_SHORT);
             }
 
         });
