@@ -1428,71 +1428,75 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020034;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020035;
         public static final int abc_textfield_search_material=0x7f020036;
-        public static final int add_cart_small=0x7f020037;
-        public static final int add_wish_small=0x7f020038;
-        public static final int address=0x7f020039;
-        public static final int border=0x7f02003a;
-        public static final int button_bg=0x7f02003b;
-        public static final int button_pressed_bg=0x7f02003c;
-        public static final int category_icon=0x7f02003d;
-        public static final int city_bg=0x7f02003e;
-        public static final int contacts=0x7f02003f;
-        public static final int counter_bg=0x7f020040;
-        public static final int drawer_bg=0x7f020041;
-        public static final int edittext_style=0x7f020042;
-        public static final int heading_bg=0x7f020043;
-        public static final int ic_action_plus_box=0x7f020044;
-        public static final int ic_action_search=0x7f020045;
-        public static final int ic_barley=0x7f020046;
-        public static final int ic_basket=0x7f020047;
-        public static final int ic_beer=0x7f020048;
-        public static final int ic_cake=0x7f020049;
-        public static final int ic_cake_variant=0x7f02004a;
-        public static final int ic_carrot=0x7f02004b;
-        public static final int ic_communities=0x7f02004c;
-        public static final int ic_cow=0x7f02004d;
-        public static final int ic_cube=0x7f02004e;
-        public static final int ic_drawer=0x7f02004f;
-        public static final int ic_duck=0x7f020050;
-        public static final int ic_dumbbell=0x7f020051;
-        public static final int ic_fan=0x7f020052;
-        public static final int ic_food=0x7f020053;
-        public static final int ic_food_apple=0x7f020054;
-        public static final int ic_food_variant=0x7f020055;
-        public static final int ic_glass_mug=0x7f020056;
-        public static final int ic_home=0x7f020057;
-        public static final int ic_launcher=0x7f020058;
-        public static final int ic_ornament=0x7f020059;
-        public static final int ic_pages=0x7f02005a;
-        public static final int ic_people=0x7f02005b;
-        public static final int ic_photos=0x7f02005c;
-        public static final int ic_pill=0x7f02005d;
-        public static final int ic_pizza=0x7f02005e;
-        public static final int ic_silverware=0x7f02005f;
-        public static final int ic_silverware_spoon=0x7f020060;
-        public static final int ic_spotlight_beam=0x7f020061;
-        public static final int ic_stove=0x7f020062;
-        public static final int ic_timetable=0x7f020063;
-        public static final int ic_water=0x7f020064;
-        public static final int ic_weather_windy=0x7f020065;
-        public static final int ic_whats_hot=0x7f020066;
-        public static final int inputs_02=0x7f020067;
-        public static final int list_item_bg_normal=0x7f020068;
-        public static final int list_item_bg_pressed=0x7f020069;
-        public static final int list_row_bg=0x7f02006a;
-        public static final int list_row_bg_hover=0x7f02006b;
-        public static final int list_row_selector=0x7f02006c;
-        public static final int list_selector=0x7f02006d;
-        public static final int login_bg=0x7f02006e;
-        public static final int login_selector=0x7f02006f;
-        public static final int pass_left=0x7f020070;
-        public static final int password=0x7f020071;
-        public static final int plain_bg=0x7f020072;
-        public static final int plus_cat=0x7f020073;
-        public static final int splash_screen=0x7f020074;
-        public static final int textview_selector=0x7f020075;
-        public static final int user_bg=0x7f020076;
-        public static final int username=0x7f020077;
+        public static final int add_cart=0x7f020037;
+        public static final int add_cart_small_dark=0x7f020038;
+        public static final int add_cart_small_faint=0x7f020039;
+        public static final int add_wish_small_dark=0x7f02003a;
+        public static final int add_wish_small_faint=0x7f02003b;
+        public static final int add_wishlist=0x7f02003c;
+        public static final int address=0x7f02003d;
+        public static final int border=0x7f02003e;
+        public static final int button_bg=0x7f02003f;
+        public static final int button_pressed_bg=0x7f020040;
+        public static final int category_icon=0x7f020041;
+        public static final int city_bg=0x7f020042;
+        public static final int contacts=0x7f020043;
+        public static final int counter_bg=0x7f020044;
+        public static final int drawer_bg=0x7f020045;
+        public static final int edittext_style=0x7f020046;
+        public static final int heading_bg=0x7f020047;
+        public static final int ic_action_plus_box=0x7f020048;
+        public static final int ic_action_search=0x7f020049;
+        public static final int ic_barley=0x7f02004a;
+        public static final int ic_basket=0x7f02004b;
+        public static final int ic_beer=0x7f02004c;
+        public static final int ic_cake=0x7f02004d;
+        public static final int ic_cake_variant=0x7f02004e;
+        public static final int ic_carrot=0x7f02004f;
+        public static final int ic_communities=0x7f020050;
+        public static final int ic_cow=0x7f020051;
+        public static final int ic_cube=0x7f020052;
+        public static final int ic_drawer=0x7f020053;
+        public static final int ic_duck=0x7f020054;
+        public static final int ic_dumbbell=0x7f020055;
+        public static final int ic_fan=0x7f020056;
+        public static final int ic_food=0x7f020057;
+        public static final int ic_food_apple=0x7f020058;
+        public static final int ic_food_variant=0x7f020059;
+        public static final int ic_glass_mug=0x7f02005a;
+        public static final int ic_home=0x7f02005b;
+        public static final int ic_launcher=0x7f02005c;
+        public static final int ic_ornament=0x7f02005d;
+        public static final int ic_pages=0x7f02005e;
+        public static final int ic_people=0x7f02005f;
+        public static final int ic_photos=0x7f020060;
+        public static final int ic_pill=0x7f020061;
+        public static final int ic_pizza=0x7f020062;
+        public static final int ic_silverware=0x7f020063;
+        public static final int ic_silverware_spoon=0x7f020064;
+        public static final int ic_spotlight_beam=0x7f020065;
+        public static final int ic_stove=0x7f020066;
+        public static final int ic_timetable=0x7f020067;
+        public static final int ic_water=0x7f020068;
+        public static final int ic_weather_windy=0x7f020069;
+        public static final int ic_whats_hot=0x7f02006a;
+        public static final int inputs_02=0x7f02006b;
+        public static final int list_item_bg_normal=0x7f02006c;
+        public static final int list_item_bg_pressed=0x7f02006d;
+        public static final int list_row_bg=0x7f02006e;
+        public static final int list_row_bg_hover=0x7f02006f;
+        public static final int list_row_selector=0x7f020070;
+        public static final int list_selector=0x7f020071;
+        public static final int login_bg=0x7f020072;
+        public static final int login_selector=0x7f020073;
+        public static final int pass_left=0x7f020074;
+        public static final int password=0x7f020075;
+        public static final int plain_bg=0x7f020076;
+        public static final int plus_cat=0x7f020077;
+        public static final int splash_screen=0x7f020078;
+        public static final int textview_selector=0x7f020079;
+        public static final int user_bg=0x7f02007a;
+        public static final int username=0x7f02007b;
     }
     public static final class id {
         public static final int action_bar=0x7f0a0031;
@@ -1508,20 +1512,22 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_search=0x7f0a0064;
-        public static final int action_settings=0x7f0a0065;
+        public static final int action_search=0x7f0a0066;
+        public static final int action_settings=0x7f0a0067;
         public static final int activity_chooser_view_content=0x7f0a0021;
-        public static final int address1_text=0x7f0a005f;
-        public static final int address2_text=0x7f0a0060;
+        public static final int address1_text=0x7f0a0061;
+        public static final int address2_text=0x7f0a0062;
         public static final int always=0x7f0a0016;
         public static final int beginning=0x7f0a0013;
         public static final int brand_name=0x7f0a004d;
         public static final int checkbox=0x7f0a0029;
-        public static final int city_text=0x7f0a0061;
+        public static final int city_text=0x7f0a0063;
         public static final int collapseActionView=0x7f0a0017;
-        public static final int contact_text=0x7f0a005e;
+        public static final int contact_text=0x7f0a0060;
         public static final int decor_content_parent=0x7f0a002f;
         public static final int default_activity_button=0x7f0a0024;
+        public static final int desc=0x7f0a0052;
+        public static final int description=0x7f0a0053;
         public static final int dialog=0x7f0a001b;
         public static final int disableHome=0x7f0a000c;
         public static final int drawer_layout=0x7f0a003f;
@@ -1530,9 +1536,9 @@ containing a value of this type.
         public static final int end=0x7f0a0014;
         public static final int expand_activities_button=0x7f0a0022;
         public static final int expanded_menu=0x7f0a0028;
-        public static final int firstname_text=0x7f0a005b;
+        public static final int firstname_text=0x7f0a005d;
         public static final int frame_container=0x7f0a0040;
-        public static final int genre=0x7f0a0053;
+        public static final int genre=0x7f0a0055;
         public static final int home=0x7f0a0004;
         public static final int homeAsUp=0x7f0a000d;
         public static final int icon=0x7f0a0026;
@@ -1545,30 +1551,30 @@ containing a value of this type.
         public static final int imageView4=0x7f0a004a;
         public static final int imageView5=0x7f0a004b;
         public static final int item_name=0x7f0a004c;
-        public static final int lastname_text=0x7f0a005c;
-        public static final int linearLayout=0x7f0a0055;
+        public static final int lastname_text=0x7f0a005e;
+        public static final int linearLayout=0x7f0a0057;
         public static final int list=0x7f0a0043;
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a0025;
         public static final int list_slidermenu=0x7f0a0041;
-        public static final int login_button=0x7f0a0058;
+        public static final int login_button=0x7f0a005a;
         public static final int manufacturer=0x7f0a0047;
         public static final int middle=0x7f0a0015;
         public static final int name=0x7f0a0046;
         public static final int never=0x7f0a0019;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
-        public static final int password_text=0x7f0a0057;
+        public static final int password_text=0x7f0a0059;
         public static final int price=0x7f0a004f;
         public static final int progress_circular=0x7f0a0005;
         public static final int progress_horizontal=0x7f0a0006;
-        public static final int progress_wheel=0x7f0a0063;
+        public static final int progress_wheel=0x7f0a0065;
         public static final int radio=0x7f0a002b;
-        public static final int rating=0x7f0a0052;
-        public static final int register=0x7f0a0059;
-        public static final int register_button=0x7f0a0062;
-        public static final int releaseYear=0x7f0a0054;
-        public static final int repeatpassword_text=0x7f0a005d;
+        public static final int rating=0x7f0a0054;
+        public static final int register=0x7f0a005b;
+        public static final int register_button=0x7f0a0064;
+        public static final int releaseYear=0x7f0a0056;
+        public static final int repeatpassword_text=0x7f0a005f;
         public static final int search_badge=0x7f0a0035;
         public static final int search_bar=0x7f0a0034;
         public static final int search_button=0x7f0a0036;
@@ -1583,7 +1589,7 @@ containing a value of this type.
         public static final int showCustom=0x7f0a000f;
         public static final int showHome=0x7f0a0010;
         public static final int showTitle=0x7f0a0011;
-        public static final int skip=0x7f0a005a;
+        public static final int skip=0x7f0a005c;
         public static final int split_action_bar=0x7f0a0007;
         public static final int stock_status=0x7f0a004e;
         public static final int submit_area=0x7f0a003c;
@@ -1594,7 +1600,7 @@ containing a value of this type.
         public static final int txtQuery=0x7f0a0042;
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
-        public static final int username_text=0x7f0a0056;
+        public static final int username_text=0x7f0a0058;
         public static final int withText=0x7f0a001a;
         public static final int wrap_content=0x7f0a001d;
     }
@@ -1950,33 +1956,33 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_background info.androidhive.slidingmenu:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundSplit info.androidhive.slidingmenu:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_backgroundStacked info.androidhive.slidingmenu:backgroundStacked}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetEnd info.androidhive.slidingmenu:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetLeft info.androidhive.slidingmenu:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetRight info.androidhive.slidingmenu:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_contentInsetStart info.androidhive.slidingmenu:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_customNavigationLayout info.androidhive.slidingmenu:customNavigationLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_displayOptions info.androidhive.slidingmenu:displayOptions}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_divider info.androidhive.slidingmenu:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_elevation info.androidhive.slidingmenu:elevation}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_height info.androidhive.slidingmenu:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_hideOnContentScroll info.androidhive.slidingmenu:hideOnContentScroll}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeAsUpIndicator info.androidhive.slidingmenu:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_homeLayout info.androidhive.slidingmenu:homeLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_icon info.androidhive.slidingmenu:icon}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle info.androidhive.slidingmenu:indeterminateProgressStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_itemPadding info.androidhive.slidingmenu:itemPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_logo info.androidhive.slidingmenu:logo}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_navigationMode info.androidhive.slidingmenu:navigationMode}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_popupTheme info.androidhive.slidingmenu:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarPadding info.androidhive.slidingmenu:progressBarPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_progressBarStyle info.androidhive.slidingmenu:progressBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitle info.androidhive.slidingmenu:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_subtitleTextStyle info.androidhive.slidingmenu:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_title info.androidhive.slidingmenu:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionBar_titleTextStyle info.androidhive.slidingmenu:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_background com.akshay.mahaveer:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundSplit com.akshay.mahaveer:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_backgroundStacked com.akshay.mahaveer:backgroundStacked}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetEnd com.akshay.mahaveer:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetLeft com.akshay.mahaveer:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetRight com.akshay.mahaveer:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_contentInsetStart com.akshay.mahaveer:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_customNavigationLayout com.akshay.mahaveer:customNavigationLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_displayOptions com.akshay.mahaveer:displayOptions}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_divider com.akshay.mahaveer:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_elevation com.akshay.mahaveer:elevation}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_height com.akshay.mahaveer:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_hideOnContentScroll com.akshay.mahaveer:hideOnContentScroll}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.akshay.mahaveer:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_homeLayout com.akshay.mahaveer:homeLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_icon com.akshay.mahaveer:icon}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.akshay.mahaveer:indeterminateProgressStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_itemPadding com.akshay.mahaveer:itemPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_logo com.akshay.mahaveer:logo}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_navigationMode com.akshay.mahaveer:navigationMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_popupTheme com.akshay.mahaveer:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarPadding com.akshay.mahaveer:progressBarPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_progressBarStyle com.akshay.mahaveer:progressBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitle com.akshay.mahaveer:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_subtitleTextStyle com.akshay.mahaveer:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_title com.akshay.mahaveer:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_titleTextStyle com.akshay.mahaveer:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionBar_background
            @see #ActionBar_backgroundSplit
@@ -2016,17 +2022,17 @@ containing a value of this type.
             0x7f01001a, 0x7f01001b, 0x7f01007b
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#background}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#background}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:background
+          @attr name com.akshay.mahaveer:background
         */
         public static final int ActionBar_background = 10;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2034,11 +2040,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:backgroundSplit
+          @attr name com.akshay.mahaveer:backgroundSplit
         */
         public static final int ActionBar_backgroundSplit = 12;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#backgroundStacked}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#backgroundStacked}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2046,11 +2052,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:backgroundStacked
+          @attr name com.akshay.mahaveer:backgroundStacked
         */
         public static final int ActionBar_backgroundStacked = 11;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2062,11 +2068,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetEnd
+          @attr name com.akshay.mahaveer:contentInsetEnd
         */
         public static final int ActionBar_contentInsetEnd = 21;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2078,11 +2084,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetLeft
+          @attr name com.akshay.mahaveer:contentInsetLeft
         */
         public static final int ActionBar_contentInsetLeft = 22;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2094,11 +2100,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetRight
+          @attr name com.akshay.mahaveer:contentInsetRight
         */
         public static final int ActionBar_contentInsetRight = 23;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2110,21 +2116,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetStart
+          @attr name com.akshay.mahaveer:contentInsetStart
         */
         public static final int ActionBar_contentInsetStart = 20;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#customNavigationLayout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#customNavigationLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:customNavigationLayout
+          @attr name com.akshay.mahaveer:customNavigationLayout
         */
         public static final int ActionBar_customNavigationLayout = 13;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#displayOptions}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#displayOptions}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2142,21 +2148,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>showCustom</code></td><td>0x10</td><td></td></tr>
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:displayOptions
+          @attr name com.akshay.mahaveer:displayOptions
         */
         public static final int ActionBar_displayOptions = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#divider}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:divider
+          @attr name com.akshay.mahaveer:divider
         */
         public static final int ActionBar_divider = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#elevation}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#elevation}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2168,11 +2174,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:elevation
+          @attr name com.akshay.mahaveer:elevation
         */
         public static final int ActionBar_elevation = 24;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#height}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#height}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2184,11 +2190,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:height
+          @attr name com.akshay.mahaveer:height
         */
         public static final int ActionBar_height = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#hideOnContentScroll}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#hideOnContentScroll}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2198,51 +2204,51 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:hideOnContentScroll
+          @attr name com.akshay.mahaveer:hideOnContentScroll
         */
         public static final int ActionBar_hideOnContentScroll = 19;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:homeAsUpIndicator
+          @attr name com.akshay.mahaveer:homeAsUpIndicator
         */
         public static final int ActionBar_homeAsUpIndicator = 26;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#homeLayout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#homeLayout}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:homeLayout
+          @attr name com.akshay.mahaveer:homeLayout
         */
         public static final int ActionBar_homeLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#icon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#icon}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:icon
+          @attr name com.akshay.mahaveer:icon
         */
         public static final int ActionBar_icon = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#indeterminateProgressStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#indeterminateProgressStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:indeterminateProgressStyle
+          @attr name com.akshay.mahaveer:indeterminateProgressStyle
         */
         public static final int ActionBar_indeterminateProgressStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#itemPadding}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#itemPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2254,21 +2260,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:itemPadding
+          @attr name com.akshay.mahaveer:itemPadding
         */
         public static final int ActionBar_itemPadding = 18;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#logo}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#logo}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:logo
+          @attr name com.akshay.mahaveer:logo
         */
         public static final int ActionBar_logo = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#navigationMode}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#navigationMode}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2282,21 +2288,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>listMode</code></td><td>1</td><td></td></tr>
 <tr><td><code>tabMode</code></td><td>2</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:navigationMode
+          @attr name com.akshay.mahaveer:navigationMode
         */
         public static final int ActionBar_navigationMode = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#popupTheme}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:popupTheme
+          @attr name com.akshay.mahaveer:popupTheme
         */
         public static final int ActionBar_popupTheme = 25;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#progressBarPadding}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#progressBarPadding}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2308,21 +2314,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:progressBarPadding
+          @attr name com.akshay.mahaveer:progressBarPadding
         */
         public static final int ActionBar_progressBarPadding = 17;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#progressBarStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#progressBarStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:progressBarStyle
+          @attr name com.akshay.mahaveer:progressBarStyle
         */
         public static final int ActionBar_progressBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#subtitle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2332,21 +2338,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:subtitle
+          @attr name com.akshay.mahaveer:subtitle
         */
         public static final int ActionBar_subtitle = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:subtitleTextStyle
+          @attr name com.akshay.mahaveer:subtitleTextStyle
         */
         public static final int ActionBar_subtitleTextStyle = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#title}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -2356,17 +2362,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:title
+          @attr name com.akshay.mahaveer:title
         */
         public static final int ActionBar_title = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:titleTextStyle
+          @attr name com.akshay.mahaveer:titleTextStyle
         */
         public static final int ActionBar_titleTextStyle = 5;
         /** Attributes that can be used with a ActionBarLayout.
@@ -2418,12 +2424,12 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionMode_background info.androidhive.slidingmenu:background}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_backgroundSplit info.androidhive.slidingmenu:backgroundSplit}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_closeItemLayout info.androidhive.slidingmenu:closeItemLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_height info.androidhive.slidingmenu:height}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_subtitleTextStyle info.androidhive.slidingmenu:subtitleTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActionMode_titleTextStyle info.androidhive.slidingmenu:titleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_background com.akshay.mahaveer:background}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_backgroundSplit com.akshay.mahaveer:backgroundSplit}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_closeItemLayout com.akshay.mahaveer:closeItemLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_height com.akshay.mahaveer:height}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_subtitleTextStyle com.akshay.mahaveer:subtitleTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionMode_titleTextStyle com.akshay.mahaveer:titleTextStyle}</code></td><td></td></tr>
            </table>
            @see #ActionMode_background
            @see #ActionMode_backgroundSplit
@@ -2437,17 +2443,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01000e, 0x7f01001c
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#background}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#background}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:background
+          @attr name com.akshay.mahaveer:background
         */
         public static final int ActionMode_background = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#backgroundSplit}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#backgroundSplit}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2455,21 +2461,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:backgroundSplit
+          @attr name com.akshay.mahaveer:backgroundSplit
         */
         public static final int ActionMode_backgroundSplit = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#closeItemLayout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#closeItemLayout}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:closeItemLayout
+          @attr name com.akshay.mahaveer:closeItemLayout
         */
         public static final int ActionMode_closeItemLayout = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#height}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#height}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
@@ -2481,27 +2487,27 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:height
+          @attr name com.akshay.mahaveer:height
         */
         public static final int ActionMode_height = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#subtitleTextStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#subtitleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:subtitleTextStyle
+          @attr name com.akshay.mahaveer:subtitleTextStyle
         */
         public static final int ActionMode_subtitleTextStyle = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleTextStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleTextStyle}
           attribute's value can be found in the {@link #ActionMode} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:titleTextStyle
+          @attr name com.akshay.mahaveer:titleTextStyle
         */
         public static final int ActionMode_titleTextStyle = 1;
         /** Attributes that can be used with a ActivityChooserView.
@@ -2510,8 +2516,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable info.androidhive.slidingmenu:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #ActivityChooserView_initialActivityCount info.androidhive.slidingmenu:initialActivityCount}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.akshay.mahaveer:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.akshay.mahaveer:initialActivityCount}</code></td><td></td></tr>
            </table>
            @see #ActivityChooserView_expandActivityOverflowButtonDrawable
            @see #ActivityChooserView_initialActivityCount
@@ -2520,17 +2526,17 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f01001d, 0x7f01001e
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#expandActivityOverflowButtonDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#expandActivityOverflowButtonDrawable}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:expandActivityOverflowButtonDrawable
+          @attr name com.akshay.mahaveer:expandActivityOverflowButtonDrawable
         */
         public static final int ActivityChooserView_expandActivityOverflowButtonDrawable = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#initialActivityCount}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#initialActivityCount}
           attribute's value can be found in the {@link #ActivityChooserView} array.
 
 
@@ -2540,7 +2546,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:initialActivityCount
+          @attr name com.akshay.mahaveer:initialActivityCount
         */
         public static final int ActivityChooserView_initialActivityCount = 0;
         /** Attributes that can be used with a CompatTextView.
@@ -2549,7 +2555,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #CompatTextView_textAllCaps info.androidhive.slidingmenu:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #CompatTextView_textAllCaps com.akshay.mahaveer:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #CompatTextView_textAllCaps
          */
@@ -2557,14 +2563,14 @@ containing a value of this type.
             0x7f01001f
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAllCaps}
           attribute's value can be found in the {@link #CompatTextView} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name info.androidhive.slidingmenu:textAllCaps
+          @attr name com.akshay.mahaveer:textAllCaps
         */
         public static final int CompatTextView_textAllCaps = 0;
         /** Attributes that can be used with a DrawerArrowToggle.
@@ -2573,14 +2579,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_barSize info.androidhive.slidingmenu:barSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_color info.androidhive.slidingmenu:color}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_drawableSize info.androidhive.slidingmenu:drawableSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars info.androidhive.slidingmenu:gapBetweenBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize info.androidhive.slidingmenu:middleBarArrowSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_spinBars info.androidhive.slidingmenu:spinBars}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_thickness info.androidhive.slidingmenu:thickness}</code></td><td></td></tr>
-           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize info.androidhive.slidingmenu:topBottomBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_barSize com.akshay.mahaveer:barSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_color com.akshay.mahaveer:color}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.akshay.mahaveer:drawableSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.akshay.mahaveer:gapBetweenBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_middleBarArrowSize com.akshay.mahaveer:middleBarArrowSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_spinBars com.akshay.mahaveer:spinBars}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_thickness com.akshay.mahaveer:thickness}</code></td><td></td></tr>
+           <tr><td><code>{@link #DrawerArrowToggle_topBottomBarArrowSize com.akshay.mahaveer:topBottomBarArrowSize}</code></td><td></td></tr>
            </table>
            @see #DrawerArrowToggle_barSize
            @see #DrawerArrowToggle_color
@@ -2596,7 +2602,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#barSize}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#barSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2608,11 +2614,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:barSize
+          @attr name com.akshay.mahaveer:barSize
         */
         public static final int DrawerArrowToggle_barSize = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#color}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#color}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2623,11 +2629,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:color
+          @attr name com.akshay.mahaveer:color
         */
         public static final int DrawerArrowToggle_color = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#drawableSize}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#drawableSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2639,11 +2645,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:drawableSize
+          @attr name com.akshay.mahaveer:drawableSize
         */
         public static final int DrawerArrowToggle_drawableSize = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#gapBetweenBars}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#gapBetweenBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2655,11 +2661,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:gapBetweenBars
+          @attr name com.akshay.mahaveer:gapBetweenBars
         */
         public static final int DrawerArrowToggle_gapBetweenBars = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#middleBarArrowSize}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#middleBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2671,11 +2677,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:middleBarArrowSize
+          @attr name com.akshay.mahaveer:middleBarArrowSize
         */
         public static final int DrawerArrowToggle_middleBarArrowSize = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#spinBars}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#spinBars}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2685,11 +2691,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:spinBars
+          @attr name com.akshay.mahaveer:spinBars
         */
         public static final int DrawerArrowToggle_spinBars = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#thickness}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#thickness}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2701,11 +2707,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:thickness
+          @attr name com.akshay.mahaveer:thickness
         */
         public static final int DrawerArrowToggle_thickness = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#topBottomBarArrowSize}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#topBottomBarArrowSize}
           attribute's value can be found in the {@link #DrawerArrowToggle} array.
 
 
@@ -2717,7 +2723,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:topBottomBarArrowSize
+          @attr name com.akshay.mahaveer:topBottomBarArrowSize
         */
         public static final int DrawerArrowToggle_topBottomBarArrowSize = 4;
         /** Attributes that can be used with a LinearLayoutCompat.
@@ -2731,10 +2737,10 @@ containing a value of this type.
            <tr><td><code>{@link #LinearLayoutCompat_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_orientation android:orientation}</code></td><td></td></tr>
            <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_divider info.androidhive.slidingmenu:divider}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding info.androidhive.slidingmenu:dividerPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild info.androidhive.slidingmenu:measureWithLargestChild}</code></td><td></td></tr>
-           <tr><td><code>{@link #LinearLayoutCompat_showDividers info.androidhive.slidingmenu:showDividers}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_divider com.akshay.mahaveer:divider}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.akshay.mahaveer:dividerPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.akshay.mahaveer:measureWithLargestChild}</code></td><td></td></tr>
+           <tr><td><code>{@link #LinearLayoutCompat_showDividers com.akshay.mahaveer:showDividers}</code></td><td></td></tr>
            </table>
            @see #LinearLayoutCompat_android_baselineAligned
            @see #LinearLayoutCompat_android_baselineAlignedChildIndex
@@ -2782,17 +2788,17 @@ containing a value of this type.
         */
         public static final int LinearLayoutCompat_android_weightSum = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#divider}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#divider}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:divider
+          @attr name com.akshay.mahaveer:divider
         */
         public static final int LinearLayoutCompat_divider = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#dividerPadding}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#dividerPadding}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2804,11 +2810,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:dividerPadding
+          @attr name com.akshay.mahaveer:dividerPadding
         */
         public static final int LinearLayoutCompat_dividerPadding = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#measureWithLargestChild}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#measureWithLargestChild}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2818,11 +2824,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:measureWithLargestChild
+          @attr name com.akshay.mahaveer:measureWithLargestChild
         */
         public static final int LinearLayoutCompat_measureWithLargestChild = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#showDividers}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#showDividers}
           attribute's value can be found in the {@link #LinearLayoutCompat} array.
 
 
@@ -2837,7 +2843,7 @@ containing a value of this type.
 <tr><td><code>middle</code></td><td>2</td><td></td></tr>
 <tr><td><code>end</code></td><td>4</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:showDividers
+          @attr name com.akshay.mahaveer:showDividers
         */
         public static final int LinearLayoutCompat_showDividers = 7;
         /** Attributes that can be used with a LinearLayoutCompat_Layout.
@@ -2976,9 +2982,9 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #MenuItem_actionLayout info.androidhive.slidingmenu:actionLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionProviderClass info.androidhive.slidingmenu:actionProviderClass}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_actionViewClass info.androidhive.slidingmenu:actionViewClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionLayout com.akshay.mahaveer:actionLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionProviderClass com.akshay.mahaveer:actionProviderClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_actionViewClass com.akshay.mahaveer:actionViewClass}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_checked android:checked}</code></td><td></td></tr>
@@ -2992,7 +2998,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuItem_android_title android:title}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_titleCondensed android:titleCondensed}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuItem_android_visible android:visible}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuItem_showAsAction info.androidhive.slidingmenu:showAsAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuItem_showAsAction com.akshay.mahaveer:showAsAction}</code></td><td></td></tr>
            </table>
            @see #MenuItem_actionLayout
            @see #MenuItem_actionProviderClass
@@ -3020,17 +3026,17 @@ containing a value of this type.
             0x7f01002e
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionLayout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionLayout}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionLayout
+          @attr name com.akshay.mahaveer:actionLayout
         */
         public static final int MenuItem_actionLayout = 14;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionProviderClass}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionProviderClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -3040,11 +3046,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:actionProviderClass
+          @attr name com.akshay.mahaveer:actionProviderClass
         */
         public static final int MenuItem_actionProviderClass = 16;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionViewClass}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionViewClass}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -3054,7 +3060,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:actionViewClass
+          @attr name com.akshay.mahaveer:actionViewClass
         */
         public static final int MenuItem_actionViewClass = 15;
         /**
@@ -3136,7 +3142,7 @@ containing a value of this type.
         */
         public static final int MenuItem_android_visible = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#showAsAction}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#showAsAction}
           attribute's value can be found in the {@link #MenuItem} array.
 
 
@@ -3152,7 +3158,7 @@ containing a value of this type.
 <tr><td><code>withText</code></td><td>4</td><td></td></tr>
 <tr><td><code>collapseActionView</code></td><td>8</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:showAsAction
+          @attr name com.akshay.mahaveer:showAsAction
         */
         public static final int MenuItem_showAsAction = 13;
         /** Attributes that can be used with a MenuView.
@@ -3168,7 +3174,7 @@ containing a value of this type.
            <tr><td><code>{@link #MenuView_android_itemTextAppearance android:itemTextAppearance}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_verticalDivider android:verticalDivider}</code></td><td></td></tr>
            <tr><td><code>{@link #MenuView_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #MenuView_preserveIconSpacing info.androidhive.slidingmenu:preserveIconSpacing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MenuView_preserveIconSpacing com.akshay.mahaveer:preserveIconSpacing}</code></td><td></td></tr>
            </table>
            @see #MenuView_android_headerBackground
            @see #MenuView_android_horizontalDivider
@@ -3226,7 +3232,7 @@ containing a value of this type.
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#preserveIconSpacing}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#preserveIconSpacing}
           attribute's value can be found in the {@link #MenuView} array.
 
 
@@ -3236,7 +3242,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:preserveIconSpacing
+          @attr name com.akshay.mahaveer:preserveIconSpacing
         */
         public static final int MenuView_preserveIconSpacing = 7;
         /** Attributes that can be used with a PopupWindow.
@@ -3246,7 +3252,7 @@ containing a value of this type.
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #PopupWindow_overlapAnchor info.androidhive.slidingmenu:overlapAnchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindow_overlapAnchor com.akshay.mahaveer:overlapAnchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindow_android_popupBackground
            @see #PopupWindow_overlapAnchor
@@ -3261,7 +3267,7 @@ containing a value of this type.
         */
         public static final int PopupWindow_android_popupBackground = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#overlapAnchor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#overlapAnchor}
           attribute's value can be found in the {@link #PopupWindow} array.
 
 
@@ -3271,7 +3277,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:overlapAnchor
+          @attr name com.akshay.mahaveer:overlapAnchor
         */
         public static final int PopupWindow_overlapAnchor = 1;
         /** Attributes that can be used with a PopupWindowBackgroundState.
@@ -3280,7 +3286,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor info.androidhive.slidingmenu:state_above_anchor}</code></td><td></td></tr>
+           <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.akshay.mahaveer:state_above_anchor}</code></td><td></td></tr>
            </table>
            @see #PopupWindowBackgroundState_state_above_anchor
          */
@@ -3288,7 +3294,7 @@ containing a value of this type.
             0x7f010031
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#state_above_anchor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#state_above_anchor}
           attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
 
 
@@ -3298,7 +3304,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:state_above_anchor
+          @attr name com.akshay.mahaveer:state_above_anchor
         */
         public static final int PopupWindowBackgroundState_state_above_anchor = 0;
         /** Attributes that can be used with a ProgressWheel.
@@ -3307,16 +3313,16 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_barColor info.androidhive.slidingmenu:matProg_barColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_barSpinCycleTime info.androidhive.slidingmenu:matProg_barSpinCycleTime}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_barWidth info.androidhive.slidingmenu:matProg_barWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_circleRadius info.androidhive.slidingmenu:matProg_circleRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_fillRadius info.androidhive.slidingmenu:matProg_fillRadius}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_linearProgress info.androidhive.slidingmenu:matProg_linearProgress}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_progressIndeterminate info.androidhive.slidingmenu:matProg_progressIndeterminate}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_rimColor info.androidhive.slidingmenu:matProg_rimColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_rimWidth info.androidhive.slidingmenu:matProg_rimWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #ProgressWheel_matProg_spinSpeed info.androidhive.slidingmenu:matProg_spinSpeed}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_barColor com.akshay.mahaveer:matProg_barColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_barSpinCycleTime com.akshay.mahaveer:matProg_barSpinCycleTime}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_barWidth com.akshay.mahaveer:matProg_barWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_circleRadius com.akshay.mahaveer:matProg_circleRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_fillRadius com.akshay.mahaveer:matProg_fillRadius}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_linearProgress com.akshay.mahaveer:matProg_linearProgress}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_progressIndeterminate com.akshay.mahaveer:matProg_progressIndeterminate}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_rimColor com.akshay.mahaveer:matProg_rimColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_rimWidth com.akshay.mahaveer:matProg_rimWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #ProgressWheel_matProg_spinSpeed com.akshay.mahaveer:matProg_spinSpeed}</code></td><td></td></tr>
            </table>
            @see #ProgressWheel_matProg_barColor
            @see #ProgressWheel_matProg_barSpinCycleTime
@@ -3335,7 +3341,7 @@ containing a value of this type.
             0x7f01003a, 0x7f01003b
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_barColor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_barColor}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3346,11 +3352,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_barColor
+          @attr name com.akshay.mahaveer:matProg_barColor
         */
         public static final int ProgressWheel_matProg_barColor = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_barSpinCycleTime}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_barSpinCycleTime}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3360,11 +3366,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_barSpinCycleTime
+          @attr name com.akshay.mahaveer:matProg_barSpinCycleTime
         */
         public static final int ProgressWheel_matProg_barSpinCycleTime = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_barWidth}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_barWidth}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3376,11 +3382,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_barWidth
+          @attr name com.akshay.mahaveer:matProg_barWidth
         */
         public static final int ProgressWheel_matProg_barWidth = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_circleRadius}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_circleRadius}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3392,11 +3398,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_circleRadius
+          @attr name com.akshay.mahaveer:matProg_circleRadius
         */
         public static final int ProgressWheel_matProg_circleRadius = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_fillRadius}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_fillRadius}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3406,11 +3412,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_fillRadius
+          @attr name com.akshay.mahaveer:matProg_fillRadius
         */
         public static final int ProgressWheel_matProg_fillRadius = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_linearProgress}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_linearProgress}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3420,11 +3426,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_linearProgress
+          @attr name com.akshay.mahaveer:matProg_linearProgress
         */
         public static final int ProgressWheel_matProg_linearProgress = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_progressIndeterminate}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_progressIndeterminate}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3434,11 +3440,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_progressIndeterminate
+          @attr name com.akshay.mahaveer:matProg_progressIndeterminate
         */
         public static final int ProgressWheel_matProg_progressIndeterminate = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_rimColor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_rimColor}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3449,11 +3455,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_rimColor
+          @attr name com.akshay.mahaveer:matProg_rimColor
         */
         public static final int ProgressWheel_matProg_rimColor = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_rimWidth}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_rimWidth}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3465,11 +3471,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_rimWidth
+          @attr name com.akshay.mahaveer:matProg_rimWidth
         */
         public static final int ProgressWheel_matProg_rimWidth = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#matProg_spinSpeed}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#matProg_spinSpeed}
           attribute's value can be found in the {@link #ProgressWheel} array.
 
 
@@ -3479,7 +3485,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:matProg_spinSpeed
+          @attr name com.akshay.mahaveer:matProg_spinSpeed
         */
         public static final int ProgressWheel_matProg_spinSpeed = 4;
         /** Attributes that can be used with a SearchView.
@@ -3492,17 +3498,17 @@ containing a value of this type.
            <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
            <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_closeIcon info.androidhive.slidingmenu:closeIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_commitIcon info.androidhive.slidingmenu:commitIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_goIcon info.androidhive.slidingmenu:goIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_iconifiedByDefault info.androidhive.slidingmenu:iconifiedByDefault}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_layout info.androidhive.slidingmenu:layout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryBackground info.androidhive.slidingmenu:queryBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_queryHint info.androidhive.slidingmenu:queryHint}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_searchIcon info.androidhive.slidingmenu:searchIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_submitBackground info.androidhive.slidingmenu:submitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_suggestionRowLayout info.androidhive.slidingmenu:suggestionRowLayout}</code></td><td></td></tr>
-           <tr><td><code>{@link #SearchView_voiceIcon info.androidhive.slidingmenu:voiceIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_closeIcon com.akshay.mahaveer:closeIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_commitIcon com.akshay.mahaveer:commitIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_goIcon com.akshay.mahaveer:goIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_iconifiedByDefault com.akshay.mahaveer:iconifiedByDefault}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_layout com.akshay.mahaveer:layout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryBackground com.akshay.mahaveer:queryBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_queryHint com.akshay.mahaveer:queryHint}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_searchIcon com.akshay.mahaveer:searchIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_submitBackground com.akshay.mahaveer:submitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_suggestionRowLayout com.akshay.mahaveer:suggestionRowLayout}</code></td><td></td></tr>
+           <tr><td><code>{@link #SearchView_voiceIcon com.akshay.mahaveer:voiceIcon}</code></td><td></td></tr>
            </table>
            @see #SearchView_android_focusable
            @see #SearchView_android_imeOptions
@@ -3551,37 +3557,37 @@ containing a value of this type.
         */
         public static final int SearchView_android_maxWidth = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#closeIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#closeIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:closeIcon
+          @attr name com.akshay.mahaveer:closeIcon
         */
         public static final int SearchView_closeIcon = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#commitIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#commitIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:commitIcon
+          @attr name com.akshay.mahaveer:commitIcon
         */
         public static final int SearchView_commitIcon = 11;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#goIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#goIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:goIcon
+          @attr name com.akshay.mahaveer:goIcon
         */
         public static final int SearchView_goIcon = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#iconifiedByDefault}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#iconifiedByDefault}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3591,31 +3597,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:iconifiedByDefault
+          @attr name com.akshay.mahaveer:iconifiedByDefault
         */
         public static final int SearchView_iconifiedByDefault = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#layout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#layout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:layout
+          @attr name com.akshay.mahaveer:layout
         */
         public static final int SearchView_layout = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#queryBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#queryBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:queryBackground
+          @attr name com.akshay.mahaveer:queryBackground
         */
         public static final int SearchView_queryBackground = 13;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#queryHint}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#queryHint}
           attribute's value can be found in the {@link #SearchView} array.
 
 
@@ -3625,47 +3631,47 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:queryHint
+          @attr name com.akshay.mahaveer:queryHint
         */
         public static final int SearchView_queryHint = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#searchIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#searchIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:searchIcon
+          @attr name com.akshay.mahaveer:searchIcon
         */
         public static final int SearchView_searchIcon = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#submitBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#submitBackground}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:submitBackground
+          @attr name com.akshay.mahaveer:submitBackground
         */
         public static final int SearchView_submitBackground = 14;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#suggestionRowLayout}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#suggestionRowLayout}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:suggestionRowLayout
+          @attr name com.akshay.mahaveer:suggestionRowLayout
         */
         public static final int SearchView_suggestionRowLayout = 12;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#voiceIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#voiceIcon}
           attribute's value can be found in the {@link #SearchView} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:voiceIcon
+          @attr name com.akshay.mahaveer:voiceIcon
         */
         public static final int SearchView_voiceIcon = 10;
         /** Attributes that can be used with a Spinner.
@@ -3681,10 +3687,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled info.androidhive.slidingmenu:disableChildrenWhenDisabled}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_popupPromptView info.androidhive.slidingmenu:popupPromptView}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_prompt info.androidhive.slidingmenu:prompt}</code></td><td></td></tr>
-           <tr><td><code>{@link #Spinner_spinnerMode info.androidhive.slidingmenu:spinnerMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_disableChildrenWhenDisabled com.akshay.mahaveer:disableChildrenWhenDisabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_popupPromptView com.akshay.mahaveer:popupPromptView}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_prompt com.akshay.mahaveer:prompt}</code></td><td></td></tr>
+           <tr><td><code>{@link #Spinner_spinnerMode com.akshay.mahaveer:spinnerMode}</code></td><td></td></tr>
            </table>
            @see #Spinner_android_background
            @see #Spinner_android_dropDownHorizontalOffset
@@ -3746,7 +3752,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Spinner_android_popupBackground = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#disableChildrenWhenDisabled}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#disableChildrenWhenDisabled}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3756,31 +3762,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:disableChildrenWhenDisabled
+          @attr name com.akshay.mahaveer:disableChildrenWhenDisabled
         */
         public static final int Spinner_disableChildrenWhenDisabled = 10;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#popupPromptView}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#popupPromptView}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:popupPromptView
+          @attr name com.akshay.mahaveer:popupPromptView
         */
         public static final int Spinner_popupPromptView = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#prompt}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#prompt}
           attribute's value can be found in the {@link #Spinner} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:prompt
+          @attr name com.akshay.mahaveer:prompt
         */
         public static final int Spinner_prompt = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#spinnerMode}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#spinnerMode}
           attribute's value can be found in the {@link #Spinner} array.
 
 
@@ -3793,7 +3799,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>dialog</code></td><td>0</td><td></td></tr>
 <tr><td><code>dropdown</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:spinnerMode
+          @attr name com.akshay.mahaveer:spinnerMode
         */
         public static final int Spinner_spinnerMode = 8;
         /** Attributes that can be used with a SwitchCompat.
@@ -3805,13 +3811,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_showText info.androidhive.slidingmenu:showText}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_splitTrack info.androidhive.slidingmenu:splitTrack}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchMinWidth info.androidhive.slidingmenu:switchMinWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchPadding info.androidhive.slidingmenu:switchPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_switchTextAppearance info.androidhive.slidingmenu:switchTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_thumbTextPadding info.androidhive.slidingmenu:thumbTextPadding}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompat_track info.androidhive.slidingmenu:track}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_showText com.akshay.mahaveer:showText}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_splitTrack com.akshay.mahaveer:splitTrack}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchMinWidth com.akshay.mahaveer:switchMinWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchPadding com.akshay.mahaveer:switchPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.akshay.mahaveer:switchTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.akshay.mahaveer:thumbTextPadding}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompat_track com.akshay.mahaveer:track}</code></td><td></td></tr>
            </table>
            @see #SwitchCompat_android_textOff
            @see #SwitchCompat_android_textOn
@@ -3848,7 +3854,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompat_android_thumb = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#showText}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#showText}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3858,11 +3864,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:showText
+          @attr name com.akshay.mahaveer:showText
         */
         public static final int SwitchCompat_showText = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#splitTrack}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#splitTrack}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3872,11 +3878,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:splitTrack
+          @attr name com.akshay.mahaveer:splitTrack
         */
         public static final int SwitchCompat_splitTrack = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#switchMinWidth}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#switchMinWidth}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3888,11 +3894,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:switchMinWidth
+          @attr name com.akshay.mahaveer:switchMinWidth
         */
         public static final int SwitchCompat_switchMinWidth = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#switchPadding}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#switchPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3904,21 +3910,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:switchPadding
+          @attr name com.akshay.mahaveer:switchPadding
         */
         public static final int SwitchCompat_switchPadding = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#switchTextAppearance}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#switchTextAppearance}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:switchTextAppearance
+          @attr name com.akshay.mahaveer:switchTextAppearance
         */
         public static final int SwitchCompat_switchTextAppearance = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#thumbTextPadding}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#thumbTextPadding}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
@@ -3930,17 +3936,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:thumbTextPadding
+          @attr name com.akshay.mahaveer:thumbTextPadding
         */
         public static final int SwitchCompat_thumbTextPadding = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#track}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#track}
           attribute's value can be found in the {@link #SwitchCompat} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:track
+          @attr name com.akshay.mahaveer:track
         */
         public static final int SwitchCompat_track = 3;
         /** Attributes that can be used with a SwitchCompatTextAppearance.
@@ -3951,7 +3957,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #SwitchCompatTextAppearance_android_textColor android:textColor}</code></td><td></td></tr>
            <tr><td><code>{@link #SwitchCompatTextAppearance_android_textSize android:textSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #SwitchCompatTextAppearance_textAllCaps info.androidhive.slidingmenu:textAllCaps}</code></td><td></td></tr>
+           <tr><td><code>{@link #SwitchCompatTextAppearance_textAllCaps com.akshay.mahaveer:textAllCaps}</code></td><td></td></tr>
            </table>
            @see #SwitchCompatTextAppearance_android_textColor
            @see #SwitchCompatTextAppearance_android_textSize
@@ -3973,14 +3979,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int SwitchCompatTextAppearance_android_textSize = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAllCaps}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAllCaps}
           attribute's value can be found in the {@link #SwitchCompatTextAppearance} array.
 
 
           <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
-          @attr name info.androidhive.slidingmenu:textAllCaps
+          @attr name com.akshay.mahaveer:textAllCaps
         */
         public static final int SwitchCompatTextAppearance_textAllCaps = 2;
         /** Attributes that can be used with a Theme.
@@ -3989,90 +3995,90 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Theme_actionBarDivider info.androidhive.slidingmenu:actionBarDivider}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarItemBackground info.androidhive.slidingmenu:actionBarItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarPopupTheme info.androidhive.slidingmenu:actionBarPopupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSize info.androidhive.slidingmenu:actionBarSize}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarSplitStyle info.androidhive.slidingmenu:actionBarSplitStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarStyle info.androidhive.slidingmenu:actionBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabBarStyle info.androidhive.slidingmenu:actionBarTabBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabStyle info.androidhive.slidingmenu:actionBarTabStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTabTextStyle info.androidhive.slidingmenu:actionBarTabTextStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarTheme info.androidhive.slidingmenu:actionBarTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionBarWidgetTheme info.androidhive.slidingmenu:actionBarWidgetTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionButtonStyle info.androidhive.slidingmenu:actionButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionDropDownStyle info.androidhive.slidingmenu:actionDropDownStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextAppearance info.androidhive.slidingmenu:actionMenuTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionMenuTextColor info.androidhive.slidingmenu:actionMenuTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeBackground info.androidhive.slidingmenu:actionModeBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle info.androidhive.slidingmenu:actionModeCloseButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCloseDrawable info.androidhive.slidingmenu:actionModeCloseDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCopyDrawable info.androidhive.slidingmenu:actionModeCopyDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeCutDrawable info.androidhive.slidingmenu:actionModeCutDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeFindDrawable info.androidhive.slidingmenu:actionModeFindDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePasteDrawable info.androidhive.slidingmenu:actionModePasteDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModePopupWindowStyle info.androidhive.slidingmenu:actionModePopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable info.androidhive.slidingmenu:actionModeSelectAllDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeShareDrawable info.androidhive.slidingmenu:actionModeShareDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeSplitBackground info.androidhive.slidingmenu:actionModeSplitBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeStyle info.androidhive.slidingmenu:actionModeStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable info.androidhive.slidingmenu:actionModeWebSearchDrawable}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowButtonStyle info.androidhive.slidingmenu:actionOverflowButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_actionOverflowMenuStyle info.androidhive.slidingmenu:actionOverflowMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_activityChooserViewStyle info.androidhive.slidingmenu:activityChooserViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarDivider com.akshay.mahaveer:actionBarDivider}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarItemBackground com.akshay.mahaveer:actionBarItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarPopupTheme com.akshay.mahaveer:actionBarPopupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSize com.akshay.mahaveer:actionBarSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarSplitStyle com.akshay.mahaveer:actionBarSplitStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarStyle com.akshay.mahaveer:actionBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabBarStyle com.akshay.mahaveer:actionBarTabBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabStyle com.akshay.mahaveer:actionBarTabStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTabTextStyle com.akshay.mahaveer:actionBarTabTextStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarTheme com.akshay.mahaveer:actionBarTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionBarWidgetTheme com.akshay.mahaveer:actionBarWidgetTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionButtonStyle com.akshay.mahaveer:actionButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionDropDownStyle com.akshay.mahaveer:actionDropDownStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextAppearance com.akshay.mahaveer:actionMenuTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionMenuTextColor com.akshay.mahaveer:actionMenuTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeBackground com.akshay.mahaveer:actionModeBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseButtonStyle com.akshay.mahaveer:actionModeCloseButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCloseDrawable com.akshay.mahaveer:actionModeCloseDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCopyDrawable com.akshay.mahaveer:actionModeCopyDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeCutDrawable com.akshay.mahaveer:actionModeCutDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeFindDrawable com.akshay.mahaveer:actionModeFindDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePasteDrawable com.akshay.mahaveer:actionModePasteDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModePopupWindowStyle com.akshay.mahaveer:actionModePopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSelectAllDrawable com.akshay.mahaveer:actionModeSelectAllDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeShareDrawable com.akshay.mahaveer:actionModeShareDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeSplitBackground com.akshay.mahaveer:actionModeSplitBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeStyle com.akshay.mahaveer:actionModeStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionModeWebSearchDrawable com.akshay.mahaveer:actionModeWebSearchDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowButtonStyle com.akshay.mahaveer:actionOverflowButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_actionOverflowMenuStyle com.akshay.mahaveer:actionOverflowMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_activityChooserViewStyle com.akshay.mahaveer:activityChooserViewStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
            <tr><td><code>{@link #Theme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarButtonStyle info.androidhive.slidingmenu:buttonBarButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_buttonBarStyle info.androidhive.slidingmenu:buttonBarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorAccent info.androidhive.slidingmenu:colorAccent}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorButtonNormal info.androidhive.slidingmenu:colorButtonNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlActivated info.androidhive.slidingmenu:colorControlActivated}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlHighlight info.androidhive.slidingmenu:colorControlHighlight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorControlNormal info.androidhive.slidingmenu:colorControlNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimary info.androidhive.slidingmenu:colorPrimary}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorPrimaryDark info.androidhive.slidingmenu:colorPrimaryDark}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_colorSwitchThumbNormal info.androidhive.slidingmenu:colorSwitchThumbNormal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerHorizontal info.androidhive.slidingmenu:dividerHorizontal}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dividerVertical info.androidhive.slidingmenu:dividerVertical}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropDownListViewStyle info.androidhive.slidingmenu:dropDownListViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight info.androidhive.slidingmenu:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextBackground info.androidhive.slidingmenu:editTextBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_editTextColor info.androidhive.slidingmenu:editTextColor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_homeAsUpIndicator info.androidhive.slidingmenu:homeAsUpIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator info.androidhive.slidingmenu:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPopupWindowStyle info.androidhive.slidingmenu:listPopupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeight info.androidhive.slidingmenu:listPreferredItemHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge info.androidhive.slidingmenu:listPreferredItemHeightLarge}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall info.androidhive.slidingmenu:listPreferredItemHeightSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft info.androidhive.slidingmenu:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight info.androidhive.slidingmenu:listPreferredItemPaddingRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelBackground info.androidhive.slidingmenu:panelBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListTheme info.androidhive.slidingmenu:panelMenuListTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_panelMenuListWidth info.androidhive.slidingmenu:panelMenuListWidth}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupMenuStyle info.androidhive.slidingmenu:popupMenuStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_popupWindowStyle info.androidhive.slidingmenu:popupWindowStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_searchViewStyle info.androidhive.slidingmenu:searchViewStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackground info.androidhive.slidingmenu:selectableItemBackground}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless info.androidhive.slidingmenu:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle info.androidhive.slidingmenu:spinnerDropDownItemStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_spinnerStyle info.androidhive.slidingmenu:spinnerStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_switchStyle info.androidhive.slidingmenu:switchStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu info.androidhive.slidingmenu:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItem info.androidhive.slidingmenu:textAppearanceListItem}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceListItemSmall info.androidhive.slidingmenu:textAppearanceListItemSmall}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle info.androidhive.slidingmenu:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle info.androidhive.slidingmenu:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu info.androidhive.slidingmenu:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_textColorSearchUrl info.androidhive.slidingmenu:textColorSearchUrl}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle info.androidhive.slidingmenu:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_toolbarStyle info.androidhive.slidingmenu:toolbarStyle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBar info.androidhive.slidingmenu:windowActionBar}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionBarOverlay info.androidhive.slidingmenu:windowActionBarOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowActionModeOverlay info.androidhive.slidingmenu:windowActionModeOverlay}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMajor info.androidhive.slidingmenu:windowFixedHeightMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedHeightMinor info.androidhive.slidingmenu:windowFixedHeightMinor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMajor info.androidhive.slidingmenu:windowFixedWidthMajor}</code></td><td></td></tr>
-           <tr><td><code>{@link #Theme_windowFixedWidthMinor info.androidhive.slidingmenu:windowFixedWidthMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarButtonStyle com.akshay.mahaveer:buttonBarButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_buttonBarStyle com.akshay.mahaveer:buttonBarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorAccent com.akshay.mahaveer:colorAccent}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorButtonNormal com.akshay.mahaveer:colorButtonNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlActivated com.akshay.mahaveer:colorControlActivated}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlHighlight com.akshay.mahaveer:colorControlHighlight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorControlNormal com.akshay.mahaveer:colorControlNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimary com.akshay.mahaveer:colorPrimary}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorPrimaryDark com.akshay.mahaveer:colorPrimaryDark}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_colorSwitchThumbNormal com.akshay.mahaveer:colorSwitchThumbNormal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerHorizontal com.akshay.mahaveer:dividerHorizontal}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dividerVertical com.akshay.mahaveer:dividerVertical}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropDownListViewStyle com.akshay.mahaveer:dropDownListViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_dropdownListPreferredItemHeight com.akshay.mahaveer:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextBackground com.akshay.mahaveer:editTextBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_editTextColor com.akshay.mahaveer:editTextColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_homeAsUpIndicator com.akshay.mahaveer:homeAsUpIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listChoiceBackgroundIndicator com.akshay.mahaveer:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPopupWindowStyle com.akshay.mahaveer:listPopupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeight com.akshay.mahaveer:listPreferredItemHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightLarge com.akshay.mahaveer:listPreferredItemHeightLarge}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemHeightSmall com.akshay.mahaveer:listPreferredItemHeightSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingLeft com.akshay.mahaveer:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_listPreferredItemPaddingRight com.akshay.mahaveer:listPreferredItemPaddingRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelBackground com.akshay.mahaveer:panelBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListTheme com.akshay.mahaveer:panelMenuListTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_panelMenuListWidth com.akshay.mahaveer:panelMenuListWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupMenuStyle com.akshay.mahaveer:popupMenuStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_popupWindowStyle com.akshay.mahaveer:popupWindowStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_searchViewStyle com.akshay.mahaveer:searchViewStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackground com.akshay.mahaveer:selectableItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_selectableItemBackgroundBorderless com.akshay.mahaveer:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerDropDownItemStyle com.akshay.mahaveer:spinnerDropDownItemStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_spinnerStyle com.akshay.mahaveer:spinnerStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_switchStyle com.akshay.mahaveer:switchStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceLargePopupMenu com.akshay.mahaveer:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItem com.akshay.mahaveer:textAppearanceListItem}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceListItemSmall com.akshay.mahaveer:textAppearanceListItemSmall}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultSubtitle com.akshay.mahaveer:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSearchResultTitle com.akshay.mahaveer:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textAppearanceSmallPopupMenu com.akshay.mahaveer:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_textColorSearchUrl com.akshay.mahaveer:textColorSearchUrl}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarNavigationButtonStyle com.akshay.mahaveer:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_toolbarStyle com.akshay.mahaveer:toolbarStyle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBar com.akshay.mahaveer:windowActionBar}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionBarOverlay com.akshay.mahaveer:windowActionBarOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowActionModeOverlay com.akshay.mahaveer:windowActionModeOverlay}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMajor com.akshay.mahaveer:windowFixedHeightMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedHeightMinor com.akshay.mahaveer:windowFixedHeightMinor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMajor com.akshay.mahaveer:windowFixedWidthMajor}</code></td><td></td></tr>
+           <tr><td><code>{@link #Theme_windowFixedWidthMinor com.akshay.mahaveer:windowFixedWidthMinor}</code></td><td></td></tr>
            </table>
            @see #Theme_actionBarDivider
            @see #Theme_actionBarItemBackground
@@ -4183,37 +4189,37 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x7f0100a0, 0x7f0100a1, 0x7f0100a2, 0x7f0100a3
         };
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarDivider}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarDivider}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarDivider
+          @attr name com.akshay.mahaveer:actionBarDivider
         */
         public static final int Theme_actionBarDivider = 20;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarItemBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarItemBackground
+          @attr name com.akshay.mahaveer:actionBarItemBackground
         */
         public static final int Theme_actionBarItemBackground = 21;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarPopupTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarPopupTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarPopupTheme
+          @attr name com.akshay.mahaveer:actionBarPopupTheme
         */
         public static final int Theme_actionBarPopupTheme = 14;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarSize}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarSize}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4233,111 +4239,111 @@ containing a value of this type.
 <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
-          @attr name info.androidhive.slidingmenu:actionBarSize
+          @attr name com.akshay.mahaveer:actionBarSize
         */
         public static final int Theme_actionBarSize = 19;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarSplitStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarSplitStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarSplitStyle
+          @attr name com.akshay.mahaveer:actionBarSplitStyle
         */
         public static final int Theme_actionBarSplitStyle = 16;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarStyle
+          @attr name com.akshay.mahaveer:actionBarStyle
         */
         public static final int Theme_actionBarStyle = 15;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarTabBarStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarTabBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarTabBarStyle
+          @attr name com.akshay.mahaveer:actionBarTabBarStyle
         */
         public static final int Theme_actionBarTabBarStyle = 10;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarTabStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarTabStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarTabStyle
+          @attr name com.akshay.mahaveer:actionBarTabStyle
         */
         public static final int Theme_actionBarTabStyle = 9;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarTabTextStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarTabTextStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarTabTextStyle
+          @attr name com.akshay.mahaveer:actionBarTabTextStyle
         */
         public static final int Theme_actionBarTabTextStyle = 11;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarTheme
+          @attr name com.akshay.mahaveer:actionBarTheme
         */
         public static final int Theme_actionBarTheme = 17;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionBarWidgetTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionBarWidgetTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionBarWidgetTheme
+          @attr name com.akshay.mahaveer:actionBarWidgetTheme
         */
         public static final int Theme_actionBarWidgetTheme = 18;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionButtonStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionButtonStyle
+          @attr name com.akshay.mahaveer:actionButtonStyle
         */
         public static final int Theme_actionButtonStyle = 44;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionDropDownStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionDropDownStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionDropDownStyle
+          @attr name com.akshay.mahaveer:actionDropDownStyle
         */
         public static final int Theme_actionDropDownStyle = 39;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionMenuTextAppearance}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionMenuTextAppearance}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionMenuTextAppearance
+          @attr name com.akshay.mahaveer:actionMenuTextAppearance
         */
         public static final int Theme_actionMenuTextAppearance = 22;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionMenuTextColor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionMenuTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4345,167 +4351,167 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:actionMenuTextColor
+          @attr name com.akshay.mahaveer:actionMenuTextColor
         */
         public static final int Theme_actionMenuTextColor = 23;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeBackground
+          @attr name com.akshay.mahaveer:actionModeBackground
         */
         public static final int Theme_actionModeBackground = 26;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeCloseButtonStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeCloseButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeCloseButtonStyle
+          @attr name com.akshay.mahaveer:actionModeCloseButtonStyle
         */
         public static final int Theme_actionModeCloseButtonStyle = 25;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeCloseDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeCloseDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeCloseDrawable
+          @attr name com.akshay.mahaveer:actionModeCloseDrawable
         */
         public static final int Theme_actionModeCloseDrawable = 28;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeCopyDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeCopyDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeCopyDrawable
+          @attr name com.akshay.mahaveer:actionModeCopyDrawable
         */
         public static final int Theme_actionModeCopyDrawable = 30;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeCutDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeCutDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeCutDrawable
+          @attr name com.akshay.mahaveer:actionModeCutDrawable
         */
         public static final int Theme_actionModeCutDrawable = 29;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeFindDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeFindDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeFindDrawable
+          @attr name com.akshay.mahaveer:actionModeFindDrawable
         */
         public static final int Theme_actionModeFindDrawable = 34;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModePasteDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModePasteDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModePasteDrawable
+          @attr name com.akshay.mahaveer:actionModePasteDrawable
         */
         public static final int Theme_actionModePasteDrawable = 31;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModePopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModePopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModePopupWindowStyle
+          @attr name com.akshay.mahaveer:actionModePopupWindowStyle
         */
         public static final int Theme_actionModePopupWindowStyle = 36;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeSelectAllDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeSelectAllDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeSelectAllDrawable
+          @attr name com.akshay.mahaveer:actionModeSelectAllDrawable
         */
         public static final int Theme_actionModeSelectAllDrawable = 32;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeShareDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeShareDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeShareDrawable
+          @attr name com.akshay.mahaveer:actionModeShareDrawable
         */
         public static final int Theme_actionModeShareDrawable = 33;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeSplitBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeSplitBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeSplitBackground
+          @attr name com.akshay.mahaveer:actionModeSplitBackground
         */
         public static final int Theme_actionModeSplitBackground = 27;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeStyle
+          @attr name com.akshay.mahaveer:actionModeStyle
         */
         public static final int Theme_actionModeStyle = 24;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionModeWebSearchDrawable}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionModeWebSearchDrawable}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionModeWebSearchDrawable
+          @attr name com.akshay.mahaveer:actionModeWebSearchDrawable
         */
         public static final int Theme_actionModeWebSearchDrawable = 35;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionOverflowButtonStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionOverflowButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionOverflowButtonStyle
+          @attr name com.akshay.mahaveer:actionOverflowButtonStyle
         */
         public static final int Theme_actionOverflowButtonStyle = 12;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#actionOverflowMenuStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#actionOverflowMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:actionOverflowMenuStyle
+          @attr name com.akshay.mahaveer:actionOverflowMenuStyle
         */
         public static final int Theme_actionOverflowMenuStyle = 13;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#activityChooserViewStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#activityChooserViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:activityChooserViewStyle
+          @attr name com.akshay.mahaveer:activityChooserViewStyle
         */
         public static final int Theme_activityChooserViewStyle = 51;
         /**
@@ -4521,27 +4527,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int Theme_android_windowIsFloating = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#buttonBarButtonStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#buttonBarButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:buttonBarButtonStyle
+          @attr name com.akshay.mahaveer:buttonBarButtonStyle
         */
         public static final int Theme_buttonBarButtonStyle = 46;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#buttonBarStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#buttonBarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:buttonBarStyle
+          @attr name com.akshay.mahaveer:buttonBarStyle
         */
         public static final int Theme_buttonBarStyle = 45;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorAccent}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorAccent}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4552,11 +4558,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorAccent
+          @attr name com.akshay.mahaveer:colorAccent
         */
         public static final int Theme_colorAccent = 78;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorButtonNormal}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorButtonNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4567,11 +4573,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorButtonNormal
+          @attr name com.akshay.mahaveer:colorButtonNormal
         */
         public static final int Theme_colorButtonNormal = 82;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorControlActivated}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorControlActivated}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4582,11 +4588,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorControlActivated
+          @attr name com.akshay.mahaveer:colorControlActivated
         */
         public static final int Theme_colorControlActivated = 80;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorControlHighlight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorControlHighlight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4597,11 +4603,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorControlHighlight
+          @attr name com.akshay.mahaveer:colorControlHighlight
         */
         public static final int Theme_colorControlHighlight = 81;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorControlNormal}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorControlNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4612,11 +4618,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorControlNormal
+          @attr name com.akshay.mahaveer:colorControlNormal
         */
         public static final int Theme_colorControlNormal = 79;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorPrimary}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorPrimary}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4627,11 +4633,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorPrimary
+          @attr name com.akshay.mahaveer:colorPrimary
         */
         public static final int Theme_colorPrimary = 76;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorPrimaryDark}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorPrimaryDark}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4642,11 +4648,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorPrimaryDark
+          @attr name com.akshay.mahaveer:colorPrimaryDark
         */
         public static final int Theme_colorPrimaryDark = 77;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#colorSwitchThumbNormal}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#colorSwitchThumbNormal}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4657,41 +4663,41 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:colorSwitchThumbNormal
+          @attr name com.akshay.mahaveer:colorSwitchThumbNormal
         */
         public static final int Theme_colorSwitchThumbNormal = 83;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#dividerHorizontal}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#dividerHorizontal}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:dividerHorizontal
+          @attr name com.akshay.mahaveer:dividerHorizontal
         */
         public static final int Theme_dividerHorizontal = 50;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#dividerVertical}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#dividerVertical}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:dividerVertical
+          @attr name com.akshay.mahaveer:dividerVertical
         */
         public static final int Theme_dividerVertical = 49;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#dropDownListViewStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#dropDownListViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:dropDownListViewStyle
+          @attr name com.akshay.mahaveer:dropDownListViewStyle
         */
         public static final int Theme_dropDownListViewStyle = 68;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#dropdownListPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#dropdownListPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4703,21 +4709,21 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:dropdownListPreferredItemHeight
+          @attr name com.akshay.mahaveer:dropdownListPreferredItemHeight
         */
         public static final int Theme_dropdownListPreferredItemHeight = 40;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#editTextBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#editTextBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:editTextBackground
+          @attr name com.akshay.mahaveer:editTextBackground
         */
         public static final int Theme_editTextBackground = 57;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#editTextColor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#editTextColor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4725,41 +4731,41 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:editTextColor
+          @attr name com.akshay.mahaveer:editTextColor
         */
         public static final int Theme_editTextColor = 56;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#homeAsUpIndicator}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#homeAsUpIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:homeAsUpIndicator
+          @attr name com.akshay.mahaveer:homeAsUpIndicator
         */
         public static final int Theme_homeAsUpIndicator = 43;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listChoiceBackgroundIndicator}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listChoiceBackgroundIndicator}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:listChoiceBackgroundIndicator
+          @attr name com.akshay.mahaveer:listChoiceBackgroundIndicator
         */
         public static final int Theme_listChoiceBackgroundIndicator = 75;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPopupWindowStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPopupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:listPopupWindowStyle
+          @attr name com.akshay.mahaveer:listPopupWindowStyle
         */
         public static final int Theme_listPopupWindowStyle = 69;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPreferredItemHeight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPreferredItemHeight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4771,11 +4777,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:listPreferredItemHeight
+          @attr name com.akshay.mahaveer:listPreferredItemHeight
         */
         public static final int Theme_listPreferredItemHeight = 63;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPreferredItemHeightLarge}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPreferredItemHeightLarge}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4787,11 +4793,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:listPreferredItemHeightLarge
+          @attr name com.akshay.mahaveer:listPreferredItemHeightLarge
         */
         public static final int Theme_listPreferredItemHeightLarge = 65;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPreferredItemHeightSmall}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPreferredItemHeightSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4803,11 +4809,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:listPreferredItemHeightSmall
+          @attr name com.akshay.mahaveer:listPreferredItemHeightSmall
         */
         public static final int Theme_listPreferredItemHeightSmall = 64;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPreferredItemPaddingLeft}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPreferredItemPaddingLeft}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4819,11 +4825,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:listPreferredItemPaddingLeft
+          @attr name com.akshay.mahaveer:listPreferredItemPaddingLeft
         */
         public static final int Theme_listPreferredItemPaddingLeft = 66;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#listPreferredItemPaddingRight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#listPreferredItemPaddingRight}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4835,31 +4841,31 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:listPreferredItemPaddingRight
+          @attr name com.akshay.mahaveer:listPreferredItemPaddingRight
         */
         public static final int Theme_listPreferredItemPaddingRight = 67;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#panelBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#panelBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:panelBackground
+          @attr name com.akshay.mahaveer:panelBackground
         */
         public static final int Theme_panelBackground = 72;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#panelMenuListTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#panelMenuListTheme}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:panelMenuListTheme
+          @attr name com.akshay.mahaveer:panelMenuListTheme
         */
         public static final int Theme_panelMenuListTheme = 74;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#panelMenuListWidth}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#panelMenuListWidth}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -4871,151 +4877,151 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:panelMenuListWidth
+          @attr name com.akshay.mahaveer:panelMenuListWidth
         */
         public static final int Theme_panelMenuListWidth = 73;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#popupMenuStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#popupMenuStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:popupMenuStyle
+          @attr name com.akshay.mahaveer:popupMenuStyle
         */
         public static final int Theme_popupMenuStyle = 54;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#popupWindowStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#popupWindowStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:popupWindowStyle
+          @attr name com.akshay.mahaveer:popupWindowStyle
         */
         public static final int Theme_popupWindowStyle = 55;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#searchViewStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#searchViewStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:searchViewStyle
+          @attr name com.akshay.mahaveer:searchViewStyle
         */
         public static final int Theme_searchViewStyle = 62;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#selectableItemBackground}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#selectableItemBackground}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:selectableItemBackground
+          @attr name com.akshay.mahaveer:selectableItemBackground
         */
         public static final int Theme_selectableItemBackground = 47;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#selectableItemBackgroundBorderless}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#selectableItemBackgroundBorderless}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:selectableItemBackgroundBorderless
+          @attr name com.akshay.mahaveer:selectableItemBackgroundBorderless
         */
         public static final int Theme_selectableItemBackgroundBorderless = 48;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#spinnerDropDownItemStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#spinnerDropDownItemStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:spinnerDropDownItemStyle
+          @attr name com.akshay.mahaveer:spinnerDropDownItemStyle
         */
         public static final int Theme_spinnerDropDownItemStyle = 42;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#spinnerStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#spinnerStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:spinnerStyle
+          @attr name com.akshay.mahaveer:spinnerStyle
         */
         public static final int Theme_spinnerStyle = 41;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#switchStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#switchStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:switchStyle
+          @attr name com.akshay.mahaveer:switchStyle
         */
         public static final int Theme_switchStyle = 58;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceLargePopupMenu}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceLargePopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceLargePopupMenu
+          @attr name com.akshay.mahaveer:textAppearanceLargePopupMenu
         */
         public static final int Theme_textAppearanceLargePopupMenu = 37;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceListItem}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceListItem}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceListItem
+          @attr name com.akshay.mahaveer:textAppearanceListItem
         */
         public static final int Theme_textAppearanceListItem = 70;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceListItemSmall}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceListItemSmall}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceListItemSmall
+          @attr name com.akshay.mahaveer:textAppearanceListItemSmall
         */
         public static final int Theme_textAppearanceListItemSmall = 71;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceSearchResultSubtitle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceSearchResultSubtitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceSearchResultSubtitle
+          @attr name com.akshay.mahaveer:textAppearanceSearchResultSubtitle
         */
         public static final int Theme_textAppearanceSearchResultSubtitle = 60;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceSearchResultTitle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceSearchResultTitle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceSearchResultTitle
+          @attr name com.akshay.mahaveer:textAppearanceSearchResultTitle
         */
         public static final int Theme_textAppearanceSearchResultTitle = 59;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textAppearanceSmallPopupMenu}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textAppearanceSmallPopupMenu}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:textAppearanceSmallPopupMenu
+          @attr name com.akshay.mahaveer:textAppearanceSmallPopupMenu
         */
         public static final int Theme_textAppearanceSmallPopupMenu = 38;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#textColorSearchUrl}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#textColorSearchUrl}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5023,31 +5029,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-          @attr name info.androidhive.slidingmenu:textColorSearchUrl
+          @attr name com.akshay.mahaveer:textColorSearchUrl
         */
         public static final int Theme_textColorSearchUrl = 61;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#toolbarNavigationButtonStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#toolbarNavigationButtonStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:toolbarNavigationButtonStyle
+          @attr name com.akshay.mahaveer:toolbarNavigationButtonStyle
         */
         public static final int Theme_toolbarNavigationButtonStyle = 53;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#toolbarStyle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#toolbarStyle}
           attribute's value can be found in the {@link #Theme} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:toolbarStyle
+          @attr name com.akshay.mahaveer:toolbarStyle
         */
         public static final int Theme_toolbarStyle = 52;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowActionBar}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowActionBar}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5057,11 +5063,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowActionBar
+          @attr name com.akshay.mahaveer:windowActionBar
         */
         public static final int Theme_windowActionBar = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowActionBarOverlay}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowActionBarOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5071,11 +5077,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowActionBarOverlay
+          @attr name com.akshay.mahaveer:windowActionBarOverlay
         */
         public static final int Theme_windowActionBarOverlay = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowActionModeOverlay}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowActionModeOverlay}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5085,11 +5091,11 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowActionModeOverlay
+          @attr name com.akshay.mahaveer:windowActionModeOverlay
         */
         public static final int Theme_windowActionModeOverlay = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowFixedHeightMajor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowFixedHeightMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5104,11 +5110,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowFixedHeightMajor
+          @attr name com.akshay.mahaveer:windowFixedHeightMajor
         */
         public static final int Theme_windowFixedHeightMajor = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowFixedHeightMinor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowFixedHeightMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5123,11 +5129,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowFixedHeightMinor
+          @attr name com.akshay.mahaveer:windowFixedHeightMinor
         */
         public static final int Theme_windowFixedHeightMinor = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowFixedWidthMajor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowFixedWidthMajor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5142,11 +5148,11 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowFixedWidthMajor
+          @attr name com.akshay.mahaveer:windowFixedWidthMajor
         */
         public static final int Theme_windowFixedWidthMajor = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#windowFixedWidthMinor}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#windowFixedWidthMinor}
           attribute's value can be found in the {@link #Theme} array.
 
 
@@ -5161,7 +5167,7 @@ some parent container.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:windowFixedWidthMinor
+          @attr name com.akshay.mahaveer:windowFixedWidthMinor
         */
         public static final int Theme_windowFixedWidthMinor = 7;
         /** Attributes that can be used with a Toolbar.
@@ -5172,26 +5178,26 @@ containing a value of this type.
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
            <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseContentDescription info.androidhive.slidingmenu:collapseContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_collapseIcon info.androidhive.slidingmenu:collapseIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetEnd info.androidhive.slidingmenu:contentInsetEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetLeft info.androidhive.slidingmenu:contentInsetLeft}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetRight info.androidhive.slidingmenu:contentInsetRight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_contentInsetStart info.androidhive.slidingmenu:contentInsetStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_maxButtonHeight info.androidhive.slidingmenu:maxButtonHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationContentDescription info.androidhive.slidingmenu:navigationContentDescription}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_navigationIcon info.androidhive.slidingmenu:navigationIcon}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_popupTheme info.androidhive.slidingmenu:popupTheme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitle info.androidhive.slidingmenu:subtitle}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_subtitleTextAppearance info.androidhive.slidingmenu:subtitleTextAppearance}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_theme info.androidhive.slidingmenu:theme}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_title info.androidhive.slidingmenu:title}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginBottom info.androidhive.slidingmenu:titleMarginBottom}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginEnd info.androidhive.slidingmenu:titleMarginEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginStart info.androidhive.slidingmenu:titleMarginStart}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMarginTop info.androidhive.slidingmenu:titleMarginTop}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleMargins info.androidhive.slidingmenu:titleMargins}</code></td><td></td></tr>
-           <tr><td><code>{@link #Toolbar_titleTextAppearance info.androidhive.slidingmenu:titleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseContentDescription com.akshay.mahaveer:collapseContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_collapseIcon com.akshay.mahaveer:collapseIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetEnd com.akshay.mahaveer:contentInsetEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetLeft com.akshay.mahaveer:contentInsetLeft}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetRight com.akshay.mahaveer:contentInsetRight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_contentInsetStart com.akshay.mahaveer:contentInsetStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_maxButtonHeight com.akshay.mahaveer:maxButtonHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationContentDescription com.akshay.mahaveer:navigationContentDescription}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_navigationIcon com.akshay.mahaveer:navigationIcon}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_popupTheme com.akshay.mahaveer:popupTheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitle com.akshay.mahaveer:subtitle}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.akshay.mahaveer:subtitleTextAppearance}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_theme com.akshay.mahaveer:theme}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_title com.akshay.mahaveer:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginBottom com.akshay.mahaveer:titleMarginBottom}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginEnd com.akshay.mahaveer:titleMarginEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginStart com.akshay.mahaveer:titleMarginStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMarginTop com.akshay.mahaveer:titleMarginTop}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleMargins com.akshay.mahaveer:titleMargins}</code></td><td></td></tr>
+           <tr><td><code>{@link #Toolbar_titleTextAppearance com.akshay.mahaveer:titleTextAppearance}</code></td><td></td></tr>
            </table>
            @see #Toolbar_android_gravity
            @see #Toolbar_android_minHeight
@@ -5237,7 +5243,7 @@ containing a value of this type.
         */
         public static final int Toolbar_android_minHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#collapseContentDescription}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#collapseContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5247,21 +5253,21 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:collapseContentDescription
+          @attr name com.akshay.mahaveer:collapseContentDescription
         */
         public static final int Toolbar_collapseContentDescription = 19;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#collapseIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#collapseIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:collapseIcon
+          @attr name com.akshay.mahaveer:collapseIcon
         */
         public static final int Toolbar_collapseIcon = 18;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetEnd}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5273,11 +5279,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetEnd
+          @attr name com.akshay.mahaveer:contentInsetEnd
         */
         public static final int Toolbar_contentInsetEnd = 5;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetLeft}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetLeft}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5289,11 +5295,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetLeft
+          @attr name com.akshay.mahaveer:contentInsetLeft
         */
         public static final int Toolbar_contentInsetLeft = 6;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetRight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetRight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5305,11 +5311,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetRight
+          @attr name com.akshay.mahaveer:contentInsetRight
         */
         public static final int Toolbar_contentInsetRight = 7;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#contentInsetStart}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#contentInsetStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5321,11 +5327,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:contentInsetStart
+          @attr name com.akshay.mahaveer:contentInsetStart
         */
         public static final int Toolbar_contentInsetStart = 4;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#maxButtonHeight}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#maxButtonHeight}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5337,11 +5343,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:maxButtonHeight
+          @attr name com.akshay.mahaveer:maxButtonHeight
         */
         public static final int Toolbar_maxButtonHeight = 16;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#navigationContentDescription}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#navigationContentDescription}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5351,31 +5357,31 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:navigationContentDescription
+          @attr name com.akshay.mahaveer:navigationContentDescription
         */
         public static final int Toolbar_navigationContentDescription = 21;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#navigationIcon}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#navigationIcon}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:navigationIcon
+          @attr name com.akshay.mahaveer:navigationIcon
         */
         public static final int Toolbar_navigationIcon = 20;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#popupTheme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#popupTheme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:popupTheme
+          @attr name com.akshay.mahaveer:popupTheme
         */
         public static final int Toolbar_popupTheme = 8;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#subtitle}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#subtitle}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5385,31 +5391,31 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:subtitle
+          @attr name com.akshay.mahaveer:subtitle
         */
         public static final int Toolbar_subtitle = 3;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#subtitleTextAppearance}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#subtitleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:subtitleTextAppearance
+          @attr name com.akshay.mahaveer:subtitleTextAppearance
         */
         public static final int Toolbar_subtitleTextAppearance = 10;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#theme}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#theme}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:theme
+          @attr name com.akshay.mahaveer:theme
         */
         public static final int Toolbar_theme = 17;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#title}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#title}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5419,11 +5425,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:title
+          @attr name com.akshay.mahaveer:title
         */
         public static final int Toolbar_title = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleMarginBottom}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleMarginBottom}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5435,11 +5441,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:titleMarginBottom
+          @attr name com.akshay.mahaveer:titleMarginBottom
         */
         public static final int Toolbar_titleMarginBottom = 15;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleMarginEnd}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleMarginEnd}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5451,11 +5457,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:titleMarginEnd
+          @attr name com.akshay.mahaveer:titleMarginEnd
         */
         public static final int Toolbar_titleMarginEnd = 13;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleMarginStart}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleMarginStart}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5467,11 +5473,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:titleMarginStart
+          @attr name com.akshay.mahaveer:titleMarginStart
         */
         public static final int Toolbar_titleMarginStart = 12;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleMarginTop}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleMarginTop}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5483,11 +5489,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:titleMarginTop
+          @attr name com.akshay.mahaveer:titleMarginTop
         */
         public static final int Toolbar_titleMarginTop = 14;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleMargins}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleMargins}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
@@ -5499,17 +5505,17 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:titleMargins
+          @attr name com.akshay.mahaveer:titleMargins
         */
         public static final int Toolbar_titleMargins = 11;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#titleTextAppearance}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#titleTextAppearance}
           attribute's value can be found in the {@link #Toolbar} array.
 
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name info.androidhive.slidingmenu:titleTextAppearance
+          @attr name com.akshay.mahaveer:titleTextAppearance
         */
         public static final int Toolbar_titleTextAppearance = 9;
         /** Attributes that can be used with a View.
@@ -5519,8 +5525,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
            <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingEnd info.androidhive.slidingmenu:paddingEnd}</code></td><td></td></tr>
-           <tr><td><code>{@link #View_paddingStart info.androidhive.slidingmenu:paddingStart}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingEnd com.akshay.mahaveer:paddingEnd}</code></td><td></td></tr>
+           <tr><td><code>{@link #View_paddingStart com.akshay.mahaveer:paddingStart}</code></td><td></td></tr>
            </table>
            @see #View_android_focusable
            @see #View_paddingEnd
@@ -5536,7 +5542,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         */
         public static final int View_android_focusable = 0;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#paddingEnd}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#paddingEnd}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5548,11 +5554,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:paddingEnd
+          @attr name com.akshay.mahaveer:paddingEnd
         */
         public static final int View_paddingEnd = 2;
         /**
-          <p>This symbol is the offset where the {@link info.androidhive.slidingmenu.R.attr#paddingStart}
+          <p>This symbol is the offset where the {@link com.akshay.mahaveer.R.attr#paddingStart}
           attribute's value can be found in the {@link #View} array.
 
 
@@ -5564,7 +5570,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name info.androidhive.slidingmenu:paddingStart
+          @attr name com.akshay.mahaveer:paddingStart
         */
         public static final int View_paddingStart = 1;
         /** Attributes that can be used with a ViewStubCompat.

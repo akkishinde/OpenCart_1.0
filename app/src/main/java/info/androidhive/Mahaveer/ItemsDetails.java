@@ -8,7 +8,7 @@ import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
@@ -32,11 +32,12 @@ import java.util.ArrayList;
 public class ItemsDetails extends Activity{
     private ProgressDialog pDialog;
     NetworkImageView item_header,im1,im2,im3,im4;
-    TextView title,manufacturer,item_name,brand,stock,price;
+    TextView title,manufacturer,item_name,brand,stock,price,description;
     ArrayList<String> imageadapter = new <String>ArrayList<String>();
     private static String pid;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
     String url="http://webshop.opencart-api.com/api/rest/products/";
+    static String headurl="";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,7 @@ public class ItemsDetails extends Activity{
         brand=(TextView)findViewById(R.id.brand_name);
         stock=(TextView)findViewById(R.id.stock_status);
         price=(TextView)findViewById(R.id.price);
+        description=(TextView)findViewById(R.id.description);
 
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
@@ -79,6 +81,34 @@ public class ItemsDetails extends Activity{
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
+        im2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+            item_header.setImageUrl(imageadapter.get(0), imageLoader);
+            }
+        });
+        im3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                item_header.setImageUrl(imageadapter.get(1), imageLoader);
+            }
+        });
+        im4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                item_header.setImageUrl(imageadapter.get(2), imageLoader);
+            }
+        });
+        im1.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                item_header.setImageUrl(headurl, imageLoader);
+            }
+        });
     }
 
     private void LoadData() {
@@ -102,22 +132,38 @@ public class ItemsDetails extends Activity{
                         title.setText(json2.getString("name"));
                         manufacturer.setText(json2.getString("manufacturer"));
                         item_header.setImageUrl(json2.getString("image"), imageLoader);
+                        headurl=json2.getString("image");
                         im1.setImageUrl(json2.getString("image"),imageLoader);
                         JSONArray jsonArray=json2.getJSONArray("images");
                         for(int i=0;i<jsonArray.length();i++) {
                           imageadapter.add(jsonArray.get(i).toString());
                         }
-                        if(imageadapter.size()>0)
-                        im2.setImageUrl(imageadapter.get(0), imageLoader);
-                        if(imageadapter.size()>1)
-                        im3.setImageUrl(imageadapter.get(1), imageLoader);
-                        if(imageadapter.size()>2)
-                        im4.setImageUrl(imageadapter.get(2), imageLoader);
-
+                        if(imageadapter.size()>0) {
+                            im2.setEnabled(true);
+                            im2.setVisibility(View.VISIBLE);
+                            im2.setImageUrl(imageadapter.get(0), imageLoader);
+                        }
+                        if(imageadapter.size()>1) {
+                            im3.setEnabled(true);
+                            im3.setVisibility(View.VISIBLE);
+                            im3.setImageUrl(imageadapter.get(1), imageLoader);
+                        }
+                        if(imageadapter.size()>2) {
+                            im4.setEnabled(true);
+                            im4.setVisibility(View.VISIBLE);
+                            im4.setImageUrl(imageadapter.get(2), imageLoader);
+                        }
                         item_name.setText(json2.getString("name"));
                         brand.setText("Manufacturer: "+json2.getString("manufacturer"));
                         stock.setText("Stock: " + json2.getString("stock_status"));
                         price.setText("Price: "+json2.getString("price"));
+                        description.setText(json2.getString("description").replaceAll("<(.*?)\\>", " ")
+                                .replaceAll("<(.*?)\\\n", " ")
+                                .replaceFirst("(.*?)\\>", " ")
+                                .replaceAll("&nbsp;", " ")
+                                .replaceAll("&amp;", " ")
+                                .replaceAll("&#39;", "'")
+                                .replaceAll("&quot;", "\""));
 
 
                     }
