@@ -1650,6 +1650,7 @@ containing a value of this type.
         public static final int register_activity=0x7f030025;
         public static final int splash_screen=0x7f030026;
         public static final int support_simple_spinner_dropdown_item=0x7f030027;
+        public static final int view_cart=0x7f030028;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -1671,25 +1672,25 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0c000d;
         public static final int abc_shareactionprovider_share_with_application=0x7f0c000e;
         public static final int abc_toolbar_collapse_description=0x7f0c000f;
-        public static final int action_settings=0x7f0c0010;
-        public static final int address1_str=0x7f0c0011;
-        public static final int address2_str=0x7f0c0012;
-        public static final int app_name=0x7f0c0013;
-        public static final int city_str=0x7f0c0014;
-        public static final int contact_str=0x7f0c0015;
-        public static final int default_progressbar=0x7f0c0016;
-        public static final int desc_list_item_icon=0x7f0c0017;
-        public static final int drawer_close=0x7f0c0018;
-        public static final int drawer_open=0x7f0c0019;
-        public static final int email_str=0x7f0c001a;
-        public static final int first_name_str=0x7f0c001b;
-        public static final int hello_world=0x7f0c001c;
-        public static final int last_name_str=0x7f0c001d;
-        public static final int password_str=0x7f0c001e;
-        public static final int register_btn=0x7f0c001f;
-        public static final int repeat_pass_str=0x7f0c0020;
-        public static final int search_hint=0x7f0c0021;
-        public static final int signin_btn=0x7f0c0022;
+        public static final int address1_str=0x7f0c0010;
+        public static final int address2_str=0x7f0c0011;
+        public static final int app_name=0x7f0c0012;
+        public static final int city_str=0x7f0c0013;
+        public static final int contact_str=0x7f0c0014;
+        public static final int default_progressbar=0x7f0c0015;
+        public static final int desc_list_item_icon=0x7f0c0016;
+        public static final int drawer_close=0x7f0c0017;
+        public static final int drawer_open=0x7f0c0018;
+        public static final int email_str=0x7f0c0019;
+        public static final int first_name_str=0x7f0c001a;
+        public static final int hello_world=0x7f0c001b;
+        public static final int last_name_str=0x7f0c001c;
+        public static final int password_str=0x7f0c001d;
+        public static final int register_btn=0x7f0c001e;
+        public static final int repeat_pass_str=0x7f0c001f;
+        public static final int search_hint=0x7f0c0020;
+        public static final int signin_btn=0x7f0c0021;
+        public static final int view_cart=0x7f0c0022;
     }
     public static final class style {
         public static final int Animation_AppCompat_DropDownUp=0x7f0d0000;

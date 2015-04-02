@@ -9,7 +9,7 @@
         android:actionViewClass="android.widget.SearchView"
         />
 
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+    <item android:id="@+id/action_settings" android:title="@string/view_cart"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
 

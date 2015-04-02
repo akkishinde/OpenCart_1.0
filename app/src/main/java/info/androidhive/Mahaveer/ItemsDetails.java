@@ -3,14 +3,19 @@ package info.androidhive.Mahaveer;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -180,6 +185,46 @@ public class ItemsDetails extends Activity{
             }
 
         });
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.main, menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
+                .getActionView();
+        searchView.setSearchableInfo(searchManager
+                .getSearchableInfo(getComponentName()));
+
+        return super.onCreateOptionsMenu(menu);
+        // getMenuInflater().inflate(R.menu.main, menu);
+        //return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // toggle nav drawer on selecting action bar app icon/title
+
+
+
+        // Handle action bar actions click
+        switch (item.getItemId()) {
+            case R.id.action_settings:
+                CallViewCart();
+                return true;
+            case R.id.action_search:
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void CallViewCart() {
+        Intent intent = new Intent(this, ViewCart.class);
+        startActivity(intent);
     }
 
 
