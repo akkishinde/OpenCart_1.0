@@ -43,6 +43,7 @@ public class ItemsListDisplay extends Activity{
     private List<ItemList> movieList = new ArrayList<ItemList>();
     private ListView listView;
     private CustomListAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,6 +96,7 @@ public class ItemsListDisplay extends Activity{
                                 movie.setThumbnailUrl(obj.getString("image"));
                                 movie.setRating((obj.getString("price")));
                                 movie.setYear(obj.getString("stock_status"));
+                                movie.setProduct_id(obj.getString("id"));
 
                                 //Genre is json array
                                 //JSONArray genreArry = obj.getJSONArray("category");

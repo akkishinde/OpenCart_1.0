@@ -96,7 +96,8 @@ public class CustomListAdapter extends BaseAdapter {
             public void onClick(View v) {
                 ItemList m = movieItems.get(position);
                 Intent intent = new Intent(activity, ItemsDetails.class);
-                intent.putExtra("title", m.getTitle());
+                intent.putExtra("id", m.getProduct_id());
+
                 activity.startActivity(intent);
             }
         });

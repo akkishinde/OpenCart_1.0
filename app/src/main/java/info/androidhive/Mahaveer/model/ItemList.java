@@ -11,13 +11,15 @@ public class ItemList {
     private String title, thumbnailUrl;
     private String year;
     private String rating;
+    private String product_id;
     private ArrayList<String> genre;
 
     public ItemList() {
     }
 
-    public ItemList(String name, String thumbnailUrl, String year, String rating,
+    public ItemList(String name, String thumbnailUrl, String year, String rating, String product_id,
                   ArrayList<String> genre) {
+        this.product_id=product_id;
         this.title = name;
         this.thumbnailUrl = thumbnailUrl;
         this.year = year;
@@ -47,6 +49,14 @@ public class ItemList {
 
     public void setYear(String year) {
         this.year = year;
+    }
+
+    public String getProduct_id() {
+        return product_id;
+    }
+
+    public void setProduct_id(String pid) {
+        this.product_id = pid;
     }
 
     public String getRating() {
