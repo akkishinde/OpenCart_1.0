@@ -116,9 +116,7 @@ public class LoginActivity extends Activity{
             jsonParams.put("email", email);
             jsonParams.put("password", pass);
             entity = new StringEntity(jsonParams.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
+        } catch (JSONException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
 

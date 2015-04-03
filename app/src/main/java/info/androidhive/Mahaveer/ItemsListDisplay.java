@@ -88,7 +88,7 @@ public class ItemsListDisplay extends Activity{
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.d(TAG, response.toString());
+                       // Log.d(TAG, response.toString());
 
                         try {
                             pDialog.hide();

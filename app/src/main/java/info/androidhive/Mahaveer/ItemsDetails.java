@@ -127,6 +127,7 @@ public class ItemsDetails extends Activity{
 
             @Override
             public void onClick(View v) {
+
                 item_qty=qty.getText().toString();
                 StringEntity entity = null;
                 JSONObject innerObj = new JSONObject();
@@ -142,15 +143,23 @@ public class ItemsDetails extends Activity{
                 LoginActivity.client.put(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/cart", entity, "application/json", new AsyncHttpResponseHandler(){
                     @Override
                     public void onSuccess(String response) {
-                        Toast.makeText(getApplicationContext(),"cart:"+response,Toast.LENGTH_SHORT).show();
+                        View v;
+                        Toast toast;
+                        TextView text;
+                        toast=Toast.makeText(getApplicationContext(), "Item added to Cart!", Toast.LENGTH_SHORT);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0,0,0,0);
+                        v.setBackgroundResource(R.color.mTeal);
+                        toast.show();
                     }
                     @Override
                     public void onFailure(int statusCode, Throwable error,
                                           String content) {
-                        Toast.makeText(getApplicationContext(),"Something wrong at Server Side! "+statusCode,Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Something went wrong at Server Side! "+statusCode,Toast.LENGTH_SHORT).show();
                     }
                 });
-            //Toast.makeText(getApplicationContext(),"cart:"+cart,Toast.LENGTH_SHORT).show();
             }
         });
 

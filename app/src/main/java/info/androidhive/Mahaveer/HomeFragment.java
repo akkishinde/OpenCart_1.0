@@ -34,14 +34,15 @@ public class HomeFragment extends Fragment {
     private ListView listView;
     private CustomSubCatAdapter adapter;
 
-	public HomeFragment(){}
+    public HomeFragment() {
+    }
 
-	@Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
+                             Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
-        int key=getArguments().getInt("key");
+        int key = getArguments().getInt("key");
         //Toast.makeText(getActivity(),"Key:"+key,Toast.LENGTH_SHORT).show();
 
         listView = (ListView) rootView.findViewById(R.id.list);
@@ -51,8 +52,8 @@ public class HomeFragment extends Fragment {
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
-        url="http://webshop.opencart-api.com:80/api/rest/categories/parent/"+key;
-        JsonObjectRequest movieReq = new JsonObjectRequest(url,null,
+        url = "http://webshop.opencart-api.com:80/api/rest/categories/parent/" + key;
+        JsonObjectRequest movieReq = new JsonObjectRequest(url, null,
                 new Response.Listener<JSONObject>() {
                     public static final String TAG = "";
 
@@ -60,16 +61,16 @@ public class HomeFragment extends Fragment {
                     public void onResponse(JSONObject response) {
                         Log.d(TAG, response.toString());
 
-                            try {
-                                hidePDialog();
-                                //String data=response.getString("Data");
-                                JSONArray jr=response.getJSONArray("data");
-                                for (int i = 0; i < jr.length(); i++) {
+                        try {
+                            hidePDialog();
+                            //String data=response.getString("Data");
+                            JSONArray jr = response.getJSONArray("data");
+                            for (int i = 0; i < jr.length(); i++) {
                                 JSONObject obj = jr.getJSONObject(i);
                                 SubCat movie = new SubCat();
                                 movie.setTitle(obj.getString("name"));
                                 movie.setThumbnailUrl(obj.getString("image"));
-                               //movie.setRating((obj.getString("price")));
+                                //movie.setRating((obj.getString("price")));
                                 movie.setYear(obj.getString("category_id"));
 
                                 // Genre is json array
@@ -83,14 +84,15 @@ public class HomeFragment extends Fragment {
                                 // adding movie to movies array
                                 movieList.add(movie);
 
-                            }} catch (JSONException e) {
-                                e.printStackTrace();
                             }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
 
 
                         adapter.notifyDataSetChanged();
                     }
-                },new Response.ErrorListener() {
+                }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 //VolleyLog.d(TAG, "Error: " + error.getMessage());
@@ -99,20 +101,21 @@ public class HomeFragment extends Fragment {
             }
 
 
-        }){
+        }) {
             @Override
-            public Map<String, String> getHeaders()  {
+            public Map<String, String> getHeaders() {
                 HashMap<String, String> headers = new HashMap<String, String>();
                 headers.put("Content-Type", "application/json");
                 headers.put("Accept", "application/json");
-                headers.put("X-Oc-Merchant-Id","123");
-                headers.put("X-Oc-Merchant-Language","en");
+                headers.put("X-Oc-Merchant-Id", "123");
+                headers.put("X-Oc-Merchant-Language", "en");
                 return headers;
             }
         };
         Session.getInstance().addToRequestQueue(movieReq);
         return rootView;
     }
+
     @Override
     public void onDestroy() {
         super.onDestroy();
