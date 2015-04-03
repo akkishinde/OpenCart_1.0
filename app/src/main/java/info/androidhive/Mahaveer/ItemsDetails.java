@@ -15,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,11 +26,13 @@ import com.android.volley.toolbox.NetworkImageView;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.apache.http.entity.StringEntity;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
@@ -37,12 +41,16 @@ import java.util.ArrayList;
 public class ItemsDetails extends Activity{
     private ProgressDialog pDialog;
     NetworkImageView item_header,im1,im2,im3,im4;
+    ImageButton addcart,addwish;
     TextView title,manufacturer,item_name,brand,stock,price,description;
+    EditText qty;
     ArrayList<String> imageadapter = new <String>ArrayList<String>();
     private static String pid;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
     String url="http://webshop.opencart-api.com/api/rest/products/";
     static String headurl="";
+    static String item_id="";
+    static String item_qty="";
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +67,8 @@ public class ItemsDetails extends Activity{
         stock=(TextView)findViewById(R.id.stock_status);
         price=(TextView)findViewById(R.id.price);
         description=(TextView)findViewById(R.id.description);
-
+        addcart=(ImageButton)findViewById(R.id.addCartButton);
+        qty=(EditText)findViewById(R.id.editText);
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
         mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
@@ -114,6 +123,37 @@ public class ItemsDetails extends Activity{
                 item_header.setImageUrl(headurl, imageLoader);
             }
         });
+        addcart.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                item_qty=qty.getText().toString();
+                StringEntity entity = null;
+                JSONObject innerObj = new JSONObject();
+                JSONObject outerObj = new JSONObject();
+                try {
+                    innerObj.put(item_id, item_qty);
+                    outerObj.put("quantity",innerObj);
+                    entity = new StringEntity(outerObj.toString());
+
+                } catch (JSONException | UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+                LoginActivity.client.put(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/cart", entity, "application/json", new AsyncHttpResponseHandler(){
+                    @Override
+                    public void onSuccess(String response) {
+                        Toast.makeText(getApplicationContext(),"cart:"+response,Toast.LENGTH_SHORT).show();
+                    }
+                    @Override
+                    public void onFailure(int statusCode, Throwable error,
+                                          String content) {
+                        Toast.makeText(getApplicationContext(),"Something wrong at Server Side! "+statusCode,Toast.LENGTH_SHORT).show();
+                    }
+                });
+            //Toast.makeText(getApplicationContext(),"cart:"+cart,Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void LoadData() {
@@ -135,6 +175,7 @@ public class ItemsDetails extends Activity{
                         JSONObject json2 = json.getJSONObject("data");
                         //Toast.makeText(getApplicationContext(), "title:", Toast.LENGTH_SHORT).show();
                         title.setText(json2.getString("name"));
+                        item_id=json2.getString("id");
                         manufacturer.setText(json2.getString("manufacturer"));
                         item_header.setImageUrl(json2.getString("image"), imageLoader);
                         headurl=json2.getString("image");
@@ -226,6 +267,5 @@ public class ItemsDetails extends Activity{
         Intent intent = new Intent(this, ViewCart.class);
         startActivity(intent);
     }
-
 
 }
