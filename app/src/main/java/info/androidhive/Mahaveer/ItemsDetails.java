@@ -94,7 +94,9 @@ public class ItemsDetails extends Activity{
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
-        pDialog.show();
+        if (pDialog == null || !pDialog.isShowing()) {
+            pDialog.show();
+        }
         im2.setOnClickListener(new View.OnClickListener() {
 
             @Override

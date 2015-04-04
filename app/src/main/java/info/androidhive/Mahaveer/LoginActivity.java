@@ -111,7 +111,10 @@ public class LoginActivity extends Activity{
         JSONObject jsonParams = new JSONObject();
         String email=username.getText().toString();
         String pass=password.getText().toString();
-        prgDialog.show();
+        if (prgDialog == null || !prgDialog.isShowing()) {
+            assert prgDialog != null;
+            prgDialog.show();
+        }
         try {
             jsonParams.put("email", email);
             jsonParams.put("password", pass);

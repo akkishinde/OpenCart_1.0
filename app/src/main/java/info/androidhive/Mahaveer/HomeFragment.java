@@ -52,7 +52,7 @@ public class HomeFragment extends Fragment {
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
-        url = "http://webshop.opencart-api.com:80/api/rest/categories/parent/" + key;
+        url = "http://webshop.opencart-api.com/api/rest/categories/parent/" + key;
         JsonObjectRequest movieReq = new JsonObjectRequest(url, null,
                 new Response.Listener<JSONObject>() {
                     public static final String TAG = "";

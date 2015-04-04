@@ -13,6 +13,9 @@ import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.json.JSONArray;
@@ -21,12 +24,15 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import info.androidhive.Mahaveer.adapter.CartAdapter;
 import info.androidhive.Mahaveer.adapter.CustomListAdapter;
 import info.androidhive.Mahaveer.adapter.CustomSubCatAdapter;
 import info.androidhive.Mahaveer.model.CartList;
+import info.androidhive.Mahaveer.model.ItemList;
 import info.androidhive.Mahaveer.model.SubCat;
 
 /**
@@ -63,13 +69,78 @@ public class ViewCart extends Activity{
                         .getColor(R.color.mWhite));
             }
         }
-        url="http://webshop.opencart-api.com:80/api/rest/cart";
+        url="http://webshop.opencart-api.com/api/rest/cart";
         listView = (ListView) findViewById(R.id.list);
         adapter = new CartAdapter(this, movieList);
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
+
+
+        /**
+         * View Cart with Volley
+         */
+
+
+        JsonObjectRequest movieReq = new JsonObjectRequest(url,null,
+                new Response.Listener<JSONObject>() {
+                    public static final String TAG = "";
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        // Log.d(TAG, response.toString());
+                        Log.d(TAG, "View Cart : "+response);
+                        try {
+                            pDialog.hide();
+                            JSONObject json= (JSONObject) new JSONTokener(response.toString()).nextValue();
+                            JSONObject json2 = json.getJSONObject("data");
+                            JSONArray products=json2.getJSONArray("products");
+                            for (int i = 0; i < products.length(); i++){
+                                JSONObject prod_data = products.getJSONObject(i);
+                                CartList movie=new CartList();
+                                movie.setTitle(prod_data.getString("name"));
+                                movie.setThumbnailUrl(prod_data.getString("thumb"));
+                                movie.setRating((prod_data.getString("price")));
+                                movie.setYear(prod_data.getString("total"));
+                                movie.setProduct_id(prod_data.getString("key"));
+                                movieList.add(movie);
+                                adapter.notifyDataSetChanged();
+                                movieList.add(movie);
+
+                            }} catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+
+                        adapter.notifyDataSetChanged();
+                    }
+                },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                //VolleyLog.d(TAG, "Error: " + error.getMessage());
+                pDialog.hide();
+
+            }
+
+        }){
+            @Override
+            public Map<String, String> getHeaders()  {
+                HashMap<String, String> headers = new HashMap<String, String>();
+                headers.put("Content-Type", "application/json");
+                headers.put("Accept", "application/json");
+                headers.put("X-Oc-Merchant-Id","123");
+                headers.put("X-Oc-Merchant-Language","en");
+                return headers;
+            }
+        };
+        Session.getInstance().addToRequestQueue(movieReq);
+
+        /**
+         * View Cart With Asynchttpclient
+         */
+
+        /*LoginActivity.client.addHeader("X-Oc-Session",Session.getInstance().getSession_id());
         LoginActivity.client.get(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/cart", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
@@ -106,7 +177,7 @@ public class ViewCart extends Activity{
                 pDialog.hide();
 
             }
-        });
+        });*/
     }
 
 
