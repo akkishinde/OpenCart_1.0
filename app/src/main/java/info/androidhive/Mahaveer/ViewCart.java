@@ -42,6 +42,7 @@ import info.androidhive.Mahaveer.model.SubCat;
  * Created by Splash New on 4/2/2015.
  */
 public class ViewCart extends Activity{
+    static int flag=0;
     private static final String TAG = "";
     private static String url = "";
     private ProgressDialog pDialog;
@@ -153,6 +154,7 @@ public class ViewCart extends Activity{
                     JSONObject obj = new JSONObject(response);
                     Log.d(TAG, "View Cart : "+response);
                     if (obj.getString("success").equals("true")) {
+                        flag=1;
                         pDialog.hide();
                         JSONObject json= (JSONObject) new JSONTokener(response).nextValue();
                         JSONObject json2 = json.getJSONObject("data");
@@ -203,8 +205,21 @@ public class ViewCart extends Activity{
     }
 
     public void confirm(View view)
-    {
+    {   if(flag==1){
         Intent intent = new Intent(ViewCart.this, OrderConfirm.class);
-        startActivity(intent);
+        startActivity(intent);}
+        else
+    {
+        View v;
+        Toast toast;
+        TextView text;
+        toast=Toast.makeText(getApplicationContext(), "Please select at least one item to the cart!!", Toast.LENGTH_SHORT);
+        v = toast.getView();
+        text = (TextView) v.findViewById(android.R.id.message);
+        text.setTextColor(getResources().getColor(R.color.mWhite));
+        text.setShadowLayer(0,0,0,0);
+        v.setBackgroundResource(R.color.mRed);
+        toast.show();
+    }
     }
 }

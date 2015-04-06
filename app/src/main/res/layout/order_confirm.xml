@@ -244,7 +244,7 @@
                 android:textSize="18sp"
                 android:textColorHighlight="@color/mWhite"
                 android:singleLine="false"
-                android:onClick="Confirm"/></LinearLayout>
+                android:onClick="confirm"/></LinearLayout>
 
     </LinearLayout>
 
