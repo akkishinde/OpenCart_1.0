@@ -3,19 +3,28 @@ package info.androidhive.Mahaveer.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.preference.PreferenceActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
+import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.apache.http.entity.StringEntity;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import info.androidhive.Mahaveer.ItemsDetails;
+import info.androidhive.Mahaveer.LoginActivity;
 import info.androidhive.Mahaveer.R;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.CartList;
@@ -31,6 +40,7 @@ public class CartAdapter extends BaseAdapter {
     private LayoutInflater inflater;
     private List<CartList> movieItems;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
+
 
     public CartAdapter(Activity activity, List<CartList> movieItems) {
         super();
@@ -58,6 +68,7 @@ public class CartAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
+
         Log.i(TAG,"IN CART ADAPTER VIEW");
 
         if (inflater == null)
@@ -110,6 +121,7 @@ public class CartAdapter extends BaseAdapter {
                 activity.startActivity(intent);
             }
         });
+
         return convertView;
     }
 

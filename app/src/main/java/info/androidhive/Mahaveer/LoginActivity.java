@@ -31,7 +31,7 @@ import java.io.UnsupportedEncodingException;
  * Created by Akshay on 3/24/2015.
  */
 public class LoginActivity extends Activity{
-    static AsyncHttpClient client = new AsyncHttpClient();
+    public static AsyncHttpClient client = new AsyncHttpClient();
     private static final String TAG = "";
     EditText username,password;
     ProgressDialog prgDialog;

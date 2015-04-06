@@ -28,7 +28,7 @@ import java.io.UnsupportedEncodingException;
  * Created by Akshay New on 3/24/2015.
  */
 public class RegisterActivity extends Activity{
-    EditText firstname,lastname,username,password,repeat_password,contact,address1,address2,city;
+    EditText firstname,lastname,username,password,repeat_password,contact,address1,address2,city,pincode;
     ProgressDialog prgDialog;
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,7 @@ public class RegisterActivity extends Activity{
         address1=(EditText)findViewById(R.id.address1_text);
         address2=(EditText)findViewById(R.id.address2_text);
         city=(EditText)findViewById(R.id.city_text);
+        pincode=(EditText)findViewById(R.id.postal_text);
         prgDialog = new ProgressDialog(this);
         prgDialog.setMessage("Please wait...");
 
@@ -77,11 +78,13 @@ public class RegisterActivity extends Activity{
         String mobile=contact.getText().toString();
         String add1=address1.getText().toString();
         String add2=address2.getText().toString();
+        String postal=pincode.getText().toString();
 
         if (Validation.isNotNull(fname) && Validation.isNotNull(lname)
                 && Validation.isNotNull(email)&& Validation.isNotNull(pass)
                 && Validation.isNotNull(repass)&& Validation.isNotNull(mobile)
-                && Validation.isNotNull(add1)&& Validation.isNotNull(add2)){
+                && Validation.isNotNull(add1)&& Validation.isNotNull(add2)
+                && Validation.isNotNull(postal)){
             if (Validation.validate(email)) {
                 if(pass.equals(repass))
                 {
@@ -132,8 +135,8 @@ public class RegisterActivity extends Activity{
         String add1=address1.getText().toString();
         String add2=address2.getText().toString();
         String citys=city.getText().toString();
+        String postal=pincode.getText().toString();
         String country="99";
-        String postal="431001";
         String state="1493";
         String agree="1";
 

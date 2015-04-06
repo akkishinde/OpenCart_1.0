@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/plain_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Address Confirmation"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/heading_bg"
+            android:textColor="@color/mTeal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/name"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/mWhite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Existing Address"
+                android:textStyle="bold"
+                android:id="@+id/existing"
+                android:textColor="@color/mTeal" />
+            <TextView
+                android:id="@+id/fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 1"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address 2"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_marginLeft="5dp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp">
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USE EXISTING ADDRESS"
+                android:textColor="@color/mOrange"
+                android:id="@+id/switch1"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textOff="YES"
+                android:textOn="NO" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mWhite">
+
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/address1_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginTop="5dip"
+                        android:hint="@string/address1_str"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|start"
+                        android:inputType="textPostalAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/mTeal"
+                        android:textColorHint="@color/mTeal"
+                        android:background="@drawable/inputs_02"
+                        android:drawableStart="@drawable/address"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="5dp" /></LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/address2_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginTop="5dip"
+                        android:hint="@string/address2_str"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|start"
+                        android:inputType="textPostalAddress"
+                        android:singleLine="true"
+                        android:textColor="@color/mTeal"
+                        android:textColorHint="@color/mTeal"
+                        android:background="@drawable/inputs_02"
+                        android:drawableStart="@drawable/address"
+                        android:drawableLeft="@drawable/address"
+                        android:drawablePadding="5dp" /></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/postal_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="5dip"
+                    android:hint="@string/pincode"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|start"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/mTeal"
+                    android:textColorHint="@color/mTeal"
+                    android:background="@drawable/inputs_02"
+                    android:drawableStart="@drawable/address"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="5dp" /></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/city_text"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="20dip"
+                    android:layout_marginTop="5dip"
+                    android:text="@string/city_str"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical|start"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/mTeal"
+                    android:textColorHint="@color/mTeal"
+                    android:background="@drawable/inputs_02"
+                    android:drawableStart="@drawable/city_bg"
+                    android:drawableLeft="@drawable/city_bg"
+                    android:drawablePadding="5dp" /></LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/mWhite">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_text"
+                android:text="CASH ON DELIVERY \n(I here by agree to the all terms and conditions.)"
+                android:id="@+id/checkBox" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textColor="@color/mWhite"
+                android:background="@drawable/login_selector"
+                android:text="Confirm Order"
+                android:textSize="18sp"
+                android:textColorHighlight="@color/mWhite"
+                android:singleLine="false"
+                android:onClick="Confirm"/></LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

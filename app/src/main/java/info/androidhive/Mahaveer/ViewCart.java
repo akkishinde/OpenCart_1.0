@@ -3,11 +3,13 @@ package info.androidhive.Mahaveer;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ListView;
@@ -185,5 +187,9 @@ public class ViewCart extends Activity{
         });
     }
 
-
+    public void confirm(View view)
+    {
+        Intent intent = new Intent(ViewCart.this, OrderConfirm.class);
+        startActivity(intent);
+    }
 }
