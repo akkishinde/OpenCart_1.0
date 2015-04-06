@@ -14,6 +14,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -172,6 +173,20 @@ public class ViewCart extends Activity{
 
                         }
 
+                    }
+                    else
+                    {
+                        pDialog.hide();
+                        View v;
+                        Toast toast;
+                        TextView text;
+                        toast=Toast.makeText(getApplicationContext(), "No Items in the Cart!", Toast.LENGTH_SHORT);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0,0,0,0);
+                        v.setBackgroundResource(R.color.mRed);
+                        toast.show();
                     }
 
                 } catch (JSONException e) {

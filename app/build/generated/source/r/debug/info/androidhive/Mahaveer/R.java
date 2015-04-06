@@ -1544,6 +1544,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0a0033;
         public static final int end=0x7f0a0014;
         public static final int existing=0x7f0a005f;
+        public static final int existing_address=0x7f0a0067;
         public static final int expand_activities_button=0x7f0a0022;
         public static final int expanded_menu=0x7f0a0028;
         public static final int firstname_text=0x7f0a006e;
@@ -1606,7 +1607,6 @@ containing a value of this type.
         public static final int state=0x7f0a0066;
         public static final int stock_status=0x7f0a0052;
         public static final int submit_area=0x7f0a003c;
-        public static final int switch1=0x7f0a0067;
         public static final int tabMode=0x7f0a000b;
         public static final int thumbnail=0x7f0a0044;
         public static final int title=0x7f0a0027;

@@ -103,16 +103,21 @@
             android:paddingRight="10dp"
             android:paddingBottom="10dp">
 
-            <Switch
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="USE EXISTING ADDRESS"
-                android:textColor="@color/mOrange"
-                android:id="@+id/switch1"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:textOff="YES"
-                android:textOn="NO" />
+                android:layout_marginTop="10dp">
+                <Button
+                    android:id="@+id/existing_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="@color/mWhite"
+                    android:background="@drawable/login_selector"
+                    android:text="New Address"
+                    android:textSize="18sp"
+                    android:textColorHighlight="@color/mWhite"
+                    android:singleLine="false"
+                    android:onClick="Confirm"/></LinearLayout>
 
         </RelativeLayout>
 
@@ -122,9 +127,6 @@
             android:layout_height="wrap_content"
             android:background="@color/mWhite">
 
-
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -144,7 +146,8 @@
                         android:background="@drawable/inputs_02"
                         android:drawableStart="@drawable/address"
                         android:drawableLeft="@drawable/address"
-                        android:drawablePadding="5dp" /></LinearLayout>
+                        android:drawablePadding="5dp"
+                        android:visibility="gone"/></LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
@@ -164,7 +167,8 @@
                         android:background="@drawable/inputs_02"
                         android:drawableStart="@drawable/address"
                         android:drawableLeft="@drawable/address"
-                        android:drawablePadding="5dp" /></LinearLayout>
+                        android:drawablePadding="5dp"
+                        android:visibility="gone"/></LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -185,7 +189,8 @@
                     android:background="@drawable/inputs_02"
                     android:drawableStart="@drawable/address"
                     android:drawableLeft="@drawable/address"
-                    android:drawablePadding="5dp" /></LinearLayout>
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"/></LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -207,7 +212,8 @@
                     android:background="@drawable/inputs_02"
                     android:drawableStart="@drawable/city_bg"
                     android:drawableLeft="@drawable/city_bg"
-                    android:drawablePadding="5dp" /></LinearLayout>
+                    android:drawablePadding="5dp"
+                    android:visibility="gone"/></LinearLayout>
 
         </LinearLayout>
 
