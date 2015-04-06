@@ -155,6 +155,7 @@ public class ItemsDetails extends Activity{
                         text.setShadowLayer(0,0,0,0);
                         v.setBackgroundResource(R.color.mTeal);
                         toast.show();
+
                     }
                     @Override
                     public void onFailure(int statusCode, Throwable error,

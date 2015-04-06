@@ -19,6 +19,7 @@ import android.widget.Toast;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.apache.http.Header;
 import org.apache.http.entity.StringEntity;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -129,16 +130,17 @@ public class LoginActivity extends Activity{
 
             @Override
             public void onSuccess(String response) {
+                //public void onSuccess(int statusCode, Header[] headers, byte[] response) {
 
                 View v;
                 Toast toast;
                 TextView text;
                 //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
                 try {
-                    JSONObject obj = new JSONObject(response);
+                    JSONObject obj = new JSONObject(response.toString());
                     if (obj.getString("success").equals("true")) {
                         prgDialog.hide();
-                        JSONObject json= (JSONObject) new JSONTokener(response).nextValue();
+                        JSONObject json= (JSONObject) new JSONTokener(response.toString()).nextValue();
                         JSONObject json2 = json.getJSONObject("data");
                         String sessionID=json2.getString("session");
                         String first_name=json2.getString("firstname");

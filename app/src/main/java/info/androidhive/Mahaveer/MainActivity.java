@@ -7,10 +7,13 @@ import java.util.ArrayList;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.SearchManager;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -31,6 +34,8 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
+
+import com.loopj.android.http.AsyncHttpResponseHandler;
 
 public class MainActivity extends Activity {
     private DrawerLayout mDrawerLayout;
@@ -381,6 +386,29 @@ public class MainActivity extends Activity {
         super.onConfigurationChanged(newConfig);
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+    @Override
+    public void onBackPressed() {
+        final Session session = (Session) getApplicationContext();
+        final String sessID=session.getSession_id();
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_delete).setTitle("Exit")
+                .setMessage("Are you sure?")
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                LoginActivity.client.addHeader("X-Oc-Merchant-Id", "123");
+                                LoginActivity.client.addHeader("X-Oc-Merchant-Language", "en");
+                                LoginActivity.client.addHeader("X-Oc-Session", sessID);
+                                LoginActivity.client.post("http://webshop.opencart-api.com/api/rest/logout", new AsyncHttpResponseHandler() {});
+                                Intent intent = new Intent(Intent.ACTION_MAIN);
+                                intent.addCategory(Intent.CATEGORY_HOME);
+                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                startActivity(intent);
+                                finish();
+                            }
+                        }
+
+                ).setNegativeButton("no",null).show();
     }
 
 }

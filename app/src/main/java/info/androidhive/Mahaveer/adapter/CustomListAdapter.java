@@ -88,6 +88,7 @@ public class CustomListAdapter extends BaseAdapter {
                 genreStr.length() - 2) : genreStr;
         genre.setText(genreStr);
 */
+
         // release year
         year.setText(String.valueOf(m.getYear()));
         convertView.setOnClickListener(new View.OnClickListener() {

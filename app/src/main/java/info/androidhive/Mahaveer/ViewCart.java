@@ -82,6 +82,7 @@ public class ViewCart extends Activity{
          * View Cart with Volley
          */
 
+/*
 
         JsonObjectRequest movieReq = new JsonObjectRequest(url,null,
                 new Response.Listener<JSONObject>() {
@@ -135,12 +136,13 @@ public class ViewCart extends Activity{
             }
         };
         Session.getInstance().addToRequestQueue(movieReq);
+*/
 
         /**
          * View Cart With Asynchttpclient
          */
 
-        /*LoginActivity.client.addHeader("X-Oc-Session",Session.getInstance().getSession_id());
+        LoginActivity.client.addHeader("X-Oc-Session",Session.getInstance().getSession_id());
         LoginActivity.client.get(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/cart", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
@@ -162,7 +164,10 @@ public class ViewCart extends Activity{
                             movie.setProduct_id(prod_data.getString("key"));
                             movieList.add(movie);
                             adapter.notifyDataSetChanged();
-                            //Session.getInstance().addToRequestQueue(null);
+                            Session.getInstance().getRequestQueue();
+                            ListView lv=(ListView) findViewById(R.id.list);
+                            lv.setAdapter(adapter);
+
                         }
 
                     }
@@ -177,7 +182,7 @@ public class ViewCart extends Activity{
                 pDialog.hide();
 
             }
-        });*/
+        });
     }
 
 

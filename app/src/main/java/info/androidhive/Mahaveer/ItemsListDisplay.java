@@ -119,8 +119,8 @@ public class ItemsListDisplay extends Activity{
                             e.printStackTrace();
                         }
 
-
                         adapter.notifyDataSetChanged();
+
                     }
                 },new Response.ErrorListener() {
             @Override
@@ -173,6 +173,7 @@ public class ItemsListDisplay extends Activity{
                 CallViewCart();
                 return true;
             case R.id.action_search:
+                new SearchResultsActivity();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

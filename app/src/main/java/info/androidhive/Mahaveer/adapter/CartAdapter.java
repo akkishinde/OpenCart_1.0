@@ -3,6 +3,7 @@ package info.androidhive.Mahaveer.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,21 +19,26 @@ import info.androidhive.Mahaveer.ItemsDetails;
 import info.androidhive.Mahaveer.R;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.CartList;
-import info.androidhive.Mahaveer.model.ItemList;
+
 
 /**
  * Created by Splash New on 4/3/2015.
  */
 public class CartAdapter extends BaseAdapter {
 
+    private static final String TAG = "";
     private Activity activity;
     private LayoutInflater inflater;
     private List<CartList> movieItems;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
 
     public CartAdapter(Activity activity, List<CartList> movieItems) {
+        super();
         this.activity = activity;
         this.movieItems = movieItems;
+        if (inflater == null)
+            inflater = (LayoutInflater) activity
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -52,6 +58,7 @@ public class CartAdapter extends BaseAdapter {
 
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
+        Log.i(TAG,"IN CART ADAPTER VIEW");
 
         if (inflater == null)
             inflater = (LayoutInflater) activity
@@ -64,6 +71,7 @@ public class CartAdapter extends BaseAdapter {
         NetworkImageView thumbNail = (NetworkImageView) convertView
                 .findViewById(R.id.thumbnail);
         TextView title = (TextView) convertView.findViewById(R.id.title);
+        Log.i(TAG,"title"+title.toString());
         TextView rating = (TextView) convertView.findViewById(R.id.rating);
         TextView genre = (TextView) convertView.findViewById(R.id.genre);
         TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
@@ -104,6 +112,5 @@ public class CartAdapter extends BaseAdapter {
         });
         return convertView;
     }
-
 
 }
