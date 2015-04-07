@@ -49,6 +49,8 @@
                 android:layout_height="wrap_content"
                 android:text="First Name"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/lname"
@@ -56,6 +58,8 @@
                 android:layout_height="wrap_content"
                 android:text="Last Name"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/address1"
@@ -63,6 +67,8 @@
                 android:layout_height="wrap_content"
                 android:text="Address 1"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/address2"
@@ -70,6 +76,8 @@
                 android:layout_height="wrap_content"
                 android:text="Address 2"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/city"
@@ -77,6 +85,8 @@
                 android:layout_height="wrap_content"
                 android:text="City"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/pin"
@@ -84,6 +94,8 @@
                 android:layout_height="wrap_content"
                 android:text="Pincode"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
             <TextView
                 android:id="@+id/state"
@@ -91,6 +103,8 @@
                 android:layout_height="wrap_content"
                 android:text="State"
                 android:layout_marginLeft="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/grey_text"
                 />
         </LinearLayout>
 
