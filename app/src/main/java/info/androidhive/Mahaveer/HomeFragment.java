@@ -52,6 +52,7 @@ public class HomeFragment extends Fragment {
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
+        //Here  you can add prduct links directly instead of sub Catagory.
         url = "http://webshop.opencart-api.com/api/rest/categories/parent/" + key;
         JsonObjectRequest movieReq = new JsonObjectRequest(url, null,
                 new Response.Listener<JSONObject>() {

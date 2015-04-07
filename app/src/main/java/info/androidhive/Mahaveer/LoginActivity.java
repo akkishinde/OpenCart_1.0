@@ -137,10 +137,10 @@ public class LoginActivity extends Activity{
                 TextView text;
                 //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
                 try {
-                    JSONObject obj = new JSONObject(response.toString());
+                    JSONObject obj = new JSONObject(response);
                     if (obj.getString("success").equals("true")) {
                         prgDialog.hide();
-                        JSONObject json= (JSONObject) new JSONTokener(response.toString()).nextValue();
+                        JSONObject json= (JSONObject) new JSONTokener(response).nextValue();
                         JSONObject json2 = json.getJSONObject("data");
                         String sessionID=json2.getString("session");
                         String first_name=json2.getString("firstname");
