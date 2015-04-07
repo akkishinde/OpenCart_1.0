@@ -221,9 +221,14 @@ public class OrderConfirm extends Activity {
                         try {
                             JSONObject obj = new JSONObject(response);
                             if (obj.getString("success").equals("true")) {
-
+                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods",new AsyncHttpResponseHandler() {
+                                    @Override
+                                    public void onSuccess(String response) {
+                                        GetShippingMethod();
+                                    }
+                                        });
                                 //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
-                                GetShippingMethod();
+
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -236,33 +241,96 @@ public class OrderConfirm extends Activity {
                         try {
                             JSONObject jsonParams = new JSONObject();
                             jsonParams.put("shipping_method", "flat.flat");
-                            jsonParams.put("comment", "test comment");
+                            jsonParams.put("comment", "Ordered_from_Android_App");
                             entity = new StringEntity(jsonParams.toString());
 
                         } catch (JSONException | UnsupportedEncodingException e) {
                             e.printStackTrace();
                         }
-                        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+                        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(String response) {
                                 Log.i(TAG, response);
                                 try {
                                     JSONObject obj = new JSONObject(response);
                                     if (obj.getString("success").equals("true")) {
-
-                                        //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
-                                        GetPaymentMethod();
+                                        LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                            @Override
+                                            public void onSuccess(String response) {
+                                                GetPaymentMethod();
+                                            }
+                                        });
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
                             }
 
-                            private void GetPaymentMethod() {
+                            private void GetPaymentMethod() {   StringEntity entity = null;
 
+                                try {
+                                    JSONObject jsonParams = new JSONObject();
+                                    jsonParams.put("payment_method", "cod");
+                                    jsonParams.put("agree", "1");
+                                    jsonParams.put("comment", "Ordered_from_Android_App");
+                                    entity = new StringEntity(jsonParams.toString());
 
+                                } catch (JSONException | UnsupportedEncodingException e) {
+                                    e.printStackTrace();
+                                }
+                                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                    @Override
+                                    public void onSuccess(String response) {
+                                        Log.i(TAG, response);
+                                        try {
+                                            JSONObject obj = new JSONObject(response);
+                                            if (obj.getString("success").equals("true")) {
+                                                LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods",new AsyncHttpResponseHandler() {
+                                                    @Override
+                                                    public void onSuccess(String response) {
+                                                       ConfirmOrder();
+                                                    }
+
+                                                    private void ConfirmOrder() {
+                                                        LoginActivity.client.post("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
+                                                            @Override
+                                                            public void onSuccess(String response) {
+                                                                Log.i(TAG, response);
+                                                                try {
+                                                                    JSONObject obj = new JSONObject(response);
+                                                                    if (obj.getString("success").equals("true")) {
+                                                                        LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
+                                                                            @Override
+                                                                            public void onSuccess(String response) {
+                                                                                Log.i(TAG, response);
+                                                                                try {
+                                                                                    JSONObject obj = new JSONObject(response);
+                                                                                    if (obj.getString("success").equals("true")) {
+                                                                                        Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                                                                                    }
+                                                                                } catch (JSONException e) {
+                                                                                    e.printStackTrace();
+                                                                                }
+                                                                            }
+                                                                        });
+                                                                    }
+                                                                } catch (JSONException e) {
+                                                                    e.printStackTrace();
+                                                                }
+                                                            }
+                                                        });
+
+                                                    }
+                                                });
+                                               // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+
+                                            }
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                });
                             }
-
                         });
                     }
                 });
