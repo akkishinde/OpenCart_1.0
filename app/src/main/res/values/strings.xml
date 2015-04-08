@@ -85,5 +85,8 @@
     <string name="pincode">PIN code</string>
     <string name="oder_confirm">Order Details</string>
     <string name="order_details">Order Details</string>
+    <string name="check_cash_on_delivery">CASH ON DELIVERY \n(I here by agree to the all terms and conditions.)</string>
+    <string name="next_button">Next</string>
+    <string name="order_history">Order History</string>
 
 </resources>

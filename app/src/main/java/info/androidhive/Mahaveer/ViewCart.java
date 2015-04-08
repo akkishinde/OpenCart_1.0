@@ -44,10 +44,10 @@ import info.androidhive.Mahaveer.model.SubCat;
 public class ViewCart extends Activity{
     static int flag=0;
     private static final String TAG = "";
-    private static String url = "";
+    static String url = "";
     private ProgressDialog pDialog;
     private List<CartList> movieList = new ArrayList<CartList>();
-    private ListView listView;
+    ListView listView;
     private CartAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

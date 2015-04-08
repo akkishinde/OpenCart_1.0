@@ -149,6 +149,7 @@ public class LoginActivity extends Activity{
                         session.setSession_id(sessionID);
                         session.setFirstname(first_name);
                         session.setUsername(username);
+                        session.setUser_id(json2.getString("customer_id"));
                         /*for(i=0;i<headers.length;i++)
                         {
                             //Log.i(TAG,"i="+i+" "+headers[i]+"\n");

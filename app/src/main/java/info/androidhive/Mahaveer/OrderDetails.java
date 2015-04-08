@@ -2,6 +2,7 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -91,7 +92,9 @@ public class OrderDetails extends Activity {
                 try {
                     JSONObject obj = new JSONObject(response);
                     if (obj.getString("success").equals("true")) {
-                        Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Order ID:"+obj.getString("order_id"), Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(OrderDetails.this, MainActivity.class);
+                        startActivity(intent);
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

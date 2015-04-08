@@ -241,7 +241,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/grey_text"
-                android:text="CASH ON DELIVERY \n(I here by agree to the all terms and conditions.)"
+                android:text="@string/check_cash_on_delivery"
                 android:id="@+id/checkBox" />
         </RelativeLayout>
         <LinearLayout
@@ -254,7 +254,7 @@
                 android:layout_height="45dp"
                 android:textColor="@color/mWhite"
                 android:background="@drawable/login_selector"
-                android:text="Confirm Order"
+                android:text="@string/next_button"
                 android:textSize="18sp"
                 android:textColorHighlight="@color/mWhite"
                 android:singleLine="false"

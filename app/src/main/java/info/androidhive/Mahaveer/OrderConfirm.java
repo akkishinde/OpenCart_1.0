@@ -2,6 +2,7 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
@@ -39,7 +40,7 @@ public class OrderConfirm extends Activity {
     static EditText address1, address2, pincode, city;
     Button switch1;
     CheckBox agree;
-
+    ProgressDialog pDialog;
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -188,6 +189,12 @@ public class OrderConfirm extends Activity {
 
 
     private void AddPaymentAddress() {
+        pDialog = new ProgressDialog(this);
+        // Showing progress dialog before making http request
+        pDialog.setMessage("Loading...");
+        if (pDialog == null || !pDialog.isShowing()) {
+            pDialog.show();
+        }
         StringEntity entity = null;
 
         try {
@@ -300,6 +307,7 @@ public class OrderConfirm extends Activity {
                                                 LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                                     @Override
                                                     public void onSuccess(String response) {
+                                                        pDialog.hide();
                                                         Intent intent = new Intent(OrderConfirm.this, OrderDetails.class);
                                                         startActivity(intent);
                                                     }

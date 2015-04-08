@@ -22,6 +22,7 @@ public class Session extends Application {
     private String session_id;
     private String username;
     private String firstname;
+    private String user_id;
     public static final String TAG = Session.class.getSimpleName();
 
     private static final String SET_COOKIE_KEY = "Set-Cookie";
@@ -139,6 +140,16 @@ public class Session extends Application {
     public void setFirstname(String fn) {
 
         firstname = fn;
+
+    }
+    public String getUser_id() {
+
+        return user_id;
+    }
+
+    public void setUser_id(String uid) {
+
+        user_id = uid;
 
     }
 
