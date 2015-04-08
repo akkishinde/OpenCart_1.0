@@ -82,6 +82,11 @@
             android:label="@string/oder_confirm"
             android:parentActivityName="info.androidhive.Mahaveer.ViewCart" >
         </activity>
+        <activity
+            android:name=".OrderDetails"
+            android:label="@string/order_details"
+            android:parentActivityName="info.androidhive.Mahaveer.ViewCart" >
+        </activity>
     </application>
 
 </manifest>

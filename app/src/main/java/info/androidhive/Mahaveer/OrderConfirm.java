@@ -2,6 +2,7 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -30,7 +31,7 @@ import java.io.UnsupportedEncodingException;
  * Created by Akshay on 4/6/2015.
  */
 public class OrderConfirm extends Activity {
-    String TAG="";
+    String TAG = "";
     static int flag = 1;
     String str_fname, str_lname, str_add1, str_add2, str_pincode, str_city, str_state;
     static String address_id;
@@ -221,12 +222,12 @@ public class OrderConfirm extends Activity {
                         try {
                             JSONObject obj = new JSONObject(response);
                             if (obj.getString("success").equals("true")) {
-                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods",new AsyncHttpResponseHandler() {
+                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
                                     @Override
                                     public void onSuccess(String response) {
                                         GetShippingMethod();
                                     }
-                                        });
+                                });
                                 //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
                             }
@@ -266,7 +267,8 @@ public class OrderConfirm extends Activity {
                                 }
                             }
 
-                            private void GetPaymentMethod() {   StringEntity entity = null;
+                            private void GetPaymentMethod() {
+                                StringEntity entity = null;
 
                                 try {
                                     JSONObject jsonParams = new JSONObject();
@@ -285,44 +287,16 @@ public class OrderConfirm extends Activity {
                                         try {
                                             JSONObject obj = new JSONObject(response);
                                             if (obj.getString("success").equals("true")) {
-                                                LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods",new AsyncHttpResponseHandler() {
+                                                LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                                     @Override
                                                     public void onSuccess(String response) {
-                                                       ConfirmOrder();
+                                                        Intent intent = new Intent(OrderConfirm.this, OrderDetails.class);
+                                                        startActivity(intent);
                                                     }
 
-                                                    private void ConfirmOrder() {
-                                                        LoginActivity.client.post("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
-                                                            @Override
-                                                            public void onSuccess(String response) {
-                                                                Log.i(TAG, response);
-                                                                try {
-                                                                    JSONObject obj = new JSONObject(response);
-                                                                    if (obj.getString("success").equals("true")) {
-                                                                        LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
-                                                                            @Override
-                                                                            public void onSuccess(String response) {
-                                                                                Log.i(TAG, response);
-                                                                                try {
-                                                                                    JSONObject obj = new JSONObject(response);
-                                                                                    if (obj.getString("success").equals("true")) {
-                                                                                        Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
-                                                                                    }
-                                                                                } catch (JSONException e) {
-                                                                                    e.printStackTrace();
-                                                                                }
-                                                                            }
-                                                                        });
-                                                                    }
-                                                                } catch (JSONException e) {
-                                                                    e.printStackTrace();
-                                                                }
-                                                            }
-                                                        });
 
-                                                    }
                                                 });
-                                               // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                                                // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
                                             }
                                         } catch (JSONException e) {

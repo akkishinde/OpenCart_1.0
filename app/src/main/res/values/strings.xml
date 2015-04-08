@@ -84,5 +84,6 @@
     <string name="confirm_btn">Confirm</string>
     <string name="pincode">PIN code</string>
     <string name="oder_confirm">Order Details</string>
+    <string name="order_details">Order Details</string>
 
 </resources>
