@@ -11,6 +11,8 @@
 
     <item android:id="@+id/action_settings" android:title="@string/view_cart"
         android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_order_hist" android:title="@string/view_history"
+        android:orderInCategory="100" app:showAsAction="never" />
 </menu>
 
 

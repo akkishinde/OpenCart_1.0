@@ -1513,6 +1513,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
+        public static final int action_order_hist=0x7f0a0078;
         public static final int action_search=0x7f0a0076;
         public static final int action_settings=0x7f0a0077;
         public static final int activity_chooser_view_content=0x7f0a0021;
@@ -1667,10 +1668,12 @@ containing a value of this type.
         public static final int login_activity=0x7f030025;
         public static final int order_confirm=0x7f030026;
         public static final int order_details=0x7f030027;
-        public static final int register_activity=0x7f030028;
-        public static final int splash_screen=0x7f030029;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002a;
-        public static final int view_cart=0x7f03002b;
+        public static final int order_hist_row=0x7f030028;
+        public static final int order_history=0x7f030029;
+        public static final int register_activity=0x7f03002a;
+        public static final int splash_screen=0x7f03002b;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002c;
+        public static final int view_cart=0x7f03002d;
     }
     public static final class menu {
         public static final int main=0x7f0e0000;
@@ -1695,26 +1698,30 @@ containing a value of this type.
         public static final int address1_str=0x7f0c0010;
         public static final int address2_str=0x7f0c0011;
         public static final int app_name=0x7f0c0012;
-        public static final int city_str=0x7f0c0013;
-        public static final int confirm_btn=0x7f0c0014;
-        public static final int contact_str=0x7f0c0015;
-        public static final int default_progressbar=0x7f0c0016;
-        public static final int desc_list_item_icon=0x7f0c0017;
-        public static final int drawer_close=0x7f0c0018;
-        public static final int drawer_open=0x7f0c0019;
-        public static final int email_str=0x7f0c001a;
-        public static final int first_name_str=0x7f0c001b;
-        public static final int hello_world=0x7f0c001c;
-        public static final int last_name_str=0x7f0c001d;
-        public static final int oder_confirm=0x7f0c001e;
-        public static final int order_details=0x7f0c001f;
-        public static final int password_str=0x7f0c0020;
-        public static final int pincode=0x7f0c0021;
-        public static final int register_btn=0x7f0c0022;
-        public static final int repeat_pass_str=0x7f0c0023;
-        public static final int search_hint=0x7f0c0024;
-        public static final int signin_btn=0x7f0c0025;
-        public static final int view_cart=0x7f0c0026;
+        public static final int check_cash_on_delivery=0x7f0c0013;
+        public static final int city_str=0x7f0c0014;
+        public static final int confirm_btn=0x7f0c0015;
+        public static final int contact_str=0x7f0c0016;
+        public static final int default_progressbar=0x7f0c0017;
+        public static final int desc_list_item_icon=0x7f0c0018;
+        public static final int drawer_close=0x7f0c0019;
+        public static final int drawer_open=0x7f0c001a;
+        public static final int email_str=0x7f0c001b;
+        public static final int first_name_str=0x7f0c001c;
+        public static final int hello_world=0x7f0c001d;
+        public static final int last_name_str=0x7f0c001e;
+        public static final int next_button=0x7f0c001f;
+        public static final int oder_confirm=0x7f0c0020;
+        public static final int order_details=0x7f0c0021;
+        public static final int order_history=0x7f0c0022;
+        public static final int password_str=0x7f0c0023;
+        public static final int pincode=0x7f0c0024;
+        public static final int register_btn=0x7f0c0025;
+        public static final int repeat_pass_str=0x7f0c0026;
+        public static final int search_hint=0x7f0c0027;
+        public static final int signin_btn=0x7f0c0028;
+        public static final int view_cart=0x7f0c0029;
+        public static final int view_history=0x7f0c002a;
     }
     public static final class style {
         public static final int Animation_AppCompat_DropDownUp=0x7f0d0000;

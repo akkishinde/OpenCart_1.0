@@ -193,7 +193,9 @@ public class MainActivity extends Activity {
         // toggle nav drawer on selecting action bar app icon/title
 
 
-
+        if (mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
         // Handle action bar actions click
         switch (item.getItemId()) {
             case R.id.action_settings:
@@ -201,16 +203,22 @@ public class MainActivity extends Activity {
                 return true;
             case R.id.action_search:
                 return true;
+            case R.id.action_order_hist:
+                CallViewHistory();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+    private void CallViewHistory() {
+        Intent intent = new Intent(this, OrderHistory.class);
+        startActivity(intent);
     }
 
     private void CallViewCart() {
         Intent intent = new Intent(this, ViewCart.class);
         startActivity(intent);
     }
-
     /* *
      * Called when invalidateOptionsMenu() is triggered
      */

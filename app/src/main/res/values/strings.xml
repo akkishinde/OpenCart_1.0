@@ -88,5 +88,6 @@
     <string name="check_cash_on_delivery">CASH ON DELIVERY \n(I here by agree to the all terms and conditions.)</string>
     <string name="next_button">Next</string>
     <string name="order_history">Order History</string>
+    <string name="view_history">Order History</string>
 
 </resources>

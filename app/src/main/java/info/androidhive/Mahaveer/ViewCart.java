@@ -16,9 +16,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
 import org.json.JSONArray;
@@ -27,16 +24,13 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+
 import java.util.List;
-import java.util.Map;
+
 
 import info.androidhive.Mahaveer.adapter.CartAdapter;
-import info.androidhive.Mahaveer.adapter.CustomListAdapter;
-import info.androidhive.Mahaveer.adapter.CustomSubCatAdapter;
+
 import info.androidhive.Mahaveer.model.CartList;
-import info.androidhive.Mahaveer.model.ItemList;
-import info.androidhive.Mahaveer.model.SubCat;
 
 /**
  * Created by Splash New on 4/2/2015.

@@ -19,6 +19,7 @@ import info.androidhive.Mahaveer.ItemsDetails;
 import info.androidhive.Mahaveer.R;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.CartList;
+import info.androidhive.Mahaveer.model.OrderHistList;
 
 /**
  * Created by Splash New on 4/8/2015.
@@ -28,11 +29,11 @@ public class OrderHistAdapter extends BaseAdapter{
     private static final String TAG = "";
     private Activity activity;
     private LayoutInflater inflater;
-    private List<CartList> movieItems;
+    private List<OrderHistList> movieItems;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
 
 
-    public OrderHistAdapter(Activity activity, List<CartList> movieItems) {
+    public OrderHistAdapter(Activity activity, List<OrderHistList> movieItems) {
         super();
         this.activity = activity;
         this.movieItems = movieItems;
@@ -78,7 +79,7 @@ public class OrderHistAdapter extends BaseAdapter{
         TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
 
         // getting movie data for the row
-        CartList m = movieItems.get(position);
+        OrderHistList m = movieItems.get(position);
 
         // thumbnail image
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
@@ -87,7 +88,7 @@ public class OrderHistAdapter extends BaseAdapter{
         title.setText(m.getTitle());
 
         // rating
-        rating.setText("Price: " + String.valueOf(m.getRating()));
+        rating.setText("Status: " + String.valueOf(m.getRating()));
 
         // genre
        /* String genreStr = "";
@@ -99,12 +100,12 @@ public class OrderHistAdapter extends BaseAdapter{
         genre.setText(genreStr);
 */
         // release year
-        year.setText(String.valueOf(m.getYear()));
+        year.setText("Total: " + String.valueOf(m.getYear()).replace("000",""));
         convertView.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                CartList m = movieItems.get(position);
+                OrderHistList m = movieItems.get(position);
                 Intent intent = new Intent(activity, ItemsDetails.class);
                 intent.putExtra("id", m.getProduct_id());
 
