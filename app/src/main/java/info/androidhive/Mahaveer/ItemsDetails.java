@@ -155,6 +155,10 @@ public class ItemsDetails extends Activity{
                         text.setShadowLayer(0,0,0,0);
                         v.setBackgroundResource(R.color.mTeal);
                         toast.show();
+                        title.setFocusable(true);
+                        title.setFocusableInTouchMode(true);
+                        qty.setText("");
+
 
                     }
                     @Override

@@ -170,9 +170,19 @@ public class OrderConfirm extends Activity {
                 toast.show();
             }
         }
-        if (flag == 1) {
+        if (flag == 1&& agree.isChecked()) {
             // Toast.makeText(getApplicationContext(), "Existing Address", Toast.LENGTH_SHORT).show();
             AddPaymentAddress();
+        }
+        else {
+            toast = Toast.makeText(getApplicationContext(), "Please Accept the payment method!", Toast.LENGTH_SHORT);
+            v = toast.getView();
+            text = (TextView) v.findViewById(android.R.id.message);
+            text.setTextColor(getResources().getColor(R.color.mWhite));
+            text.setShadowLayer(0, 0, 0, 0);
+            v.setBackgroundResource(R.color.mTeal);
+            //toast.setGravity(Gravity.TOP, 0, 950);
+            toast.show();
         }
     }
 
