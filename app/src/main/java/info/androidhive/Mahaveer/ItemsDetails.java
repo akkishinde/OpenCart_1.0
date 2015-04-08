@@ -274,6 +274,9 @@ public class ItemsDetails extends Activity{
                 return true;
             case R.id.action_search:
                 return true;
+            case R.id.action_order_hist:
+                CallViewHistory();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -281,6 +284,10 @@ public class ItemsDetails extends Activity{
 
     private void CallViewCart() {
         Intent intent = new Intent(this, ViewCart.class);
+        startActivity(intent);
+    }
+    private void CallViewHistory() {
+        Intent intent = new Intent(this, OrderHistory.class);
         startActivity(intent);
     }
 
