@@ -93,6 +93,11 @@
             android:label="@string/order_history"
             android:parentActivityName="info.androidhive.Mahaveer.OrderHistory" >
         </activity>
+        <activity
+            android:name=".HistoryDetails"
+            android:label="@string/order_history"
+            android:parentActivityName="info.androidhive.Mahaveer.OrderHistory" >
+        </activity>
     </application>
 
 </manifest>

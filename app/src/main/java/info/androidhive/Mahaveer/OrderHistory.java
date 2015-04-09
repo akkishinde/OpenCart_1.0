@@ -85,7 +85,7 @@ public class OrderHistory extends Activity{
                             movie.setTitle(prod_data.getString("date_added"));
                             movie.setRating((prod_data.getString("status")));
                             movie.setYear(prod_data.getString("total"));
-                            movie.setProduct_id(prod_data.getString("order_id"));
+                            movie.setOrder_id(prod_data.getString("order_id"));
                             movieList.add(movie);
                             adapter.notifyDataSetChanged();
                             Session.getInstance().getRequestQueue();

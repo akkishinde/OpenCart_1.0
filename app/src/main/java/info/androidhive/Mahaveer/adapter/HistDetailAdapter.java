@@ -15,26 +15,26 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import java.util.List;
 
-import info.androidhive.Mahaveer.HistoryDetails;
 import info.androidhive.Mahaveer.ItemsDetails;
 import info.androidhive.Mahaveer.R;
 import info.androidhive.Mahaveer.Session;
 import info.androidhive.Mahaveer.model.CartList;
-import info.androidhive.Mahaveer.model.OrderHistList;
+import info.androidhive.Mahaveer.model.HistDetailList;
 
 /**
- * Created by Splash New on 4/8/2015.
+ * Created by Splash New on 4/9/2015.
  */
-public class OrderHistAdapter extends BaseAdapter{
+public class HistDetailAdapter extends BaseAdapter{
+
 
     private static final String TAG = "";
     private Activity activity;
     private LayoutInflater inflater;
-    private List<OrderHistList> movieItems;
+    private List<HistDetailList> movieItems;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
 
 
-    public OrderHistAdapter(Activity activity, List<OrderHistList> movieItems) {
+    public HistDetailAdapter(Activity activity, List<HistDetailList> movieItems) {
         super();
         this.activity = activity;
         this.movieItems = movieItems;
@@ -61,13 +61,13 @@ public class OrderHistAdapter extends BaseAdapter{
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
 
-        Log.i(TAG, "IN CART ADAPTER VIEW");
+
 
         if (inflater == null)
             inflater = (LayoutInflater) activity
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         if (convertView == null)
-            convertView = inflater.inflate(R.layout.order_hist_row, null);
+            convertView = inflater.inflate(R.layout.hist_list_row, null);
 
         if (imageLoader == null)
             imageLoader = Session.getInstance().getImageLoader();
@@ -80,7 +80,7 @@ public class OrderHistAdapter extends BaseAdapter{
         TextView year = (TextView) convertView.findViewById(R.id.releaseYear);
 
         // getting movie data for the row
-        OrderHistList m = movieItems.get(position);
+         HistDetailList m = movieItems.get(position);
 
         // thumbnail image
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
@@ -89,7 +89,7 @@ public class OrderHistAdapter extends BaseAdapter{
         title.setText(m.getTitle());
 
         // rating
-        rating.setText("Status: " + String.valueOf(m.getRating()));
+        rating.setText("Price: " + String.valueOf(m.getRating()));
 
         // genre
        /* String genreStr = "";
@@ -101,14 +101,14 @@ public class OrderHistAdapter extends BaseAdapter{
         genre.setText(genreStr);
 */
         // release year
-        year.setText("Total: " + String.valueOf(m.getYear()).replace("000",""));
+        year.setText(String.valueOf(m.getYear()));
         convertView.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                OrderHistList m = movieItems.get(position);
-                Intent intent = new Intent(activity, HistoryDetails.class);
-                intent.putExtra("id", m.getOrder_id());
+                HistDetailList m = movieItems.get(position);
+                Intent intent = new Intent(activity, ItemsDetails.class);
+                intent.putExtra("id", m.getProduct_id());
 
                 activity.startActivity(intent);
             }
@@ -116,5 +116,6 @@ public class OrderHistAdapter extends BaseAdapter{
 
         return convertView;
     }
+
 
 }

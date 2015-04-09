@@ -3,9 +3,9 @@ package info.androidhive.Mahaveer.model;
 import java.util.ArrayList;
 
 /**
- * Created by Splash New on 4/8/2015.
+ * Created by Splash New on 4/9/2015.
  */
-public class OrderHistList {
+public class HistDetailList {
 
 
     private String title, thumbnailUrl;
@@ -14,10 +14,10 @@ public class OrderHistList {
     private String product_id;
     private ArrayList<String> genre;
 
-    public OrderHistList() {
+    public HistDetailList() {
     }
 
-    public OrderHistList(String name, String thumbnailUrl, String year, String rating, String product_id,
+    public HistDetailList(String name, String thumbnailUrl, String year, String rating, String product_id,
                     ArrayList<String> genre) {
         this.product_id=product_id;
         this.title = name;
@@ -51,11 +51,11 @@ public class OrderHistList {
         this.year = year;
     }
 
-    public String getOrder_id() {
+    public String getProduct_id() {
         return product_id;
     }
 
-    public void setOrder_id(String pid) {
+    public void setProduct_id(String pid) {
         this.product_id = pid;
     }
 
