@@ -109,7 +109,6 @@ public class OrderHistAdapter extends BaseAdapter{
                 OrderHistList m = movieItems.get(position);
                 Intent intent = new Intent(activity, HistoryDetails.class);
                 intent.putExtra("id", m.getOrder_id());
-
                 activity.startActivity(intent);
             }
         });
