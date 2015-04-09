@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -31,6 +32,7 @@ import info.androidhive.Mahaveer.model.HistDetailList;
  * Created by Splash New on 4/9/2015.
  */
 public class HistoryDetails extends Activity {
+    TextView orderid,invoiceid,date,payment,total,status,count;
     private static final String TAG = "";
     static String url = "";
     private ProgressDialog pDialog;
@@ -42,6 +44,13 @@ public class HistoryDetails extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.history_details);
+        orderid=(TextView)findViewById(R.id.order_id);
+        invoiceid=(TextView)findViewById(R.id.invoice_no);
+        date=(TextView)findViewById(R.id.date);
+        payment=(TextView)findViewById(R.id.payment);
+        total=(TextView)findViewById(R.id.total);
+        status=(TextView)findViewById(R.id.status);
+        count=(TextView)findViewById(R.id.count);
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
         mActionBar.setDisplayHomeAsUpEnabled(true);
@@ -80,7 +89,28 @@ public class HistoryDetails extends Activity {
                     if (obj.getString("success").equals("true")) {
                         JSONObject json= (JSONObject) new JSONTokener(response).nextValue();
                         JSONObject json2=json.getJSONObject("data");
-
+                        orderid.setText("Order ID: "+json2.getString("order_id"));
+                        invoiceid.setText("Invoice Number: "+json2.getString("invoice_no"));
+                        date.setText("Date Added: "+json2.getString("date_added"));
+                        payment.setText("Payment Method: "+json2.getString("payment_method"));
+                        total.setText("Total Amount: "+json2.getString("total").replace("000",""));
+                        status.setText("Order Status: "+json2.getString("order_status"));
+                        JSONArray products=json2.getJSONArray("products");
+                        count.setText("Item Count: "+products.length());
+                        for (int i = 0; i < products.length(); i++){
+                            JSONObject prod_data = products.getJSONObject(i);
+                            HistDetailList movie=new HistDetailList();
+                            movie.setTitle(prod_data.getString("name"));
+                            //movie.setThumbnailUrl(prod_data.getString("thumb"));
+                            movie.setRating((prod_data.getString("price")));
+                            movie.setYear(prod_data.getString("total"));
+                            movie.setProduct_id(prod_data.getString("product_id"));
+                            movieList.add(movie);
+                            adapter.notifyDataSetChanged();
+                            Session.getInstance().getRequestQueue();
+                            ListView lv=(ListView) findViewById(R.id.list);
+                            lv.setAdapter(adapter);
+                        }
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

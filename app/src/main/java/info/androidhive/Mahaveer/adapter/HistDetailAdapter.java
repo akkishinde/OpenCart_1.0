@@ -71,8 +71,8 @@ public class HistDetailAdapter extends BaseAdapter{
 
         if (imageLoader == null)
             imageLoader = Session.getInstance().getImageLoader();
-        NetworkImageView thumbNail = (NetworkImageView) convertView
-                .findViewById(R.id.thumbnail);
+       /* NetworkImageView thumbNail = (NetworkImageView) convertView
+                .findViewById(R.id.thumbnail);*/
         TextView title = (TextView) convertView.findViewById(R.id.title);
         Log.i(TAG,"title"+title.toString());
         TextView rating = (TextView) convertView.findViewById(R.id.rating);
@@ -83,7 +83,7 @@ public class HistDetailAdapter extends BaseAdapter{
          HistDetailList m = movieItems.get(position);
 
         // thumbnail image
-        thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
+//        thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 
         // title
         title.setText(m.getTitle());
