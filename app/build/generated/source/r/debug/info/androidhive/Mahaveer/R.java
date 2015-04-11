@@ -1513,9 +1513,9 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0a002e;
         public static final int action_mode_bar_stub=0x7f0a002d;
         public static final int action_mode_close_button=0x7f0a0020;
-        public static final int action_order_hist=0x7f0a007d;
-        public static final int action_search=0x7f0a007b;
-        public static final int action_settings=0x7f0a007c;
+        public static final int action_order_hist=0x7f0a007e;
+        public static final int action_search=0x7f0a007c;
+        public static final int action_settings=0x7f0a007d;
         public static final int activity_chooser_view_content=0x7f0a0021;
         public static final int addCartButton=0x7f0a005c;
         public static final int addWishButton=0x7f0a005d;
@@ -1526,6 +1526,7 @@ containing a value of this type.
         public static final int always=0x7f0a0016;
         public static final int beginning=0x7f0a0013;
         public static final int brand_name=0x7f0a0059;
+        public static final int button=0x7f0a007b;
         public static final int checkBox=0x7f0a0073;
         public static final int checkbox=0x7f0a0029;
         public static final int city=0x7f0a006b;

@@ -28,13 +28,14 @@
         android:dividerHeight="5dp"
         android:listSelector="@drawable/list_row_selector"
         android:layout_below="@+id/name"
-        android:layout_above="@+id/register_button" />
+        android:layout_above="@+id/button" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"></LinearLayout>
 
     <Button
         android:id="@+id/register_button"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:textColor="@color/mWhite"
@@ -46,5 +47,19 @@
         android:onClick="confirm"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textColor="@color/mWhite"
+        android:background="@drawable/login_selector"
+        android:text="Empty Cart"
+        android:textSize="18sp"
+        android:textColorHighlight="@color/mWhite"
+        android:singleLine="false"
+        android:onClick="empty"
+        android:layout_above="@+id/register_button"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
 </LinearLayout>

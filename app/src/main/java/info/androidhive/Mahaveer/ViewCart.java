@@ -216,4 +216,33 @@ public class ViewCart extends Activity{
         toast.show();
     }
     }
+    public void empty(View view){
+        LoginActivity.client.delete(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/cart/empty", new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(String response) {
+                try {
+                    JSONObject obj = new JSONObject(response);
+                    if (obj.getString("success").equals("true")) {
+                        View v;
+                        Toast toast;
+                        TextView text;
+                        toast=Toast.makeText(getApplicationContext(), "All Items Removed!!", Toast.LENGTH_SHORT);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0,0,0,0);
+                        v.setBackgroundResource(R.color.mRed);
+                        toast.show();
+                        adapter.notifyDataSetChanged();
+                        Intent intent = getIntent();
+                        finish();
+                        startActivity(intent);
+                    }
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 }
