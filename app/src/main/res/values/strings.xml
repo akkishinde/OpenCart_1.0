@@ -89,5 +89,7 @@
     <string name="next_button">Next</string>
     <string name="order_history">Order History</string>
     <string name="view_history">Order History</string>
+    <string name="hrlp_text">Help</string>
+    <string name="version">Version 1.0.0</string>
 
 </resources>

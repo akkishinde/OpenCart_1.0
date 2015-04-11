@@ -177,11 +177,11 @@ public class MainActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
 //        MenuInflater inflater = getMenuInflater();
 //        inflater.inflate(R.menu.main, menu);
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+     /*   SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
                 .getActionView();
         searchView.setSearchableInfo(searchManager
-                .getSearchableInfo(getComponentName()));
+                .getSearchableInfo(getComponentName()));*/
 
         return super.onCreateOptionsMenu(menu);
        // getMenuInflater().inflate(R.menu.main, menu);
@@ -201,15 +201,47 @@ public class MainActivity extends Activity {
             case R.id.action_settings:
                 CallViewCart();
                 return true;
-            case R.id.action_search:
-                return true;
+         /*   case R.id.action_search:
+                 CallSearchCart();
+                return true;*/
             case R.id.action_order_hist:
                 CallViewHistory();
+                return true;
+            case R.id.action_help:
+                CallHelp();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    private void CallHelp() {
+        View messageView = getLayoutInflater().inflate(R.layout.help, null, false);
+
+        // When linking text, force to always use default color. This works
+        // around a pressed color state bug.
+        TextView textView = (TextView) messageView.findViewById(R.id.about_credits);
+       /* int defaultColor = textView.getTextColors().getDefaultColor();
+        textView.setTextColor(defaultColor);
+*/
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.ic_launcher);
+        builder.setTitle(R.string.app_name);
+        builder.setView(messageView);
+        builder.create();
+        builder.show();
+    }
+
+    private void CallSearchCart() {
+        Intent intent = new Intent(this, SearchResultsActivity.class);
+
+        //intent.putExtra("query",);
+
+    }
+
     private void CallViewHistory() {
         Intent intent = new Intent(this, OrderHistory.class);
         startActivity(intent);

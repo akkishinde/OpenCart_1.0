@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/version"
+        android:textStyle="bold"
+        android:textColor="@color/grey_text" />
+
+    <TextView
+        android:id="@+id/about_credits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dip"
+        android:textSize="16sp"
+        android:textAlignment="viewStart"
+        android:text="Thank you for Downloading the App\nfor any Queries please email us at support@splashinfotech.in\n\nHELP:\nPress Menu to view Cart Items and Order Details."
+        android:autoLink="web"
+        android:textColor="@color/mTeal" />
+
+</LinearLayout>

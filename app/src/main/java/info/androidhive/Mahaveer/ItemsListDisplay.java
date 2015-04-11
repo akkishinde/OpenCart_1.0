@@ -2,6 +2,7 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 
 import android.app.SearchManager;
@@ -15,6 +16,7 @@ import android.util.Log;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ListView;
@@ -54,7 +56,9 @@ public class ItemsListDisplay extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_items);
         ActionBar mActionBar = getActionBar();
+
         assert mActionBar != null;
+        mActionBar.setDisplayHomeAsUpEnabled(true);
         mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
                 .getColor(R.color.mOrange)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -150,12 +154,12 @@ public class ItemsListDisplay extends Activity{
         getMenuInflater().inflate(R.menu.main, menu);
 //        MenuInflater inflater = getMenuInflater();
 //        inflater.inflate(R.menu.main, menu);
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+    /*    SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView = (SearchView) menu.findItem(R.id.action_search)
                 .getActionView();
         searchView.setSearchableInfo(searchManager
                 .getSearchableInfo(getComponentName()));
-
+*/
         return super.onCreateOptionsMenu(menu);
         // getMenuInflater().inflate(R.menu.main, menu);
         //return true;
@@ -172,15 +176,38 @@ public class ItemsListDisplay extends Activity{
             case R.id.action_settings:
                 CallViewCart();
                 return true;
-            case R.id.action_search:
+          /*  case R.id.action_search:
                 new SearchResultsActivity();
-                return true;
+                return true;*/
             case R.id.action_order_hist:
                 CallViewHistory();
+                return true;
+            case R.id.action_help:
+                CallHelp();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void CallHelp() {
+        View messageView = getLayoutInflater().inflate(R.layout.help, null, false);
+
+        // When linking text, force to always use default color. This works
+        // around a pressed color state bug.
+        TextView textView = (TextView) messageView.findViewById(R.id.about_credits);
+       /* int defaultColor = textView.getTextColors().getDefaultColor();
+        textView.setTextColor(defaultColor);
+*/
+
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setIcon(R.drawable.ic_launcher);
+        builder.setTitle(R.string.app_name);
+        builder.setView(messageView);
+        builder.create();
+        builder.show();
     }
 
     private void CallViewCart() {
