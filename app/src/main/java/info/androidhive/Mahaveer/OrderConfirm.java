@@ -34,13 +34,14 @@ import java.io.UnsupportedEncodingException;
 public class OrderConfirm extends Activity {
     String TAG = "";
     static int flag = 1;
-    String str_fname, str_lname, str_add1, str_add2, str_pincode, str_city, str_state;
+    static String str_fname, str_lname, str_add1, str_add2, str_pincode, str_city, str_state;
     static String address_id;
     TextView fname, lname, xadd1, xadd2, xcity, xpincode, xstate;
     static EditText address1, address2, pincode, city;
     Button switch1;
     CheckBox agree;
     ProgressDialog pDialog;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -149,6 +150,7 @@ public class OrderConfirm extends Activity {
             if (Validation.isNotNull(address1.getText().toString()) && Validation.isNotNull(address2.getText().toString())
                     && Validation.isNotNull(pincode.getText().toString())) {
                 if (agree.isChecked()) {
+                    //Method Call for New Address
                     invokeWS();
                 } else {
                     toast = Toast.makeText(getApplicationContext(), "Please Accept the payment method!", Toast.LENGTH_SHORT);
@@ -157,7 +159,6 @@ public class OrderConfirm extends Activity {
                     text.setTextColor(getResources().getColor(R.color.mWhite));
                     text.setShadowLayer(0, 0, 0, 0);
                     v.setBackgroundResource(R.color.mTeal);
-                    //toast.setGravity(Gravity.TOP, 0, 950);
                     toast.show();
                 }
             } else {
@@ -167,23 +168,22 @@ public class OrderConfirm extends Activity {
                 text.setTextColor(getResources().getColor(R.color.mWhite));
                 text.setShadowLayer(0, 0, 0, 0);
                 v.setBackgroundResource(R.color.mTeal);
-                //toast.setGravity(Gravity.TOP, 0, 950);
                 toast.show();
             }
         }
-        if (flag == 1&& agree.isChecked()) {
-            // Toast.makeText(getApplicationContext(), "Existing Address", Toast.LENGTH_SHORT).show();
-            AddPaymentAddress();
-        }
-        else {
-            toast = Toast.makeText(getApplicationContext(), "Please Accept the payment method!", Toast.LENGTH_SHORT);
-            v = toast.getView();
-            text = (TextView) v.findViewById(android.R.id.message);
-            text.setTextColor(getResources().getColor(R.color.mWhite));
-            text.setShadowLayer(0, 0, 0, 0);
-            v.setBackgroundResource(R.color.mTeal);
-            //toast.setGravity(Gravity.TOP, 0, 950);
-            toast.show();
+        if (flag == 1) {
+            if (agree.isChecked()) {
+                // Method Call for Existing Address.
+                AddPaymentAddress();
+            } else {
+                toast = Toast.makeText(getApplicationContext(), "Please Accept the payment method!", Toast.LENGTH_SHORT);
+                v = toast.getView();
+                text = (TextView) v.findViewById(android.R.id.message);
+                text.setTextColor(getResources().getColor(R.color.mWhite));
+                text.setShadowLayer(0, 0, 0, 0);
+                v.setBackgroundResource(R.color.mTeal);
+                toast.show();
+            }
         }
     }
 
@@ -331,7 +331,167 @@ public class OrderConfirm extends Activity {
     }
 
     private void invokeWS() {
+        pDialog = new ProgressDialog(this);
+        // Showing progress dialog before making http request
+        pDialog.setMessage("Loading...");
+        if (pDialog == null || !pDialog.isShowing()) {
+            pDialog.show();
+        }
+        StringEntity entity = null;
+        String add1,add2,citys,pincodes;
+        add1=address1.getText().toString();
+        add2=address2.getText().toString();
+        citys=city.getText().toString();
+        pincodes=pincode.getText().toString();
+        Log.i(TAG, add1+add2+citys+pincodes);
 
-        Toast.makeText(getApplicationContext(), "New Address", Toast.LENGTH_SHORT).show();
+        try {
+            JSONObject jsonParams = new JSONObject();
+            jsonParams.put("address_1", add1);
+            jsonParams.put("address_2", add2);
+            jsonParams.put("city", citys);
+            jsonParams.put("postcode", pincodes);
+            jsonParams.put("firstname", str_fname);
+            jsonParams.put("lastname", str_lname);
+            jsonParams.put("zone_id", "1493");
+            jsonParams.put("country_id", "99");
+            jsonParams.put("shipping_address", "new");
+            entity = new StringEntity(jsonParams.toString());
+            LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+                @Override
+                public void onSuccess(String response) {
+                    Log.i(TAG,"Paymentaddress:"+ response);
+                    try {
+                        JSONObject obj = new JSONObject(response);
+                        if (obj.getString("success").equals("true")) {
+                            AddShipmentAddress();
+                            //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                private void AddShipmentAddress() {
+                    StringEntity entity = null;
+                    JSONObject jsonParams = new JSONObject();
+                    try {
+                        jsonParams.put("address_1", address1.getText().toString());
+                        jsonParams.put("address_2", address2.getText().toString());
+                        jsonParams.put("city", city.getText().toString());
+                        jsonParams.put("postcode", pincode.getText().toString());
+                        jsonParams.put("firstname", str_fname);
+                        jsonParams.put("lastname", str_lname);
+                        jsonParams.put("zone_id", "1493");
+                        jsonParams.put("country_id", "99");
+                        jsonParams.put("shipping_address", "new");
+                        entity = new StringEntity(jsonParams.toString());
+                        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(String response) {
+                                Log.i(TAG,"ShipmentAddress:"+ response);
+                                try {
+                                    JSONObject obj = new JSONObject(response);
+                                    if (obj.getString("success").equals("true")) {
+                                        LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
+                                            @Override
+                                            public void onSuccess(String response) {
+                                                Log.i(TAG, response);
+                                                GetShippingMethod();
+                                            }
+
+                                            private void GetShippingMethod() {
+                                                StringEntity entity = null;
+
+                                                try {
+                                                    JSONObject jsonParams = new JSONObject();
+                                                    jsonParams.put("shipping_method", "flat.flat");
+                                                    jsonParams.put("comment", "Ordered_from_Android_App");
+                                                    entity = new StringEntity(jsonParams.toString());
+
+                                                } catch (JSONException | UnsupportedEncodingException e) {
+                                                    e.printStackTrace();
+                                                }
+                                                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                                    @Override
+                                                    public void onSuccess(String response) {
+                                                        Log.i(TAG, response);
+                                                        try {
+                                                            JSONObject obj = new JSONObject(response);
+                                                            if (obj.getString("success").equals("true")) {
+                                                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                                                    @Override
+                                                                    public void onSuccess(String response) {
+                                                                        GetPaymentMethod();
+                                                                    }
+                                                                });
+                                                            }
+                                                        } catch (JSONException e) {
+                                                            e.printStackTrace();
+                                                        }
+                                                    }
+
+                                                    private void GetPaymentMethod() {
+                                                        StringEntity entity = null;
+
+                                                        try {
+                                                            JSONObject jsonParams = new JSONObject();
+                                                            jsonParams.put("payment_method", "cod");
+                                                            jsonParams.put("agree", "1");
+                                                            jsonParams.put("comment", "Ordered_from_Android_App");
+                                                            entity = new StringEntity(jsonParams.toString());
+                                                            LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                                                @Override
+                                                                public void onSuccess(String response) {
+                                                                    Log.i(TAG, response);
+                                                                    try {
+                                                                        JSONObject obj = new JSONObject(response);
+                                                                        if (obj.getString("success").equals("true")) {
+                                                                            LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                                                                @Override
+                                                                                public void onSuccess(String response) {
+                                                                                    Log.i(TAG, response);
+                                                                                    pDialog.hide();
+                                                                                    Intent intent = new Intent(OrderConfirm.this, OrderDetails.class);
+                                                                                    startActivity(intent);
+                                                                                }
+                                                                            });
+                                                                            // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+
+                                                                        }
+                                                                    } catch (JSONException e) {
+                                                                        e.printStackTrace();
+                                                                    }
+                                                                }
+                                                            });
+
+                                                        } catch (JSONException | UnsupportedEncodingException e) {
+                                                            e.printStackTrace();
+                                                        }
+
+                                                    }
+                                                });
+
+                                            }
+                                        });
+                                        //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+
+                                    }
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+                    } catch (JSONException | UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            });
+        } catch (JSONException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+
+        }
+        // Toast.makeText(getApplicationContext(), "New Address", Toast.LENGTH_SHORT).show();
     }
 }

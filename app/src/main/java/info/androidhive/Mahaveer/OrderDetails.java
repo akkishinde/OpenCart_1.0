@@ -88,11 +88,22 @@ public class OrderDetails extends Activity {
 
             @Override
             public void onSuccess(String response) {
+                View v;
+                Toast toast;
+                TextView text;
                 Log.i(TAG, response);
                 try {
                     JSONObject obj = new JSONObject(response);
                     if (obj.getString("success").equals("true")) {
-                        Toast.makeText(getApplicationContext(), "Order ID:"+obj.getString("order_id"), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(), "Order ID:"+obj.getString("order_id"), Toast.LENGTH_LONG).show();
+                        toast=Toast.makeText(getApplicationContext(), "Thank You!\norder ID: "+obj.getString("order_id"), Toast.LENGTH_LONG);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0,0,0,0);
+                        v.setBackgroundResource(R.color.mGreen);
+                        //toast.setGravity(Gravity.TOP, 0, 950);
+                        toast.show();
                         Intent intent = new Intent(OrderDetails.this, MainActivity.class);
                         startActivity(intent);
                     }
