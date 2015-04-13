@@ -35,8 +35,7 @@
 
     <Button
         android:id="@+id/register_button"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="45dp"
         android:textColor="@color/mWhite"
         android:background="@drawable/login_selector"
@@ -46,11 +45,11 @@
         android:singleLine="false"
         android:onClick="confirm"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="45dp"
         android:textColor="@color/mWhite"
         android:background="@drawable/login_selector"
@@ -59,7 +58,7 @@
         android:textColorHighlight="@color/mWhite"
         android:singleLine="false"
         android:onClick="empty"
-        android:layout_above="@+id/register_button"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
 </LinearLayout>
