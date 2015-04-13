@@ -3,6 +3,7 @@ package info.androidhive.Mahaveer;
 import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,7 +34,7 @@ public class HomeFragment extends Fragment {
     private List<SubCat> movieList = new ArrayList<SubCat>();
     private ListView listView;
     private CustomSubCatAdapter adapter;
-
+    ViewPager mHandler;
     public HomeFragment() {
     }
 
@@ -48,6 +49,13 @@ public class HomeFragment extends Fragment {
         listView = (ListView) rootView.findViewById(R.id.list);
         adapter = new CustomSubCatAdapter(getActivity(), movieList);
         listView.setAdapter(adapter);
+        ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.view_pager);
+        ImageAdapterForGallery adapterr = new ImageAdapterForGallery(
+                getActivity());
+        viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
+        viewPager.setAdapter(adapterr);
+        viewPager.setCurrentItem(0);
+        adapterr.setTimer(viewPager, 5);
         pDialog = new ProgressDialog(getActivity());
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");

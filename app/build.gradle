@@ -26,4 +26,5 @@ dependencies {
     compile 'com.pnikosis:materialish-progress:1.5'
     compile 'com.loopj.android:android-async-http:1.4.4'
     compile files('libs/volley.jar')
+
 }

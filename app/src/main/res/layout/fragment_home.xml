@@ -16,6 +16,12 @@
         android:gravity="center"
         android:id="@+id/name"
         android:layout_gravity="center_horizontal" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/name">
+    </android.support.v4.view.ViewPager>
   <!--  <TextView
         android:id="@+id/txtLabel"
          android:layout_width="wrap_content"
@@ -38,7 +44,7 @@
         android:divider="@color/transparent"
         android:dividerHeight="5dp"
         android:listSelector="@drawable/list_row_selector"
-        android:layout_below="@+id/name"/>
+        android:layout_below="@+id/view_pager"/>
     
 
 </RelativeLayout>

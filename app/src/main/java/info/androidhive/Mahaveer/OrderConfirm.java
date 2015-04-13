@@ -126,7 +126,7 @@ public class OrderConfirm extends Activity {
                         xcity.setText("City: " + str_city);
                         xpincode.setText("Pincode: " + str_pincode);
                         xstate.setText("State: " + str_state);
-                        Toast.makeText(getApplicationContext(), "Name:" + str_fname, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getApplicationContext(), "Name:" + str_fname, Toast.LENGTH_SHORT).show();
 
                     }
                 } catch (JSONException e) {
