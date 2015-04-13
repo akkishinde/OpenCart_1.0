@@ -63,7 +63,8 @@
         <activity
             android:name=".ItemsListDisplay"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:parentActivityName="info.androidhive.Mahaveer.MainActivity">
             <meta-data
                 android:name="android.app.default_searchable"
                 android:value=".SearchResultsActivity"
@@ -73,7 +74,8 @@
             android:name=".ItemsDetails"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".ItemsListDisplay"
+            >
         </activity>
         <activity
             android:name=".ViewCart"
@@ -99,6 +101,11 @@
             android:name=".HistoryDetails"
             android:label="@string/order_history"
             android:parentActivityName="info.androidhive.Mahaveer.OrderHistory" >
+        </activity>
+        <activity
+            android:name=".ViewWish"
+            android:label="@string/view_wishlist"
+            android:parentActivityName="info.androidhive.Mahaveer.MainActivity" >
         </activity>
     </application>
 

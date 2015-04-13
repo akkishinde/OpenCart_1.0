@@ -68,6 +68,7 @@ public class ItemsDetails extends Activity{
         price=(TextView)findViewById(R.id.price);
         description=(TextView)findViewById(R.id.description);
         addcart=(ImageButton)findViewById(R.id.addCartButton);
+        addwish=(ImageButton)findViewById(R.id.addWishButton);
         qty=(EditText)findViewById(R.id.editText);
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
@@ -166,6 +167,39 @@ public class ItemsDetails extends Activity{
                     public void onFailure(int statusCode, Throwable error,
                                           String content) {
                         Toast.makeText(getApplicationContext(),"Something went wrong at Server Side! "+statusCode,Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+
+        addwish.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/wishlist/" + item_id, null, new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(String response) {
+                        View v;
+                        Toast toast;
+                        TextView text;
+                        toast = Toast.makeText(getApplicationContext(), "Item added to WishList!", Toast.LENGTH_SHORT);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0, 0, 0, 0);
+                        v.setBackgroundResource(R.color.mTeal);
+                        toast.show();
+                        title.setFocusable(true);
+                        title.setFocusableInTouchMode(true);
+
+
+                    }
+
+                    @Override
+                    public void onFailure(int statusCode, Throwable error,
+                                          String content) {
+                        Toast.makeText(getApplicationContext(), "Something went wrong at Server Side! " + statusCode, Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -278,9 +312,17 @@ public class ItemsDetails extends Activity{
             case R.id.action_order_hist:
                 CallViewHistory();
                 return true;
+            case R.id.action_wishlist:
+                CallWishList();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void CallWishList() {
+        Intent intent = new Intent(this, ViewWish.class);
+        startActivity(intent);
     }
 
     private void CallViewCart() {

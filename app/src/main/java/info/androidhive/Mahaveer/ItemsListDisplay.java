@@ -185,9 +185,17 @@ public class ItemsListDisplay extends Activity{
             case R.id.action_help:
                 CallHelp();
                 return true;
+            case R.id.action_wishlist:
+                CallWishList();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void CallWishList() {
+        Intent intent = new Intent(this, ViewWish.class);
+        startActivity(intent);
     }
 
     private void CallHelp() {

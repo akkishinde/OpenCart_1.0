@@ -20,7 +20,7 @@
         android:paddingTop="20dip"
         android:textSize="16sp"
         android:textAlignment="viewStart"
-        android:text="Thank you for Downloading the App\nfor any Queries please email us at support@splashinfotech.in\n\nHELP:\nPress Menu to view Cart Items and Order Details."
+        android:text="@string/help_string"
         android:autoLink="web"
         android:textColor="@color/mTeal" />
 

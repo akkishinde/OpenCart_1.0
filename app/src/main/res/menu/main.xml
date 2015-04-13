@@ -13,6 +13,8 @@
         android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
     <item android:id="@+id/action_settings" android:title="@string/view_cart"
         android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/action_wishlist" android:title="@string/view_wishlist"
+        android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
     <item android:id="@+id/action_order_hist" android:title="@string/view_history"
         android:orderInCategory="100" app:showAsAction="ifRoom|withText" />
 </menu>
