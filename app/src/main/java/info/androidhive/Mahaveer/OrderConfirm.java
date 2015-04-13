@@ -30,6 +30,9 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * Created by Akshay on 4/6/2015.
+ * Child Class of View Cart.
+ * After Confirming the Cart Items This activity will be invoked.
+ * You can add new address for shipment in this activity.
  */
 public class OrderConfirm extends Activity {
     String TAG = "";

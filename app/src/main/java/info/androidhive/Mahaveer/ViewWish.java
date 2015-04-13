@@ -34,7 +34,8 @@ import info.androidhive.Mahaveer.adapter.WishAdapter;
 import info.androidhive.Mahaveer.model.WishList;
 
 /**
- * Created by Splash New on 4/2/2015.
+ * Created by Akshay on 4/2/2015.
+ * This Class displays the Wish List from MENU.
  */
 public class ViewWish extends Activity{
     static int flag=0;

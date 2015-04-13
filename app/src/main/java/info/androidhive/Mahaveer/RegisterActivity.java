@@ -26,6 +26,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * Created by Akshay New on 3/24/2015.
+ * This activity will be used to register the users.
  */
 public class RegisterActivity extends Activity{
     EditText firstname,lastname,username,password,repeat_password,contact,address1,address2,city,pincode;

@@ -27,7 +27,8 @@ import info.androidhive.Mahaveer.adapter.OrderHistAdapter;
 import info.androidhive.Mahaveer.model.OrderHistList;
 
 /**
- * Created by Splash New on 4/8/2015.
+ * Created by Aksahy on 4/8/2015.
+ * This activity will give the list of orders in Order History MENU.
  */
 public class OrderHistory extends Activity{
     private static final String TAG = "";

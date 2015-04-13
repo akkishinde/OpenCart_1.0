@@ -29,7 +29,9 @@ import info.androidhive.Mahaveer.adapter.HistDetailAdapter;
 import info.androidhive.Mahaveer.model.HistDetailList;
 
 /**
- * Created by Splash New on 4/9/2015.
+ * Created by Akshay on 4/9/2015.
+ * This activity is a child activity of order details
+ * This Activity Will display the details of past orders.
  */
 public class HistoryDetails extends Activity {
     TextView orderid,invoiceid,date,payment,total,status,count;

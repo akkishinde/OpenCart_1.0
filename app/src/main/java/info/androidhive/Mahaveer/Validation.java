@@ -4,7 +4,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by Splash New on 3/25/2015.
+ * Created by Akshay on 3/25/2015.
+ * This class validates the textfields. like email or null fields.
  */
 public class Validation {
 

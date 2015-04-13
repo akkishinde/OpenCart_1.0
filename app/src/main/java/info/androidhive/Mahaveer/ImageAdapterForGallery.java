@@ -1,7 +1,9 @@
 package info.androidhive.Mahaveer;
 
 /**
- * Created by Splash New on 4/13/2015.
+ * Created by Akshay on 4/13/2015.
+ * This adapter will be used to store the images for Slider.
+ * You can add more images in slider using this adapter.
  */
 
         import java.util.Timer;

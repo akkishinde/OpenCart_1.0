@@ -33,7 +33,8 @@ import info.androidhive.Mahaveer.adapter.CartAdapter;
 import info.androidhive.Mahaveer.model.CartList;
 
 /**
- * Created by Splash New on 4/2/2015.
+ * Created by Akshay on 4/2/2015.
+ * This Class Used to display the cart items from MENU.
  */
 public class ViewCart extends Activity{
     static int flag=0;

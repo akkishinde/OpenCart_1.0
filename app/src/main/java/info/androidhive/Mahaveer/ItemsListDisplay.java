@@ -42,7 +42,9 @@ import info.androidhive.Mahaveer.model.ItemList;
 
 
 /**
- * Created by Splash New on 3/31/2015.
+ * Created by Akshay on 3/31/2015.
+ * This activity will display the List of products.
+ * This activity is a child activity of Home Fragment.
  */
 public class ItemsListDisplay extends Activity{
     private static String url = "";

@@ -23,6 +23,9 @@ import org.json.JSONTokener;
 
 /**
  * Created by Akshay New on 4/8/2015.
+ * Child Activity of Order Confirm.
+ * This is the final Activity in Checkout Process.
+ * After Confirm you will get the Order ID.
  */
 public class OrderDetails extends Activity {
     TextView invoice, fname, lname, payment, total;

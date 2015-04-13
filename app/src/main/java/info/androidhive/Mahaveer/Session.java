@@ -15,7 +15,9 @@ import java.util.Map;
 import info.androidhive.Mahaveer.util.LruBitmapCache;
 
 /**
- * Created by Splash New on 3/25/2015.
+ * Created by Akshay on 3/25/2015.
+ * This Class is a Global Class.
+ * To maintain the app session you can add setter getter.
  */
 public class Session extends Application {
 

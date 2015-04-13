@@ -36,7 +36,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- * Created by Splash New on 3/31/2015.
+ * Created by Aksahy on 3/31/2015.
+ * This activity will display the details of the items.
+ * You can buy the items or add to wishlist from this activity.
  */
 public class ItemsDetails extends Activity {
     private ProgressDialog pDialog;

@@ -55,7 +55,7 @@ public class HomeFragment extends Fragment {
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         viewPager.setAdapter(adapterr);
         viewPager.setCurrentItem(0);
-        adapterr.setTimer(viewPager, 3);
+        adapterr.setTimer(viewPager, 5);
         pDialog = new ProgressDialog(getActivity());
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");

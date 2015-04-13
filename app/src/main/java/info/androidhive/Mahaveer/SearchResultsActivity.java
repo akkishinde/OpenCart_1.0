@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 /**
- * Created by Splash New on 3/30/2015.
+ * Created by Akshay on 3/30/2015.
+ * This functionality will be used to search any item.
+ * Will be released in further version.
  */
 public class SearchResultsActivity extends Activity {
     private TextView txtQuery;

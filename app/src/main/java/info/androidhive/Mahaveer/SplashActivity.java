@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 /**
  * Created by Akshay on 3/24/2015.
+ * Splash Activity. This is the Initial activity which checks the Internet Connectivity of the App
  */
 public class SplashActivity extends Activity {
     // Splash screen timer

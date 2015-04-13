@@ -4,7 +4,8 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 /**
- * Created by Splash New on 4/13/2015.
+ * Created by Akshay on 4/13/2015.
+ * This Class is used to give the animation to Image Slider.
  */
 public class ZoomOutPageTransformer implements ViewPager.PageTransformer {
 

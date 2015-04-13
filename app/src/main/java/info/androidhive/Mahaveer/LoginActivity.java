@@ -31,6 +31,8 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * Created by Akshay on 3/24/2015.
+ * After Splash screen this activity will be invoked.
+ * After successful login you will be redirected to the Main Activity.
  */
 public class LoginActivity extends Activity{
     public static AsyncHttpClient client = new AsyncHttpClient();
