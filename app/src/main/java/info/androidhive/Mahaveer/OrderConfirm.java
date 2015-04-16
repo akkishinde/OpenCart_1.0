@@ -220,7 +220,7 @@ public class OrderConfirm extends Activity {
                     }
                     else
                     {
-                        Toast.makeText(getApplicationContext(), "Something went wrong.!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -257,7 +257,7 @@ public class OrderConfirm extends Activity {
                             }
                             else
                             {
-                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -292,7 +292,7 @@ public class OrderConfirm extends Activity {
                                     }
                                     else
                                     {
-                                        Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -334,7 +334,7 @@ public class OrderConfirm extends Activity {
                                             }
                                             else
                                             {
-                                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                                             }
                                         } catch (JSONException e) {
                                             e.printStackTrace();
@@ -386,6 +386,11 @@ public class OrderConfirm extends Activity {
                             AddShipmentAddress();
                             //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
                         }
+                        else
+                        {
+                            Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
+                        }
+
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -447,7 +452,7 @@ public class OrderConfirm extends Activity {
                                                             }
                                                             else
                                                             {
-                                                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
+                                                                Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                                                             }
                                                         } catch (JSONException e) {
                                                             e.printStackTrace();
@@ -484,7 +489,7 @@ public class OrderConfirm extends Activity {
                                                                         }
                                                                         else
                                                                         {
-                                                                            Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
+                                                                            Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                                                                         }
                                                                     } catch (JSONException e) {
                                                                         e.printStackTrace();
@@ -503,6 +508,10 @@ public class OrderConfirm extends Activity {
                                         });
                                         //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
+                                    }
+                                    else
+                                    {
+                                        Toast.makeText(getApplicationContext(), "Sorry! Stock is over...", Toast.LENGTH_SHORT).show();
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
