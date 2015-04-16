@@ -101,7 +101,7 @@ public class OrderConfirm extends Activity {
 
     //This Method is called on the creation of the activity
     private void GetExistingAddress() {
-        LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentaddress", new AsyncHttpResponseHandler() {
+        LoginActivity.client.get(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentaddress", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 try {
@@ -194,7 +194,7 @@ public class OrderConfirm extends Activity {
     private void AddPaymentAddress() {
         pDialog = new ProgressDialog(this);
         // Showing progress dialog before making http request
-        pDialog.setMessage("Loading...");
+        pDialog.setMessage("This process takes time!!");
         if (pDialog == null || !pDialog.isShowing()) {
             pDialog.show();
         }
@@ -208,7 +208,7 @@ public class OrderConfirm extends Activity {
         } catch (JSONException | UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+        LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentaddress", entity, "application/json", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 Log.i(TAG, response);
@@ -217,6 +217,10 @@ public class OrderConfirm extends Activity {
                     if (obj.getString("success").equals("true")) {
                         AddShipmentAddress();
                         //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
+                    }
+                    else
+                    {
+                        Toast.makeText(getApplicationContext(), "Something went wrong.!", Toast.LENGTH_SHORT).show();
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -235,14 +239,14 @@ public class OrderConfirm extends Activity {
                 } catch (JSONException | UnsupportedEncodingException e) {
                     e.printStackTrace();
                 }
-                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+                LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(String response) {
                         Log.i(TAG, response);
                         try {
                             JSONObject obj = new JSONObject(response);
                             if (obj.getString("success").equals("true")) {
-                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
+                                LoginActivity.client.get(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
                                     @Override
                                     public void onSuccess(String response) {
                                         GetShippingMethod();
@@ -250,6 +254,10 @@ public class OrderConfirm extends Activity {
                                 });
                                 //Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
+                            }
+                            else
+                            {
+                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -268,19 +276,23 @@ public class OrderConfirm extends Activity {
                         } catch (JSONException | UnsupportedEncodingException e) {
                             e.printStackTrace();
                         }
-                        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                        LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(String response) {
                                 Log.i(TAG, response);
                                 try {
                                     JSONObject obj = new JSONObject(response);
                                     if (obj.getString("success").equals("true")) {
-                                        LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                        LoginActivity.client.get(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                             @Override
                                             public void onSuccess(String response) {
                                                 GetPaymentMethod();
                                             }
                                         });
+                                    }
+                                    else
+                                    {
+                                        Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -300,14 +312,14 @@ public class OrderConfirm extends Activity {
                                 } catch (JSONException | UnsupportedEncodingException e) {
                                     e.printStackTrace();
                                 }
-                                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
                                     @Override
                                     public void onSuccess(String response) {
                                         Log.i(TAG, response);
                                         try {
                                             JSONObject obj = new JSONObject(response);
                                             if (obj.getString("success").equals("true")) {
-                                                LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                                LoginActivity.client.put("http://mahaveersupermarket.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                                     @Override
                                                     public void onSuccess(String response) {
                                                         pDialog.hide();
@@ -319,6 +331,10 @@ public class OrderConfirm extends Activity {
                                                 });
                                                 // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
+                                            }
+                                            else
+                                            {
+                                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
                                             }
                                         } catch (JSONException e) {
                                             e.printStackTrace();
@@ -360,7 +376,7 @@ public class OrderConfirm extends Activity {
             jsonParams.put("country_id", "99");
             jsonParams.put("shipping_address", "new");
             entity = new StringEntity(jsonParams.toString());
-            LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+            LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentaddress", entity, "application/json", new AsyncHttpResponseHandler() {
                 @Override
                 public void onSuccess(String response) {
                     Log.i(TAG,"Paymentaddress:"+ response);
@@ -389,14 +405,14 @@ public class OrderConfirm extends Activity {
                         jsonParams.put("country_id", "99");
                         jsonParams.put("shipping_address", "new");
                         entity = new StringEntity(jsonParams.toString());
-                        LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
+                        LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingaddress", entity, "application/json", new AsyncHttpResponseHandler() {
                             @Override
                             public void onSuccess(String response) {
                                 Log.i(TAG,"ShipmentAddress:"+ response);
                                 try {
                                     JSONObject obj = new JSONObject(response);
                                     if (obj.getString("success").equals("true")) {
-                                        LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
+                                        LoginActivity.client.get(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingmethods", new AsyncHttpResponseHandler() {
                                             @Override
                                             public void onSuccess(String response) {
                                                 Log.i(TAG, response);
@@ -415,19 +431,23 @@ public class OrderConfirm extends Activity {
                                                 } catch (JSONException | UnsupportedEncodingException e) {
                                                     e.printStackTrace();
                                                 }
-                                                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                                LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/shippingmethods", entity, "application/json", new AsyncHttpResponseHandler() {
                                                     @Override
                                                     public void onSuccess(String response) {
                                                         Log.i(TAG, response);
                                                         try {
                                                             JSONObject obj = new JSONObject(response);
                                                             if (obj.getString("success").equals("true")) {
-                                                                LoginActivity.client.get(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                                                LoginActivity.client.get(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                                                     @Override
                                                                     public void onSuccess(String response) {
                                                                         GetPaymentMethod();
                                                                     }
                                                                 });
+                                                            }
+                                                            else
+                                                            {
+                                                                Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
                                                             }
                                                         } catch (JSONException e) {
                                                             e.printStackTrace();
@@ -443,14 +463,14 @@ public class OrderConfirm extends Activity {
                                                             jsonParams.put("agree", "1");
                                                             jsonParams.put("comment", "Ordered_from_Android_App");
                                                             entity = new StringEntity(jsonParams.toString());
-                                                            LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
+                                                            LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/paymentmethods", entity, "application/json", new AsyncHttpResponseHandler() {
                                                                 @Override
                                                                 public void onSuccess(String response) {
                                                                     Log.i(TAG, response);
                                                                     try {
                                                                         JSONObject obj = new JSONObject(response);
                                                                         if (obj.getString("success").equals("true")) {
-                                                                            LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
+                                                                            LoginActivity.client.put("http://mahaveersupermarket.com/api/rest/paymentmethods", new AsyncHttpResponseHandler() {
                                                                                 @Override
                                                                                 public void onSuccess(String response) {
                                                                                     Log.i(TAG, response);
@@ -461,6 +481,10 @@ public class OrderConfirm extends Activity {
                                                                             });
                                                                             // Toast.makeText(getApplicationContext(), "Success", Toast.LENGTH_SHORT).show();
 
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            Toast.makeText(getApplicationContext(), "Item may be Out of Stock.!", Toast.LENGTH_SHORT).show();
                                                                         }
                                                                     } catch (JSONException e) {
                                                                         e.printStackTrace();

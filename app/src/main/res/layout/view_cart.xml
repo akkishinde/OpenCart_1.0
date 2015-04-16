@@ -45,7 +45,8 @@
         android:singleLine="false"
         android:onClick="confirm"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
 
     <Button
         android:id="@+id/button"
@@ -59,6 +60,7 @@
         android:singleLine="false"
         android:onClick="empty"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
 </RelativeLayout>
 </LinearLayout>

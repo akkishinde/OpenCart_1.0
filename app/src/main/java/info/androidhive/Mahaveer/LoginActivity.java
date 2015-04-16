@@ -2,8 +2,10 @@ package info.androidhive.Mahaveer;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -155,9 +157,9 @@ public class LoginActivity extends Activity{
             e.printStackTrace();
         }
 
-        client.addHeader("X-Oc-Merchant-Id","123");
+        client.addHeader("X-Oc-Merchant-Id","123456");
         client.addHeader("X-Oc-Merchant-Language","en");
-        client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/login", entity, "application/json", new AsyncHttpResponseHandler() {
+        client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/login", entity, "application/json", new AsyncHttpResponseHandler() {
 
             @Override
             public void onSuccess(String response) {
@@ -244,6 +246,27 @@ public class LoginActivity extends Activity{
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+    @Override
+    public void onBackPressed() {
 
+
+            new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_delete).setTitle("Exit")
+                    .setMessage("Are you sure?")
+                    .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                                    intent.addCategory(Intent.CATEGORY_HOME);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                    finish();
+                                    System.runFinalizersOnExit(true);
+                                    System.exit(0);
+                                    android.os.Process.killProcess(android.os.Process.myPid());
+                                }
+                            }
+
+                    ).setNegativeButton("no", null).show();
+        }
 
 }

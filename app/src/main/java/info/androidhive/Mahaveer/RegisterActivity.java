@@ -163,9 +163,9 @@ public class RegisterActivity extends Activity{
             e.printStackTrace();
         }
         AsyncHttpClient client = new AsyncHttpClient();
-        client.addHeader("X-Oc-Merchant-Id","123");
+        client.addHeader("X-Oc-Merchant-Id","123456");
         client.addHeader("X-Oc-Merchant-Language","en");
-        client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/register", entity, "application/json", new AsyncHttpResponseHandler() {
+        client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/register", entity, "application/json", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 prgDialog.hide();

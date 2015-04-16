@@ -69,7 +69,7 @@ public class ViewWish extends Activity{
                         .getColor(R.color.mWhite));
             }
         }
-        url="http://webshop.opencart-api.com/api/rest/cart";
+        url="http://mahaveersupermarket.com/api/rest/cart";
         listView = (ListView) findViewById(R.id.list);
         adapter = new WishAdapter(this, movieList);
         pDialog = new ProgressDialog(this);
@@ -83,7 +83,7 @@ public class ViewWish extends Activity{
          */
 
         LoginActivity.client.addHeader("X-Oc-Session",Session.getInstance().getSession_id());
-        LoginActivity.client.get(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/wishlist", new AsyncHttpResponseHandler() {
+        LoginActivity.client.get(getApplicationContext(),"http://mahaveersupermarket.com/api/rest/wishlist", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 try {
@@ -118,7 +118,7 @@ public class ViewWish extends Activity{
                         View v;
                         Toast toast;
                         TextView text;
-                        toast=Toast.makeText(getApplicationContext(), "No Items in the Cart!", Toast.LENGTH_SHORT);
+                        toast=Toast.makeText(getApplicationContext(), "No Items in Wish List!", Toast.LENGTH_SHORT);
                         v = toast.getView();
                         text = (TextView) v.findViewById(android.R.id.message);
                         text.setTextColor(getResources().getColor(R.color.mWhite));

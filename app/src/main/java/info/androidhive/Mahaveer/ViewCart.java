@@ -68,7 +68,7 @@ public class ViewCart extends Activity{
                         .getColor(R.color.mWhite));
             }
         }
-        url="http://webshop.opencart-api.com/api/rest/cart";
+        url="http://mahaveersupermarket.com/api/rest/cart";
         listView = (ListView) findViewById(R.id.list);
         adapter = new CartAdapter(this, movieList);
         pDialog = new ProgressDialog(this);
@@ -142,7 +142,7 @@ public class ViewCart extends Activity{
          */
 
         LoginActivity.client.addHeader("X-Oc-Session",Session.getInstance().getSession_id());
-        LoginActivity.client.get(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/cart", new AsyncHttpResponseHandler() {
+        LoginActivity.client.get(getApplicationContext(),"http://mahaveersupermarket.com/api/rest/cart", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 try {
@@ -218,7 +218,7 @@ public class ViewCart extends Activity{
     }
     }
     public void empty(View view){
-        LoginActivity.client.delete(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/cart/empty", new AsyncHttpResponseHandler() {
+        LoginActivity.client.delete(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/cart/empty", new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 try {

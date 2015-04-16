@@ -81,7 +81,7 @@ public class HistoryDetails extends Activity {
         pDialog.show();
         Intent intent = getIntent();
         pid = intent.getStringExtra("id");
-        LoginActivity.client.get(getApplicationContext(),"http://webshop.opencart-api.com/api/rest/orders/"+pid, new AsyncHttpResponseHandler() {
+        LoginActivity.client.get(getApplicationContext(),"http://mahaveersupermarket.com/api/rest/orders/"+pid, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(String response) {
                 pDialog.hide();

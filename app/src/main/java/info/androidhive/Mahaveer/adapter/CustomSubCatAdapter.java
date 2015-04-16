@@ -68,7 +68,7 @@ public class CustomSubCatAdapter extends BaseAdapter {
         thumbNail.setImageUrl(m.getThumbnailUrl(), imageLoader);
 
         // title
-        title.setText(m.getTitle());
+        title.setText(m.getTitle().replace("&amp;","&"));
 
         // rating
         //rating.setText("Price: " + String.valueOf(m.getRating()));

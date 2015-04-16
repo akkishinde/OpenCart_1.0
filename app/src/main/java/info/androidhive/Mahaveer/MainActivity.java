@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
         //navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
         // adding nav drawer items to array
         // Home
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0,-1)));
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
@@ -184,7 +184,7 @@ public class MainActivity extends Activity {
                 .getSearchableInfo(getComponentName()));*/
 
         return super.onCreateOptionsMenu(menu);
-       // getMenuInflater().inflate(R.menu.main, menu);
+        // getMenuInflater().inflate(R.menu.main, menu);
         //return true;
     }
 
@@ -234,7 +234,6 @@ public class MainActivity extends Activity {
 */
 
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setIcon(R.drawable.ic_launcher);
         builder.setTitle(R.string.app_name);
@@ -259,6 +258,7 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, ViewCart.class);
         startActivity(intent);
     }
+
     /* *
      * Called when invalidateOptionsMenu() is triggered
      */
@@ -280,122 +280,122 @@ public class MainActivity extends Activity {
             case 0:
                 fragment = new HomeFragment();
 
-                args.putInt("key", 20);
+                args.putInt("key", 76);
                 fragment.setArguments(args);
                 break;
             case 1:
                 fragment = new HomeFragment();
-                args.putInt("key", 18);
+                args.putInt("key", 73);
                 fragment.setArguments(args);
                 break;
             case 2:
                 fragment = new HomeFragment();
-                args.putInt("key", 25);
+                args.putInt("key", 68);
                 fragment.setArguments(args);
                 break;
             case 3:
                 fragment = new HomeFragment();
-                args.putInt("key", 57);
+                args.putInt("key", 77);
                 fragment.setArguments(args);
                 break;
             case 4:
                 fragment = new HomeFragment();
-                args.putInt("key", 17);
+                args.putInt("key", 79);
                 fragment.setArguments(args);
                 break;
             case 5:
                 fragment = new HomeFragment();
-                args.putInt("key", 24);
+                args.putInt("key", 63);
                 fragment.setArguments(args);
                 break;
             case 6:
                 fragment = new HomeFragment();
-                args.putInt("key", 33);
+                args.putInt("key", 70);
                 fragment.setArguments(args);
                 break;
             case 7:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 69);
                 fragment.setArguments(args);
                 break;
             case 8:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 78);
                 fragment.setArguments(args);
                 break;
             case 9:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 142);
                 fragment.setArguments(args);
                 break;
             case 10:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 71);
                 fragment.setArguments(args);
                 break;
             case 11:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 62);
                 fragment.setArguments(args);
                 break;
             case 12:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 65);
                 fragment.setArguments(args);
                 break;
             case 13:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 66);
                 fragment.setArguments(args);
                 break;
             case 14:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 59);
                 fragment.setArguments(args);
                 break;
             case 15:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 20);
                 fragment.setArguments(args);
                 break;
             case 16:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 72);
                 fragment.setArguments(args);
                 break;
             case 17:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 75);
                 fragment.setArguments(args);
                 break;
             case 18:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 74);
                 fragment.setArguments(args);
                 break;
             case 19:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 80);
                 fragment.setArguments(args);
                 break;
             case 20:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 82);
                 fragment.setArguments(args);
                 break;
             case 21:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 64);
                 fragment.setArguments(args);
                 break;
             case 22:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 89);
                 fragment.setArguments(args);
                 break;
             case 23:
                 fragment = new HomeFragment();
-                args.putInt("key", 34);
+                args.putInt("key", 81);
                 fragment.setArguments(args);
                 break;
 
@@ -441,28 +441,39 @@ public class MainActivity extends Activity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
+
     @Override
     public void onBackPressed() {
         final Session session = (Session) getApplicationContext();
-        final String sessID=session.getSession_id();
-        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_delete).setTitle("Exit")
-                .setMessage("Are you sure?")
-                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                LoginActivity.client.addHeader("X-Oc-Merchant-Id", "123");
-                                LoginActivity.client.addHeader("X-Oc-Merchant-Language", "en");
-                                LoginActivity.client.addHeader("X-Oc-Session", sessID);
-                                LoginActivity.client.post("http://webshop.opencart-api.com/api/rest/logout", new AsyncHttpResponseHandler() {});
-                                Intent intent = new Intent(Intent.ACTION_MAIN);
-                                intent.addCategory(Intent.CATEGORY_HOME);
-                                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                startActivity(intent);
-                                finish();
+        final String sessID = session.getSession_id();
+        if (sessID.isEmpty()) {
+            session.setSession_id("");
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        } else {
+            new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_delete).setTitle("Exit")
+                    .setMessage("Are you sure?")
+                    .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    LoginActivity.client.addHeader("X-Oc-Merchant-Id", "123");
+                                    LoginActivity.client.addHeader("X-Oc-Merchant-Language", "en");
+                                    LoginActivity.client.addHeader("X-Oc-Session", sessID);
+                                    LoginActivity.client.post("http://mahaveersupermarket.com/api/rest/logout", new AsyncHttpResponseHandler() {
+                                    });
+                                    Intent intent = new Intent(Intent.ACTION_MAIN);
+                                    intent.addCategory(Intent.CATEGORY_HOME);
+                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    startActivity(intent);
+                                    finish();
+                                    System.runFinalizersOnExit(true);
+                                    System.exit(0);
+                                    android.os.Process.killProcess(android.os.Process.myPid());
+                                }
                             }
-                        }
 
-                ).setNegativeButton("no",null).show();
+                    ).setNegativeButton("no", null).show();
+        }
     }
 
 }

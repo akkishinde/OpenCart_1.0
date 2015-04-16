@@ -55,7 +55,7 @@ public class OrderDetails extends Activity {
             if (title != null) {
                 title.setTextColor(getResources()
                         .getColor(R.color.mWhite));
-                LoginActivity.client.post("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
+                LoginActivity.client.post("http://mahaveersupermarket.com/api/rest/confirm", new AsyncHttpResponseHandler() {
                     public static final String TAG = "";
 
                     @Override
@@ -86,7 +86,7 @@ public class OrderDetails extends Activity {
 
     public void finish(View view) {
 
-        LoginActivity.client.put("http://webshop.opencart-api.com/api/rest/confirm", new AsyncHttpResponseHandler() {
+        LoginActivity.client.put("http://mahaveersupermarket.com/api/rest/confirm", new AsyncHttpResponseHandler() {
             public static final String TAG = "";
 
             @Override

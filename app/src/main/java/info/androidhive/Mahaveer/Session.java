@@ -21,7 +21,7 @@ import info.androidhive.Mahaveer.util.LruBitmapCache;
  */
 public class Session extends Application {
 
-    private String session_id;
+    private String session_id="";
     private String username;
     private String firstname;
     private String user_id;

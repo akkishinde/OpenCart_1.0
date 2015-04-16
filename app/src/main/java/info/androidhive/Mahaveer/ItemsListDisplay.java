@@ -47,6 +47,7 @@ import info.androidhive.Mahaveer.model.ItemList;
  * This activity is a child activity of Home Fragment.
  */
 public class ItemsListDisplay extends Activity{
+    private static final String TAG = "";
     private static String url = "";
     private ProgressDialog pDialog;
     private List<ItemList> movieList = new ArrayList<ItemList>();
@@ -79,7 +80,8 @@ public class ItemsListDisplay extends Activity{
         }
          Intent intent = getIntent();
         String category_id = intent.getStringExtra("category_id");
-        url="http://webshop.opencart-api.com/api/rest/products/category/"+category_id;
+        Log.d(TAG, category_id);
+        url="http://mahaveersupermarket.com/api/rest/products/category/"+category_id;
         listView = (ListView) findViewById(R.id.list);
         adapter = new CustomListAdapter(this, movieList);
         listView.setAdapter(adapter);
@@ -95,12 +97,12 @@ public class ItemsListDisplay extends Activity{
 
                     @Override
                     public void onResponse(JSONObject response) {
-                       // Log.d(TAG, response.toString());
+                        Log.d(TAG, response.toString());
 
                         try {
                             pDialog.hide();
                             //String data=response.getString("Data");
-                            JSONArray jr=response.getJSONArray("data");
+                                JSONArray jr=response.getJSONArray("data");
                             for (int i = 0; i < jr.length(); i++) {
                                 JSONObject obj = jr.getJSONObject(i);
                                 ItemList movie = new ItemList();
@@ -143,7 +145,7 @@ public class ItemsListDisplay extends Activity{
                 HashMap<String, String> headers = new HashMap<String, String>();
                 headers.put("Content-Type", "application/json");
                 headers.put("Accept", "application/json");
-                headers.put("X-Oc-Merchant-Id","123");
+                headers.put("X-Oc-Merchant-Id","123456");
                 headers.put("X-Oc-Merchant-Language","en");
                 return headers;
             }

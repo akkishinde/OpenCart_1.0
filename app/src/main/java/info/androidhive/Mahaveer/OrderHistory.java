@@ -63,7 +63,7 @@ public class OrderHistory extends Activity{
         }
         final Session session = (Session) getApplicationContext();
         final String uid=session.getUser_id();
-        url="http://webshop.opencart-api.com/api/rest/orders/user/";
+        url="http://mahaveersupermarket.com/api/rest/orders/user/";
         listView = (ListView) findViewById(R.id.list);
         adapter = new OrderHistAdapter(this,movieList);
         pDialog = new ProgressDialog(this);

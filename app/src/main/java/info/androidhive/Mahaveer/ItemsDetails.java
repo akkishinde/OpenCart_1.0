@@ -49,11 +49,11 @@ public class ItemsDetails extends Activity {
     ArrayList<String> imageadapter = new <String>ArrayList<String>();
     private static String pid;
     ImageLoader imageLoader = Session.getInstance().getImageLoader();
-    String url = "http://webshop.opencart-api.com/api/rest/products/";
+    String url = "http://mahaveersupermarket.com/api/rest/products/";
     static String headurl = "";
     static String item_id = "";
     static String item_qty = "";
-     int empty_flag = 0;
+    int empty_flag = 0;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -136,52 +136,11 @@ public class ItemsDetails extends Activity {
 
             @Override
             public void onClick(View v) {
-                if (empty_flag == 0) {
-                    item_qty = qty.getText().toString();
-                    StringEntity entity = null;
-                    JSONObject innerObj = new JSONObject();
-                    JSONObject outerObj = new JSONObject();
-                    try {
-                        innerObj.put(item_id, item_qty);
-                        outerObj.put("quantity", innerObj);
-                        entity = new StringEntity(outerObj.toString());
-
-                    } catch (JSONException | UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-                    LoginActivity.client.put(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/cart", entity, "application/json", new AsyncHttpResponseHandler() {
-                        @Override
-                        public void onSuccess(String response) {
-                            View v;
-                            Toast toast;
-                            TextView text;
-                            toast = Toast.makeText(getApplicationContext(), "Item added to Cart!", Toast.LENGTH_SHORT);
-                            v = toast.getView();
-                            text = (TextView) v.findViewById(android.R.id.message);
-                            text.setTextColor(getResources().getColor(R.color.mWhite));
-                            text.setShadowLayer(0, 0, 0, 0);
-                            v.setBackgroundResource(R.color.mTeal);
-                            toast.show();
-                            title.setFocusable(true);
-                            title.setFocusableInTouchMode(true);
-                            qty.setText("");
-
-
-                        }
-
-                        @Override
-                        public void onFailure(int statusCode, Throwable error,
-                                              String content) {
-                            Toast.makeText(getApplicationContext(), "Something went wrong at Server Side! " + statusCode, Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                }
-                else
-                {
+                if (Session.getInstance().getSession_id().isEmpty()) {
 
                     Toast toast;
                     TextView text;
-                    toast = Toast.makeText(getApplicationContext(), "Out Of Stock", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getApplicationContext(), "Please Login to Continue!", Toast.LENGTH_SHORT);
                     v = toast.getView();
                     text = (TextView) v.findViewById(android.R.id.message);
                     text.setTextColor(getResources().getColor(R.color.mWhite));
@@ -191,7 +150,62 @@ public class ItemsDetails extends Activity {
                     title.setFocusable(true);
                     title.setFocusableInTouchMode(true);
                     qty.setText("");
+                } else {
+                    if (empty_flag == 0) {
+                        item_qty = qty.getText().toString();
+                        StringEntity entity = null;
+                        JSONObject innerObj = new JSONObject();
+                        JSONObject outerObj = new JSONObject();
+                        try {
+                            innerObj.put(item_id, item_qty);
+                            outerObj.put("quantity", innerObj);
+                            entity = new StringEntity(outerObj.toString());
 
+                        } catch (JSONException | UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+                        LoginActivity.client.put(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/cart", entity, "application/json", new AsyncHttpResponseHandler() {
+                            @Override
+                            public void onSuccess(String response) {
+                                View v;
+                                Toast toast;
+                                TextView text;
+                                toast = Toast.makeText(getApplicationContext(), "Item added to Cart!", Toast.LENGTH_SHORT);
+                                v = toast.getView();
+                                text = (TextView) v.findViewById(android.R.id.message);
+                                text.setTextColor(getResources().getColor(R.color.mWhite));
+                                text.setShadowLayer(0, 0, 0, 0);
+                                v.setBackgroundResource(R.color.mTeal);
+                                toast.show();
+                                title.setFocusable(true);
+                                title.setFocusableInTouchMode(true);
+                                qty.setText("");
+
+
+                            }
+
+                            @Override
+                            public void onFailure(int statusCode, Throwable error,
+                                                  String content) {
+                                Toast.makeText(getApplicationContext(), "Something went wrong at Server Side! " + statusCode, Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    } else {
+
+                        Toast toast;
+                        TextView text;
+                        toast = Toast.makeText(getApplicationContext(), "Out Of Stock", Toast.LENGTH_SHORT);
+                        v = toast.getView();
+                        text = (TextView) v.findViewById(android.R.id.message);
+                        text.setTextColor(getResources().getColor(R.color.mWhite));
+                        text.setShadowLayer(0, 0, 0, 0);
+                        v.setBackgroundResource(R.color.mRed);
+                        toast.show();
+                        title.setFocusable(true);
+                        title.setFocusableInTouchMode(true);
+                        qty.setText("");
+
+                    }
                 }
             }
         });
@@ -201,7 +215,7 @@ public class ItemsDetails extends Activity {
             @Override
             public void onClick(View v) {
 
-                LoginActivity.client.post(getApplicationContext(), "http://webshop.opencart-api.com/api/rest/wishlist/" + item_id, null, new AsyncHttpResponseHandler() {
+                LoginActivity.client.post(getApplicationContext(), "http://mahaveersupermarket.com/api/rest/wishlist/" + item_id, null, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(String response) {
                         View v;
@@ -232,9 +246,9 @@ public class ItemsDetails extends Activity {
     }
 
     private void LoadData() {
-        url = "http://webshop.opencart-api.com/api/rest/products/" + pid;
+        url = "http://mahaveersupermarket.com/api/rest/products/" + pid;
         AsyncHttpClient client = new AsyncHttpClient();
-        client.addHeader("X-Oc-Merchant-Id", "123");
+        client.addHeader("X-Oc-Merchant-Id", "123456");
         client.addHeader("X-Oc-Merchant-Language", "en");
         client.get(getApplicationContext(), url, new AsyncHttpResponseHandler() {
             public static final String TAG = "";

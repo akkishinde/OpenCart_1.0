@@ -129,7 +129,7 @@ public class WishAdapter extends BaseAdapter {
             public void onClick(View v) {
                 WishList m = movieItems.get(position);
                 String pid=m.getProduct_id();
-                LoginActivity.client.delete("http://webshop.opencart-api.com/api/rest/wishlist/"+pid, new AsyncHttpResponseHandler() {
+                LoginActivity.client.delete("http://mahaveersupermarket.com/api/rest/wishlist/"+pid, new AsyncHttpResponseHandler() {
                     @Override
                     public void onSuccess(String response) {
                         try {

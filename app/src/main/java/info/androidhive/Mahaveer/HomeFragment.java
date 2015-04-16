@@ -49,19 +49,19 @@ public class HomeFragment extends Fragment {
         listView = (ListView) rootView.findViewById(R.id.list);
         adapter = new CustomSubCatAdapter(getActivity(), movieList);
         listView.setAdapter(adapter);
-        ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.view_pager);
+       /* ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.view_pager);
         ImageAdapterForGallery adapterr = new ImageAdapterForGallery(
                 getActivity());
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         viewPager.setAdapter(adapterr);
         viewPager.setCurrentItem(0);
-        adapterr.setTimer(viewPager, 5);
+        adapterr.setTimer(viewPager, 5);*/
         pDialog = new ProgressDialog(getActivity());
         // Showing progress dialog before making http request
         pDialog.setMessage("Loading...");
         pDialog.show();
         //Here  you can add prduct links directly instead of sub Catagory.
-        url = "http://webshop.opencart-api.com/api/rest/categories/parent/" + key;
+        url = "http://mahaveersupermarket.com/api/rest/categories/parent/" + key;
         JsonObjectRequest movieReq = new JsonObjectRequest(url, null,
                 new Response.Listener<JSONObject>() {
                     public static final String TAG = "";
@@ -116,7 +116,7 @@ public class HomeFragment extends Fragment {
                 HashMap<String, String> headers = new HashMap<String, String>();
                 headers.put("Content-Type", "application/json");
                 headers.put("Accept", "application/json");
-                headers.put("X-Oc-Merchant-Id", "123");
+                headers.put("X-Oc-Merchant-Id", "123456");
                 headers.put("X-Oc-Merchant-Language", "en");
                 return headers;
             }
