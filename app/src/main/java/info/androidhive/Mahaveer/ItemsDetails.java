@@ -44,7 +44,7 @@ public class ItemsDetails extends Activity {
     private ProgressDialog pDialog;
     NetworkImageView item_header, im1, im2, im3, im4;
     ImageButton addcart, addwish;
-    TextView title, manufacturer, item_name, brand, stock, price, description;
+    TextView title, manufacturer, item_name, brand, stock, price, description,weight;
     EditText qty;
     ArrayList<String> imageadapter = new <String>ArrayList<String>();
     private static String pid;
@@ -70,6 +70,7 @@ public class ItemsDetails extends Activity {
         brand = (TextView) findViewById(R.id.brand_name);
         stock = (TextView) findViewById(R.id.stock_status);
         price = (TextView) findViewById(R.id.price);
+        weight=(TextView)findViewById(R.id.textView);
         description = (TextView) findViewById(R.id.description);
         addcart = (ImageButton) findViewById(R.id.addCartButton);
         addwish = (ImageButton) findViewById(R.id.addWishButton);
@@ -295,6 +296,7 @@ public class ItemsDetails extends Activity {
                             empty_flag = 1;
                         }
                         price.setText("Price: " + json2.getString("price"));
+                        weight.setText("Weight: "+json2.getString("weight").replace(".00000000","")+json2.getString("weight_class"));
                         description.setText(json2.getString("description").replaceAll("<(.*?)\\>", " ")
                                 .replaceAll("<(.*?)\\\n", " ")
                                 .replaceFirst("(.*?)\\>", " ")
@@ -302,8 +304,14 @@ public class ItemsDetails extends Activity {
                                 .replaceAll("&amp;", " ")
                                 .replaceAll("&#39;", "'")
                                 .replaceAll("&quot;", "\""));
+                     /*   JSONArray OptionArray = json2.getJSONArray("options");
+                        JSONObject optobj=OptionArray.getJSONObject(1);
+                        JSONArray values=optobj.getJSONArray("option_value");
+                        for (int i = 0; i < values.length(); i++) {
+                            JSONObject jb=values.getJSONObject(i);
+                            Toast.makeText(getApplicationContext(),"resp:"+jb.getString("name"), Toast.LENGTH_SHORT).show();
 
-
+                        }*/
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
