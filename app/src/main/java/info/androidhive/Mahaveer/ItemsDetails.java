@@ -77,7 +77,7 @@ public class ItemsDetails extends Activity {
         qty = (EditText) findViewById(R.id.editText);
         ActionBar mActionBar = getActionBar();
         assert mActionBar != null;
-        mActionBar.setDisplayHomeAsUpEnabled(true);
+        //mActionBar.setDisplayHomeAsUpEnabled(true);
         mActionBar.setBackgroundDrawable(new ColorDrawable(getResources()
                 .getColor(R.color.mOrange)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
